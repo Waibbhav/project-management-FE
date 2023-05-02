@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*======================================= Variables
+===============================================================*/
+// color
+$blackColor: #000;
+$whiteColor: #fff;
+$primaryColor: #00BAFF;
+$textColor: #383F49;
+$titleColor: #092C38;
+$darkTextColor: #0D062D;
+$inputBorderColor: #787486;
+$placeholderColor: #787486;
+$greenColor: #76CC8E;
+$bgColor: #F0F6F9;
+
+// font-weight
+$font-weights: ("regular": 400,
+    "sami-bold": 500,
+    "bold": 700,
+    "extra-bold": 900);
+
+
+/*======================================= Functions====================================
+=======================================================================================*/
+@function weight($weight-name) {
+    @return map-get($map: $font-weights, $key: $weight-name);
+}
+
+// If you want bullet in li default is true
+@mixin bullet($bullet: true) {
+    @if $bullet {
+        li {
+            position: relative;
+            padding-left: 15px;
+
+            &::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+                position: absolute;
+                left: 1px;
+                top: 6px;
+                background-color: $primaryColor;
+                display: block;
+            }
+        }
+    }
+
+    @else {
+        li {
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+/* 
+//this Mixing only for light theme and Dark theme concecpt
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($whiteColor, 100%);
+        color: darken($blackColor, 100%);
+    }
+ }
+.light{
+    @include theme(true);
+}
+*/
+/*======================================= Mixing=======================================================
+=======================================================================================================*/
+
+// Font Mixing
+
+@mixin poppins {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+// Clearfix
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    *zoom: 1;
+}
+
+// Flex
+
+@mixin flex {
+    display: flex !important;
+}
+
+@mixin justify-content($flex-justify) {
+    justify-content: $flex-justify !important;
+}
+
+@mixin align-items($flex-items) {
+    align-items: $flex-items !important;
+}
+
+@mixin flex-wrap($flex-wrap) {
+    flex-wrap: $flex-wrap !important;
+}
+
+@mixin flex-direction($flex-direction) {
+    flex-direction: $flex-direction !important;
+}
+
+@mixin order($order) {
+    order: $order !important;
+}
+
+@mixin align-content($align-content) {
+    align-content: $align-content !important;
+}
+
+// Transition
+
+@mixin transition($mileseconds) {
+    transition: all ease-in-out $mileseconds;
+}
+
+// Transform
+
+@mixin transform($transform...) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+}
+
+// Border Radius
+
+@mixin radius($radius...) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+// Vertical Center
+
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50.1%);
+    -ms-transform: translateY(-50.1%);
+    transform: translateY(-50.1%);
+}
+
+// Font Weight
+
+@mixin font-weight($weightValue) {
+    font-weight: weight($weightValue);
+}
+
+// Appearance
+
+@mixin appearance($appearance) {
+    appearance: $appearance;
+}
+
+// Placeholder
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+
+    ;
+
+    &:-moz-placeholder {
+        @content
+    }
+
+    ;
+
+    &::-moz-placeholder {
+        @content
+    }
+
+    ;
+
+    &:-ms-input-placeholder {
+        @content
+    }
+
+    ;
+}
+
+// Box Shadow
+
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+// Box sizing
+
+@mixin box-sizing {
+    box-sizing: border-box;
+}
+
+// common btn
+
+@mixin commonBtn {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    color: $whiteColor !important;
+    min-width: 172px;
+    font-size: 18px;
+    outline: 0 !important;
+    @include box-shadow(none);
+    @include transition(0.3s);
+    @include radius(35px);
+    text-align: center;
+    line-height: 48px;
+    padding: 0 20px;
+
+    &:hover {
+        background-color: $textColor;
+        color: $whiteColor;
+        border: 1px solid $textColor;
+    }
+}
+
+/* common Style Start */
+
+* {
+    @include box-sizing;
+}
+
+html {
+    font-size: 10px;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    @include poppins();
+    font-weight: weight(regular);
+    font-size: 1.2rem;
+    color: $textColor;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+}
+
+a,
+button,
+input[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+}
+
+a,
+button,
+input[type="submit"] {
+    @include transition(0.3s);
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+}
+
+span,
+strong,
+small {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section,
+main,
+address,
+aside,
+figure,
+figcaption {
+    display: block;
+}
+
+strong,
+label {
+    @include font-weight(bold);
+}
+
+label {
+    vertical-align: top;
+}
+
+figure {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 20px 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    padding: 0;
+    margin: 0 0 20px 0;
+    @include font-weight(bold);
+    color: $titleColor;
+}
+
+ol,
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul {
+    @include bullet(false);
+}
+
+ul.bullet {
+    @include bullet(true);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid $inputBorderColor;
+    vertical-align: middle;
+    @include radius(2px);
+    min-height: 36px;
+    line-height: 36px;
+    font-size: inherit;
+    resize: none;
+    color: $textColor;
+
+    @include placeholder {
+        color: $placeholderColor;
+        opacity: 1;
+    }
+
+    // @include box-shadow(2px 1px 5px rgba($blackColor, 0.1));
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+select {
+    @include appearance(none);
+    padding: 5px 12px;
+    min-height: 36px;
+    line-height: 36px;
+    border: 1px solid $inputBorderColor;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .9em;
+    background-position: calc(100% - 0.5em) center;
+    background-repeat: no-repeat;
+    min-height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    border: 1px solid $inputBorderColor;
+    background-color: inherit;
+    @include radius(2px);
+    color: $textColor;
+
+    option {
+        color: $textColor;
+    }
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    text-align: center;
+    @include appearance(none);
+    cursor: pointer;
+
+    &:hover {
+        outline: none;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn {
+    outline: 0;
+    text-decoration: none;
+    @include commonBtn;
+}
+
+.common-gap {
+    @media (max-width: 479px) {
+        padding: 20px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 30px 0;
+    }
+
+    @media (max-width: 991px) {
+        padding: 40px 0;
+    }
+
+    @media (min-width: 992px) {
+        padding: 60px 0;
+    }
+}
+
+/* Common Style End */
