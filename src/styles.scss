@@ -11,23 +11,23 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$angular-latest-primary: mat.define-palette(mat.$indigo-palette);
-$angular-latest-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$jira-primary: mat.define-palette(mat.$indigo-palette);
+$jira-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$angular-latest-warn: mat.define-palette(mat.$red-palette);
+$jira-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$angular-latest-theme: mat.define-light-theme((color: (primary: $angular-latest-primary,
-      accent: $angular-latest-accent,
-      warn: $angular-latest-warn,
+$jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
+      accent: $jira-accent,
+      warn: $jira-warn,
     )));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($angular-latest-theme);
+@include mat.all-component-themes($jira-theme);
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -35,12 +35,82 @@ $angular-latest-theme: mat.define-light-theme((color: (primary: $angular-latest-
 @import './assets/scss/grid.scss';
 @import './assets/scss/config';
 
-html,
-body {
-  height: 100%;
+.card-layout {
+  @include card();
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -11px;
+
+  .project-item {
+    padding: 11px;
+    flex: 0 0 auto;
+    width: 20%;
+
+    @media (max-width: 1199px) {
+      width: 25%;
+    }
+
+    @media (max-width: 991px) {
+      width: 33.33%;
+    }
+
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+
+    @media (max-width: 479px) {
+      width: 100%;
+    }
+
+    .card-layout {
+      .project-status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .project-icon {
+          background-color: rgba($color: $primaryColor, $alpha: 0.2);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 26px;
+          height: 26px;
+          @include radius(100%);
+
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        .project-status-tag {
+          display: inline-flex;
+          align-items: center;
+
+          .project-flag {
+            font-size: 1.6rem;
+            margin-right: 7px;
+
+            &.green {
+              i {
+                color: $greenColor;
+              }
+            }
+          }
+
+          .status-tag {
+            min-height: 20px;
+            @include radius(16px);
+            @include blue_tag();
+            font-weight: 600;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }

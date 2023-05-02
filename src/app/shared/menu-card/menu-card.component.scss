@@ -1,0 +1,108 @@
+@import '../../../assets/scss/config';
+
+.menu-card-wrapper {
+    .menu-holder {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+
+        &>* {
+            flex: 0 0 auto;
+            padding: 15px;
+            width: 25%;
+
+            @media (max-width: 991px) {
+                width: 50%;
+            }
+
+            @media (max-width: 479px) {
+                width: 100%;
+                padding: 10px;
+            }
+
+            &>* {
+                @include radius(10px);
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                min-height: 110px;
+
+                &>* {
+                    flex: 0 0 auto;
+                }
+
+                .icon-box {
+                    width: 58px;
+                    height: 58px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include radius(100%);
+                    margin-right: 10px;
+
+                    img {
+                        max-height: 26px;
+                        min-height: 26px;
+                        -webkit-filter: drop-shadow(2px 2px 0px rgba($blackColor, $alpha:0.1));
+                        filter: drop-shadow(2px 2px 0px rgba($blackColor, $alpha:0.1));
+                    }
+                }
+
+                .description-box {
+                    flex: 1;
+
+                    h4 {
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        color: $blackColor;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        color: $textColor;
+                    }
+                }
+            }
+        }
+
+        .yellow-tag {
+            @include yellow_tag();
+
+            .icon-box {
+                background-color: $yellowColor;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        .green-tag {
+            @include green_tag();
+
+            .icon-box {
+                background-color: $greenColor;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        .purple-tag {
+            @include purple_tag();
+
+            .icon-box {
+                background-color: $purpleColor;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        .orange-tag {
+            @include orange_tag();
+
+            .icon-box {
+                background-color: $orangeColor;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    }
+}

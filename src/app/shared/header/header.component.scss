@@ -1,1 +1,104 @@
 @import '../../../assets/scss/config';
+
+.header-wrapper {
+    background-color: $whiteColor;
+    min-height: 60px;
+    box-shadow: 0px 4px 5px rgba($color: $blackColor, $alpha: 0.02);
+    display: flex;
+    align-items: center;
+
+    .container {
+        .logo-with-search {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                max-width: 136px;
+                min-width: 136px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .search-task {
+                input {
+                    min-height: 40px;
+                    line-height: 40px;
+                    @include radius(8px);
+                    @include box-shadow(0px 1px 3px rgba($color: #606C80, $alpha:0.05));
+                    padding-left: 45px;
+                    background: url('../../../assets/images/search.svg') no-repeat center left 15px;
+                    background-size: 15px;
+                    border: 1px solid #EBEEF2;
+                    max-width: 264px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .my-account-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .btn-link {
+                margin-right: 22px;
+            }
+
+            .header-notification {
+                width: 40px;
+                height: 40px;
+                @include radius(50%);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.6rem;
+                position: relative;
+                @include purple_tag();
+
+                .notification-count {
+                    width: 15px;
+                    height: 15px;
+                    @include radius(50%);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $whiteColor;
+                    font-size: 8px;
+                    background-color: $purpleColor;
+                    font-weight: 700;
+                    position: absolute;
+                    top: -2px;
+                    right: -2px;
+                }
+            }
+
+            .abtar-account-holder {
+                margin-left: 21px;
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                @include radius(50%);
+                align-items: center;
+                justify-content: center;
+                background: url('../../../assets/images/progress.svg') no-repeat center;
+                background-size: 100% 100%;
+
+                .header-user {
+                    border-radius: 50%;
+                    width: 34px;
+                    height: 34px;
+                    padding: 0;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    @include radius(50%);
+                }
+            }
+        }
+    }
+}

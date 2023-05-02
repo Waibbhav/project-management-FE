@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '../scss/fontawesome.scss';
+@import '../scss/regular.scss';
+@import '../scss/solid.scss';
+@import '../scss/light.scss';
+@import '../scss/thin.scss';
+@import '../scss/brands.scss';
 /*======================================= Variables
 ===============================================================*/
 // color
@@ -10,8 +16,16 @@ $titleColor: #092C38;
 $darkTextColor: #0D062D;
 $inputBorderColor: #787486;
 $placeholderColor: #787486;
-$greenColor: #76CC8E;
+$lightGreenColor: #76CC8E;
 $bgColor: #F0F6F9;
+$purpleColor: #8833FF;
+$lightYellowColor: #FFF7E3;
+$yellowColor: #FFD047;
+$lightOrangeColor: #FFEBDA;
+$orangeColor: #FEA613;
+$lightGreenColor: #DEF7E9;
+$greenColor: #00B661;
+$blueColor: #2563EB;
 
 // font-weight
 $font-weights: ("regular": 400,
@@ -215,20 +229,43 @@ $font-weights: ("regular": 400,
     background-color: $primaryColor;
     border: 1px solid $primaryColor;
     color: $whiteColor !important;
-    min-width: 172px;
-    font-size: 18px;
+    min-width: 151px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
     outline: 0 !important;
-    @include box-shadow(none);
+    @include box-shadow(0px 8px 20px rgba($color: $primaryColor, $alpha: 0.11));
     @include transition(0.3s);
-    @include radius(35px);
+    @include radius(7px);
     text-align: center;
-    line-height: 48px;
     padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    min-height: 40px;
 
     &:hover {
         background-color: $textColor;
         color: $whiteColor;
         border: 1px solid $textColor;
+    }
+}
+
+@mixin linkBtn {
+    color: $primaryColor;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+        font-size: 1.1rem;
+    }
+
+    &:hover {
+        color: $blackColor;
+        text-decoration: underline;
     }
 }
 
@@ -252,6 +289,7 @@ body {
     font-weight: weight(regular);
     font-size: 1.2rem;
     color: $textColor;
+    background-color: $bgColor;
 }
 
 img {
@@ -273,6 +311,8 @@ input[type="submit"] {
 a,
 button,
 input[type="submit"] {
+    text-decoration: none;
+    display: inline-flex;
     @include transition(0.3s);
 
     &:hover {
@@ -334,8 +374,28 @@ h6 {
     font-family: inherit;
     padding: 0;
     margin: 0 0 20px 0;
-    @include font-weight(bold);
-    color: $titleColor;
+    font-weight: 500;
+    color: $blackColor;
+}
+
+h1,
+.h1 {
+    font-size: 4.4rem;
+}
+
+h2,
+.h2 {
+    font-size: 3.6rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.5rem;
 }
 
 ol,
@@ -370,12 +430,12 @@ input[type="color"],
 textarea {
     display: inline-block;
     width: 100%;
-    padding: 5px 10px;
+    padding: 0 10px;
     border: 1px solid $inputBorderColor;
     vertical-align: middle;
-    @include radius(2px);
-    min-height: 36px;
-    line-height: 36px;
+    @include radius(6px);
+    min-height: 60px;
+    line-height: 60px;
     font-size: inherit;
     resize: none;
     color: $textColor;
@@ -401,21 +461,19 @@ input[type=number] {
 
 select {
     @include appearance(none);
-    padding: 5px 12px;
-    min-height: 36px;
-    line-height: 36px;
+    padding: 0 12px;
     border: 1px solid $inputBorderColor;
     padding-right: 30px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
     background-size: .9em;
     background-position: calc(100% - 0.5em) center;
     background-repeat: no-repeat;
-    min-height: 36px;
-    line-height: 36px;
+    min-height: 60px;
+    line-height: 60px;
     cursor: pointer;
     border: 1px solid $inputBorderColor;
     background-color: inherit;
-    @include radius(2px);
+    @include radius(6px);
     color: $textColor;
 
     option {
@@ -446,22 +504,99 @@ input[type="submit"] {
     @include commonBtn;
 }
 
+.btn-link {
+    @include linkBtn();
+}
+
 .common-gap {
-    @media (max-width: 479px) {
-        padding: 20px 0;
-    }
+    padding-block: 30px;
+}
 
-    @media (max-width: 767px) {
-        padding: 30px 0;
-    }
+.text-uppercase {
+    text-transform: uppercase;
+}
 
-    @media (max-width: 991px) {
-        padding: 40px 0;
-    }
+.text-capitalize {
+    text-transform: capitalize;
+}
 
-    @media (min-width: 992px) {
-        padding: 60px 0;
-    }
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@mixin purple_tag {
+    background-color: rgba($color: $purpleColor, $alpha: 0.1);
+    color: $purpleColor;
+}
+
+@mixin yellow_tag {
+    background-color: $lightYellowColor;
+    color: $yellowColor;
+}
+
+@mixin orange_tag {
+    background-color: $lightOrangeColor;
+    color: $orangeColor;
+}
+
+@mixin green_tag {
+    background-color: $lightGreenColor;
+    color: $greenColor;
+}
+
+@mixin blue_tag {
+    background-color: rgba($color: $blueColor, $alpha: 0.1);
+    color: $blueColor;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.m-30 {
+    margin: 30px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+@mixin card {
+    background-color: $whiteColor;
+    @include radius(10px);
+    @include box-shadow(0px 4px 11px rgba($color: $primaryColor, $alpha: 0.05));
 }
 
 /* Common Style End */

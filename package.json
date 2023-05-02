@@ -1,5 +1,5 @@
 {
-  "name": "angular-latest",
+  "name": "jira",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run angular-latest:serve-ssr",
-    "serve:ssr": "node dist/angular-latest/server/main.js",
-    "build:ssr": "ng build && ng run angular-latest:server",
-    "prerender": "ng run angular-latest:prerender"
+    "dev:ssr": "ng run jira:serve-ssr",
+    "serve:ssr": "node dist/jira/server/main.js",
+    "build:ssr": "ng build && ng run jira:server",
+    "prerender": "ng run jira:prerender"
   },
   "private": true,
   "dependencies": {

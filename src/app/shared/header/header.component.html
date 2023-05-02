@@ -1,8 +1,27 @@
 <header class="header-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col logo-with-search">
-        <figure><a routerLink=""></a></figure>
+      <div class="col-12 col-md-6 logo-with-search">
+        <a routerLink="" class="logo"
+          ><img src="./assets/images/logo.svg" alt=""
+        /></a>
+        <form class="search-task">
+          <input type="search" placeholder="Search Tasks" />
+        </form>
+      </div>
+      <div class="col-12 col-md-6 my-account-header">
+        <button type="button" class="text-uppercase btn-link">
+          Add new project
+        </button>
+        <a href="#" class="header-notification">
+          <i class="fa-solid fa-bell"></i>
+          <span class="notification-count">1</span>
+        </a>
+        <div class="abtar-account-holder">
+          <button type="button" class="header-user">
+            <img src="./assets/images/avater.png" alt="" />
+          </button>
+        </div>
       </div>
     </div>
   </div>
