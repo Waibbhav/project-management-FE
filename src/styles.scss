@@ -146,15 +146,38 @@ $jira-theme: mat.define-light-theme(
 }
 .login-sec {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e6f9ff;
-  padding: 65px 0;
-  overflow: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: #e6f9ff;
+    padding-top: 84px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+.login-cont{
+  height: 100%;
+  overflow-y: auto;
   position: relative;
-
-
+    z-index: 1;
+}
+.login-area{
+  height: calc(100vh - 84px);
+    overflow: auto;
+    display: table;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.login-area-pro{
+  display: table-cell;
+    vertical-align: middle;
+    height: calc(100vh - 84px);
+    padding: 50px 0;
+    
 }
 .submit-inn {
   button {
@@ -231,7 +254,7 @@ $jira-theme: mat.define-light-theme(
 }
 .pc1 {
   position: absolute;
-  top: -8px;
+  top: 8%;
   left: 0;
   width: 20%;
 }
