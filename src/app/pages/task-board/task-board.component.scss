@@ -1,0 +1,105 @@
+@import '../../../assets/scss/config';
+
+.task-board-wrapper {
+  padding-block: 40px;
+
+  .task-board-header {
+    margin-bottom: 23px;
+
+    .task-board-profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 22px;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        margin: 0;
+      }
+
+      .member-group {
+        li {
+          button {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        button {
+          width: 40px;
+          height: 40px;
+          font-size: 12px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  .view-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .grid-list-view {
+      ul {
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(0px 1px 3px rgba(96, 108, 128, 0.05));
+        background: #fff;
+        border: 1px solid #EBEEF2;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+
+        li {
+          button {
+            display: flex;
+            align-items: center;
+            background: transparent;
+            padding: 8px 16px;
+            border-right: 1px solid #EBEEF2;
+            color: #606C80;
+            font-weight: 500;
+            font-size: 12px;
+
+            img {
+              margin-right: 8px;
+              width: 18px;
+              height: 18px;
+              object-fit: contain;
+            }
+          }
+
+          &:last-child {
+            button {
+              border: none;
+            }
+          }
+          &:hover {
+            button{
+                background: #EBEEF2;
+            }
+          }
+        }
+      }
+    }
+
+    .search-task {
+        max-width: 317px;
+        input {
+            min-height: 40px;
+            line-height: 40px;
+            @include radius(8px);
+            @include box-shadow(0px 1px 3px rgba($color: #606C80, $alpha:0.05));
+            padding-left: 45px;
+            background: url('../../../assets/images/search.svg') no-repeat center left 15px;
+            background-size: 15px;
+            border: 1px solid #EBEEF2;
+            width: 100%;
+            background-color: #fff;
+        }
+    }
+  }
+}
