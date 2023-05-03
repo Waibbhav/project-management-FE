@@ -331,7 +331,7 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
 
 .login-sec {
   height: 100vh;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e6f9ff;
@@ -456,7 +456,7 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
 
 .pc1 {
   position: absolute;
-  top: -8px;
+  top: 8%;
   left: 0;
   width: 20%;
 }
