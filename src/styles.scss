@@ -1,6 +1,6 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material'as mat;
+@use "@angular/material"as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -22,7 +22,8 @@ $jira-warn: mat.define-palette(mat.$red-palette);
 $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
       accent: $jira-accent,
       warn: $jira-warn,
-    )));
+    ),
+  ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -32,8 +33,8 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
 /* You can add global styles to this file, and also import other style files */
 
 // Grid scss
-@import './assets/scss/grid.scss';
-@import './assets/scss/config';
+@import "./assets/scss/grid.scss";
+@import "./assets/scss/config";
 
 .card-layout {
   @include card();
@@ -106,8 +107,8 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
               }
             }
 
-            &.yellow{
-              i{
+            &.yellow {
+              i {
                 color: #F5CF00;
               }
             }
@@ -253,7 +254,8 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
     align-items: center;
     justify-content: center;
     padding: 0;
-    &:hover{
+
+    &:hover {
       opacity: 0.6;
     }
 
@@ -273,11 +275,12 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
     li {
       margin-right: 8px;
       display: flex;
-      align-items: center;              
+      align-items: center;
 
       &:last-child {
         margin: 0;
-        span{
+
+        span {
           color: #D97706;
         }
       }
@@ -297,4 +300,170 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
 
 .mat-divider {
   border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+// ===rounak======
+.haeder2 {
+  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+  padding: 32px 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.login-outr {
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 25px 40px;
+}
+
+.login-wrapper {
+  // padding-top: 85px;
+  position: relative;
+}
+
+.login-sec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f9ff;
+  padding-top: 84px;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.login-cont {
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.login-area {
+  height: calc(100vh - 84px);
+  overflow: auto;
+  display: table;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.login-area-pro {
+  display: table-cell;
+  vertical-align: middle;
+  height: calc(100vh - 84px);
+  padding: 50px 0;
+
+}
+
+.submit-inn {
+  button {
+    background: #00baff;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: black;
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  input {
+    border: 1px solid rgba(91, 109, 116, 0.2);
+    height: 54px;
+    padding: 0 20px;
+    color: black;
+    font-size: 15px;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 6px;
+    display: inline-block;
+
+    text-transform: capitalize;
+
+    color: #5b6d74;
+  }
+}
+
+.login-hdr {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #092c38;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 17px;
+
+    text-transform: capitalize;
+
+    color: #5b6d74;
+  }
+}
+
+.login-form {
+  margin-bottom: 30px;
+}
+
+.form-btm {
+  border-top: 1px solid rgba(91, 109, 116, 0.5);
+  padding-top: 23px;
+
+  p {
+    font-size: 13px;
+    text-align: center;
+
+    a {
+      color: #03bbff;
+      font-weight: 600;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.pc1 {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 20%;
+}
+
+.pc2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 28%;
 }
