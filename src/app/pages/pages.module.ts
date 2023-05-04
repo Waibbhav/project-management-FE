@@ -8,9 +8,10 @@ import { SharedModule } from '@project/shared/shared.module';
 import { MaterialModule } from '@project/material.module';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { TaskBoardComponent } from './task-board/task-board.component';
+import { ResourcePullComponent } from './resource-pull/resource-pull.component';
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, TaskBoardComponent],
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent],
   imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule],
 })
 export class PagesModule {}

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { TaskBoardComponent } from './task-board/task-board.component';
+import { ResourcePullComponent } from './resource-pull/resource-pull.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'task-board',
         component: TaskBoardComponent,
+      },
+      {
+        path: 'resource-pull',
+        component: ResourcePullComponent,
       },
     ],
   },
