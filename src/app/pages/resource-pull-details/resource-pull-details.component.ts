@@ -9,6 +9,7 @@ export class ResourcePullDetailsComponent implements OnInit {
 
   constructor() { }
   viewMode = 'tab1';
+  addCls=false;
   projectdatils:any[]=[]
   projectdatilscontain:any[]=[]
   ngOnInit(): void {
@@ -20,49 +21,24 @@ export class ResourcePullDetailsComponent implements OnInit {
     ]
     this.projectdatilscontain = [
       {
-        heading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry?", item: [
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },    
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },  
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
+        heading: {
+          item: [
+            { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview dd",tabletime: "03.27", },
+            { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
+            { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },    
+            { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },  
+            { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
+          ]
+        }, item: [
+          { projectname: "DP0-3", projectimage: "./assets/images/redimageone.png",projectdescription: "Lorem ipsum dolor sit amet", },
+          { projectname: "DP0-3", projectimage: "./assets/images/redimageone.png",projectdescription: "Lorem ipsum dolor sit amet", },
+          { projectname: "DP0-3", projectimage: "./assets/images/redimageone.png",projectdescription: "Lorem ipsum dolor sit amet", },
+          { projectname: "DP0-3", projectimage: "./assets/images/redimageone.png",projectdescription: "Lorem ipsum dolor sit amet", },
+          { projectname: "DP0-3", projectimage: "./assets/images/redimageone.png",projectdescription: "Lorem ipsum dolor sit amet", },
+         
         ]
       },
-      {
-        heading: "Contrary to popular belief", item: [
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },    
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },  
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-        ]
-      },   {
-        heading: "There are many variations", item: [
-
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },    
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },  
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-        ]
-      },   {
-        heading: "The standard chunk of Lorem", item: [
-
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },    
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },  
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-        ]
-      },   {
-        heading: "Sed ut perspiciatis unde omnis iste natus", item: [
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },    
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },  
-          { tableheading1: "Lorem Ipsum mmm is simply", tablepreview: "Preview",tabletime: "03.27", },
-        ]
-      },
+       
     
     
     
@@ -70,5 +46,7 @@ export class ResourcePullDetailsComponent implements OnInit {
     
     ]
   }
-
+  onShow(){
+    this.addCls=!this.addCls;
+  }
 }
