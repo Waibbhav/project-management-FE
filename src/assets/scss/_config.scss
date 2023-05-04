@@ -27,6 +27,7 @@ $orangeColor: #D97706;
 $lightGreenColor: #DEF7E9;
 $greenColor: #00B661;
 $blueColor: #2563EB;
+$errorColor:#FF846C;
 
 // font-weight
 $font-weights: ("regular": 400,
@@ -252,13 +253,13 @@ $font-weights: ("regular": 400,
     }
 }
 
-@mixin commonBtnBig{
+@mixin commonBtnBig {
     @include commonBtn();
     font-size: 1.8rem;
     min-height: 54px;
 }
 
-.btn-big{
+.btn-big {
     @include commonBtnBig();
 }
 
@@ -473,6 +474,10 @@ textarea {
         border-color: $primaryColor !important;
     }
 
+    &.error {
+        border-color: $errorColor !important;
+    }
+
     // @include box-shadow(2px 1px 5px rgba($blackColor, 0.1));
 }
 
@@ -615,6 +620,18 @@ input[type="submit"] {
 
 .p-10 {
     padding: 10px;
+}
+
+.m-60 {
+    margin: 60px;
+}
+
+.m-50 {
+    margin: 50px;
+}
+
+.m-40 {
+    margin: 40px;
 }
 
 .m-30 {
