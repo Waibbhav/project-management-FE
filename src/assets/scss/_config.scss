@@ -15,6 +15,7 @@ $textColor: #383F49;
 $titleColor: #092C38;
 $darkTextColor: #0D062D;
 $inputBorderColor: #787486;
+$inputBorderColor1: #5B6D74;
 $placeholderColor: #787486;
 $midGreenColor: #76CC8E;
 $bgColor: #F0F6F9;
@@ -282,11 +283,16 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+body,
+.mat-body,
+.mat-body-1,
+.mat-typography .mat-body,
+.mat-typography .mat-body-1,
+.mat-typography {
     margin: 0;
     padding: 0;
     @include poppins();
-    font-weight: weight(regular);
+    font-weight: weight(regular) !important;
     font-size: 1.2rem;
     color: $textColor;
     background-color: $bgColor;
@@ -510,6 +516,18 @@ input[type="submit"] {
 
 .common-gap {
     padding-block: 30px;
+}
+
+.common-gap-big {
+    padding-block: 60px;
+
+    @media (max-width: 1199px) {
+        padding-block: 40px;
+    }
+
+    @media (max-width: 991px) {
+        padding-block: 40px;
+    }
 }
 
 .text-uppercase {
