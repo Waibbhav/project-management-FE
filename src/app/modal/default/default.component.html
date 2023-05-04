@@ -59,3 +59,82 @@
     </div>
 
 </ng-container>
+<ng-container *ngIf="data?.type === 'addproject'">
+  <div class="addnewresourcemodal">
+    <div class="addtaskmodal-head">
+      <div class="modal-head-lft">
+        <h2>Add Project</h2>
+        <button type="button" [mat-dialog-close]>
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+   <div class="modal-head-rgt">
+      <div class="addresourcecontain">
+        <label>Project Name<span>*</span></label>
+        <input type="text" class="inputname" />
+      </div>
+      <div class="addresourcecontain">
+        <div class="row">
+          <div class="col-sm-6">
+            <label>Project Category<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+          <div class="col-sm-6">
+            <label>Client Name<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Name / Email" />
+          </div>
+      </div>
+      </div>
+      <div class="addresourcecontain">
+        <div class="row">
+          <div class="col-sm-6">
+            <label>Business Type<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+          <div class="col-sm-6">
+            <label>BDM<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+        </div>
+        
+      </div>
+      <div class="addresourcecontain">
+        <div class="row">
+          <div class="col-sm-6">
+            <label>Project Hours<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Add" />
+          </div>
+          <div class="col-sm-6">
+            <label>CSM/Delivery Manager<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Name / Email" />
+          </div>
+        </div>
+        
+      </div>
+      <div class="addresourcecontain">
+        <div class="row">
+          <div class="col-sm-6">
+            <label>Project vertical<span>*</span></label>
+            <div>
+     <input type="radio" /> Custom <input type="radio" /> CMS          
+            </div>
+
+      </div>
+          <div class="col-sm-6">
+            <label>Project Status<span>*</span></label>
+<button class="inactiveone">Inactive</button>         
+ </div>
+        </div>
+        
+      </div>
+      <div class="save-button">
+        <button class="savebuttonone">Save</button>
+        <button class="cancelbutton">Cancel</button>
+        </div>
+      </div> 
+    </div>
+ 
+    </div>
+
+</ng-container>

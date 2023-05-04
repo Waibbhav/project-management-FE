@@ -13,7 +13,7 @@
         <div class="menu-holder">
 <ul>
             <li *ngFor="let item of projectdatils">
-                <a href="#" >
+                <a routerLink="" >
                 <h3> {{item.heading}}</h3>
                 <h2> {{item.description}}</h2>
             </a>
@@ -40,7 +40,7 @@
                   
                     
                       <div class="add-scrollbar">
-                     <div class="yourprojectmain " *ngFor="let item of [1 , 2, 3, 4, 5, 6]" >
+                     <div class="yourprojectmain " >
                         <div (click)="onShow()" class="showmorebutton">
                             <div class="leftsectionmain">
                                 <figure>
@@ -85,7 +85,183 @@
                             </div>
                               </div></div>
                      </div>
-                       
+                     <div class="yourprojectmain " >
+                        <div (click)="onShow()" class="showmorebutton">
+                            <div class="leftsectionmain">
+                                <figure>
+                                <img src="../../../assets/images/imageone.svg" />   
+                                </figure>
+                                <h2>Dev pro 01</h2>
+                                <span *ngIf="addCls===false">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span> 
+                                <span *ngIf="addCls===true">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 5.5758L5.18747 2.60113L8.16214 5.5758C8.46114 5.8748 8.94414 5.8748 9.24314 5.5758C9.54214 5.2768 9.54214 4.7938 9.24314 4.4948L5.72414 0.975799C5.42514 0.676799 4.94214 0.676799 4.64314 0.975799L1.12414 4.4948C0.980581 4.63804 0.899902 4.8325 0.899902 5.0353C0.899902 5.2381 0.980581 5.43256 1.12414 5.5758C1.42314 5.86713 1.91381 5.8748 2.21281 5.5758Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span>
+                            </div>
+                            <div class="rightsection">
+                                <h3>Allocated Hours</h3>
+                                <button class="hourbutton">5 hour</button>
+                            </div>
+                          </div>
+                          <div class="projectconatin" [class.showmore]="addCls">
+                            <div class="projectblockconatin">
+                            <div class="leftcontainone">
+                                <figure>
+                                    <img src="../../../assets/images/redimageone.svg" />    
+                                </figure>
+                                <p>DP0-4 <strong>Lipsum dolor sit amet</strong> </p>
+                            </div>
+                            <div class="rightcontainone">
+                                <Button>
+                                    TO DO   
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#5B6D74"/>
+                                        </svg>
+                                </Button>
+                                <figure>
+                                    <img src="../../../assets/images/avater.png" />    
+                                </figure>
+                                
+                            </div>
+                              </div></div>
+                     </div>     <div class="yourprojectmain " >
+                        <div (click)="onShow()" class="showmorebutton">
+                            <div class="leftsectionmain">
+                                <figure>
+                                <img src="../../../assets/images/imageone.svg" />   
+                                </figure>
+                                <h2>Dev pro 01</h2>
+                                <span *ngIf="addCls===false">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span> 
+                                <span *ngIf="addCls===true">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 5.5758L5.18747 2.60113L8.16214 5.5758C8.46114 5.8748 8.94414 5.8748 9.24314 5.5758C9.54214 5.2768 9.54214 4.7938 9.24314 4.4948L5.72414 0.975799C5.42514 0.676799 4.94214 0.676799 4.64314 0.975799L1.12414 4.4948C0.980581 4.63804 0.899902 4.8325 0.899902 5.0353C0.899902 5.2381 0.980581 5.43256 1.12414 5.5758C1.42314 5.86713 1.91381 5.8748 2.21281 5.5758Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span>
+                            </div>
+                            <div class="rightsection">
+                                <h3>Allocated Hours</h3>
+                                <button class="hourbutton">5 hour</button>
+                            </div>
+                          </div>
+                          <div class="projectconatin" [class.showmore]="addCls">
+                            <div class="projectblockconatin">
+                            <div class="leftcontainone">
+                                <figure>
+                                    <img src="../../../assets/images/redimageone.svg" />    
+                                </figure>
+                                <p>DP0-4 <strong>Lipsum dolor sit amet</strong> </p>
+                            </div>
+                            <div class="rightcontainone">
+                                <Button>
+                                    TO DO   
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#5B6D74"/>
+                                        </svg>
+                                </Button>
+                                <figure>
+                                    <img src="../../../assets/images/avater.png" />    
+                                </figure>
+                                
+                            </div>
+                              </div></div>
+                     </div>     <div class="yourprojectmain " >
+                        <div (click)="onShow()" class="showmorebutton">
+                            <div class="leftsectionmain">
+                                <figure>
+                                <img src="../../../assets/images/imageone.svg" />   
+                                </figure>
+                                <h2>Dev pro 01</h2>
+                                <span *ngIf="addCls===false">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span> 
+                                <span *ngIf="addCls===true">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 5.5758L5.18747 2.60113L8.16214 5.5758C8.46114 5.8748 8.94414 5.8748 9.24314 5.5758C9.54214 5.2768 9.54214 4.7938 9.24314 4.4948L5.72414 0.975799C5.42514 0.676799 4.94214 0.676799 4.64314 0.975799L1.12414 4.4948C0.980581 4.63804 0.899902 4.8325 0.899902 5.0353C0.899902 5.2381 0.980581 5.43256 1.12414 5.5758C1.42314 5.86713 1.91381 5.8748 2.21281 5.5758Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span>
+                            </div>
+                            <div class="rightsection">
+                                <h3>Allocated Hours</h3>
+                                <button class="hourbutton">5 hour</button>
+                            </div>
+                          </div>
+                          <div class="projectconatin" [class.showmore]="addCls">
+                            <div class="projectblockconatin">
+                            <div class="leftcontainone">
+                                <figure>
+                                    <img src="../../../assets/images/redimageone.svg" />    
+                                </figure>
+                                <p>DP0-4 <strong>Lipsum dolor sit amet</strong> </p>
+                            </div>
+                            <div class="rightcontainone">
+                                <Button>
+                                    TO DO   
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#5B6D74"/>
+                                        </svg>
+                                </Button>
+                                <figure>
+                                    <img src="../../../assets/images/avater.png" />    
+                                </figure>
+                                
+                            </div>
+                              </div></div>
+                     </div>     <div class="yourprojectmain " >
+                        <div (click)="onShow()" class="showmorebutton">
+                            <div class="leftsectionmain">
+                                <figure>
+                                <img src="../../../assets/images/imageone.svg" />   
+                                </figure>
+                                <h2>Dev pro 01</h2>
+                                <span *ngIf="addCls===false">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span> 
+                                <span *ngIf="addCls===true">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 5.5758L5.18747 2.60113L8.16214 5.5758C8.46114 5.8748 8.94414 5.8748 9.24314 5.5758C9.54214 5.2768 9.54214 4.7938 9.24314 4.4948L5.72414 0.975799C5.42514 0.676799 4.94214 0.676799 4.64314 0.975799L1.12414 4.4948C0.980581 4.63804 0.899902 4.8325 0.899902 5.0353C0.899902 5.2381 0.980581 5.43256 1.12414 5.5758C1.42314 5.86713 1.91381 5.8748 2.21281 5.5758Z" fill="#C3CAD9"/>
+                                    </svg>
+                                    </span>
+                            </div>
+                            <div class="rightsection">
+                                <h3>Allocated Hours</h3>
+                                <button class="hourbutton">5 hour</button>
+                            </div>
+                          </div>
+                          <div class="projectconatin" [class.showmore]="addCls">
+                            <div class="projectblockconatin">
+                            <div class="leftcontainone">
+                                <figure>
+                                    <img src="../../../assets/images/redimageone.svg" />    
+                                </figure>
+                                <p>DP0-4 <strong>Lipsum dolor sit amet</strong> </p>
+                            </div>
+                            <div class="rightcontainone">
+                                <Button>
+                                    TO DO   
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.21281 0.424201L5.18747 3.39887L8.16214 0.424201C8.46114 0.125201 8.94414 0.125201 9.24314 0.424201C9.54214 0.723201 9.54214 1.2062 9.24314 1.5052L5.72414 5.0242C5.42514 5.3232 4.94214 5.3232 4.64314 5.0242L1.12414 1.5052C0.980581 1.36196 0.899902 1.1675 0.899902 0.964701C0.899902 0.761904 0.980581 0.567439 1.12414 0.424201C1.42314 0.132868 1.91381 0.125201 2.21281 0.424201Z" fill="#5B6D74"/>
+                                        </svg>
+                                </Button>
+                                <figure>
+                                    <img src="../../../assets/images/avater.png" />    
+                                </figure>
+                                
+                            </div>
+                              </div></div>
+                     </div>
                          
                       </div>
                    </div>
