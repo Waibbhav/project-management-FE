@@ -424,6 +424,24 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
       position: relative;
       margin-block: 20px;
     }
+
+    .passbox {
+      position: relative;
+
+      input {
+        padding-right: 40px;
+      }
+
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        right: 15px;
+      }
+    }
   }
 
   .timer {
