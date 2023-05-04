@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { TaskBoardComponent } from './task-board/task-board.component';
 import { ResourcePullComponent } from './resource-pull/resource-pull.component';
+import { ResourcePullDetailsComponent } from './resource-pull-details/resource-pull-details.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'resource-pull',
         component: ResourcePullComponent,
+      },
+      {
+        path: 'resource-pull-details',
+        component: ResourcePullDetailsComponent,
       },
     ],
   },

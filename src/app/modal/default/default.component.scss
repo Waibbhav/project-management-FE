@@ -15,3 +15,122 @@
   border-radius: 5px;
   padding: 20px;
 }
+.addnewresourcemodal{
+  position: relative;
+    overflow: hidden;
+    padding: 30px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
+    border-radius: 10px;
+    width: 600px;
+    max-width: 600px;
+h2{
+  font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 1.3;
+color: #000000;
+margin-bottom: 25px;
+}
+.modal-head-lft{
+  position: relative;
+  button{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background: rgba(120, 116, 134, 0.2);
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background:#00BAFF;
+      color: #fff;
+    }
+    .mat-icon{
+      width: 13px;
+      height: 13px;
+      font-size: 13px;
+    }
+  }
+}
+  .addresourcecontain{
+    margin-bottom: 20px;
+    label{
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+color: #0D062D;
+font-weight: 500;
+    }
+    .inputname{
+      border: 1px solid #787486;
+      border-radius: 6px;
+      background: #FFFFFF;
+box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
+border-radius: 10px;
+padding: 15px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #868D8E;
+line-height: auto;
+height:60px;
+font-size: 14px;
+line-height: 1.2;
+text-transform: capitalize;
+color: #787486;
+margin-top: 8px;
+&::placeholder{
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.2;
+color: #787486;
+}
+    }
+}
+.save-button{
+  max-width: 400px;
+  margin: 0px auto;
+  margin-top: 40px;
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+@media (max-width:420px){
+  max-width: 90%;
+}
+  .savebuttonone{
+    width: 100%;
+    height: 54px;
+    background: #00BAFF;
+    border-radius: 7px;
+    font-weight: 500;
+font-size: 18px;
+line-height: 1.2;
+text-transform: capitalize;
+color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+&:hover{
+  background:#383F49;
+}
+  }
+  .cancelbutton{
+    font-weight: 500;
+font-size: 18px;
+line-height: 1.2;
+text-transform: capitalize;
+color:#000;
+margin-top: 10px;
+&:hover{
+color:#00BAFF;
+text-decoration: none;
+}
+}
+}
+}

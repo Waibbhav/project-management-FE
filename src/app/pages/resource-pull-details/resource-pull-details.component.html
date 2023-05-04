@@ -1,0 +1,74 @@
+<main class="resource-pull-main">
+<section>
+ <div class="container">
+ <div class="resource-header">
+ <h3>Jason William</h3>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+ </div>
+ </section>
+ <section>
+    <div class="container">
+        <div class="card-layout project-detail-card">
+        <div class="menu-holder">
+<ul>
+            <li *ngFor="let item of projectdatils">
+                <a href="#" >
+                <h3> {{item.heading}}</h3>
+                <h2> {{item.description}}</h2>
+            </a>
+            </li>
+          </ul>
+        </div>
+    </div> 
+    </div>
+ </section>
+ <section>
+    <div class="container">
+    <div class="tabsection">
+        <div class="tab-slider--nav">
+            <h2>Your projects</h2>
+            <ul class="tab-slider--tabs">
+              <li class="tab-slider--trigger" [class.active]="viewMode == 'tab1'" rel="tab1" (click)="viewMode ='tab1'">Weekly</li>
+              <li class="tab-slider--trigger" [class.active]="viewMode == 'tab2'" rel="tab2" (click)="viewMode ='tab2'">Monthly</li>
+            </ul>
+          </div>
+          <div class="tab-slider--container" [ngSwitch]="viewMode">
+            <div id="tab1" class="tab-slider--body" *ngSwitchCase="'tab1'">
+                <div class="card-layout">
+                   <div class="your-project-main">
+                    <div class="yourprojectsaccrodian">
+                        <mat-accordion class="example-headers-align" multi *ngFor="let item of projectdatilscontain" >
+                          <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                              <mat-panel-description>
+                                {{item.heading}}
+                              </mat-panel-description>
+                            </mat-expansion-panel-header>
+                        
+                           <div>
+                            {{item.para}}
+                           <span class="contact-suporttext">
+                            <a href="#">Contact Support</a></span> 
+                           </div>
+                        
+                          </mat-expansion-panel>
+                        
+                        
+                        
+                        </mat-accordion>
+                      </div>
+                   </div>
+                </div>
+           
+            </div>
+            <div id="tab2" class="tab-slider--body" *ngSwitchCase="'tab2'">
+              <h2>Second Tab</h2>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo
+                quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+    </div>
+</div>
+ </section>
+</main>

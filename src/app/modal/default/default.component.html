@@ -4,3 +4,58 @@
     quas id dolore magnam vitae, alias consectetur cum ea pariatur maiores laudantium?
   </div>
 </ng-container>
+<ng-container *ngIf="data?.type === 'addnewresource'">
+  <div class="addnewresourcemodal">
+    <div class="addtaskmodal-head">
+      <div class="modal-head-lft">
+        <h2>Add Your Property</h2>
+        <button type="button" [mat-dialog-close]>
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+   <div class="modal-head-rgt">
+      <div class="addresourcecontain">
+        <label>Full Name<span>*</span></label>
+        <input type="text" class="inputname" />
+      </div>
+      <div class="addresourcecontain">
+        <label>Email Address<span>*</span></label>
+        <input type="text" class="inputname" />
+      </div>
+      <div class="addresourcecontain">
+        <div class="row">
+          <div class="col-sm-6">
+            <label>Employee Code<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+          <div class="col-sm-6">
+            <label>Skype ID<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+        </div>
+        
+      </div>
+      <div class="addresourcecontain">
+        <div class="row">
+          <div class="col-sm-6">
+            <label>Designation<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+          <div class="col-sm-6">
+            <label>Phone Number<span>*</span></label>
+        <input type="text" class="inputname" placeholder="Type" />
+          </div>
+        </div>
+        
+      </div>
+      <div class="save-button">
+        <button class="savebuttonone">Save</button>
+        <button class="cancelbutton">Cancel</button>
+        </div>
+      </div> 
+    </div>
+ 
+    </div>
+
+</ng-container>

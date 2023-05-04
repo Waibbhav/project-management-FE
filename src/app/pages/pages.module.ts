@@ -9,9 +9,11 @@ import { MaterialModule } from '@project/material.module';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { TaskBoardComponent } from './task-board/task-board.component';
 import { ResourcePullComponent } from './resource-pull/resource-pull.component';
+import { ModalModule } from '@project/modal/modal.module';
+import { ResourcePullDetailsComponent } from './resource-pull-details/resource-pull-details.component';
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent],
-  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule],
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent],
+  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule ],
 })
 export class PagesModule {}
