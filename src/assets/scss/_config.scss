@@ -252,6 +252,16 @@ $font-weights: ("regular": 400,
     }
 }
 
+@mixin commonBtnBig{
+    @include commonBtn();
+    font-size: 1.8rem;
+    min-height: 54px;
+}
+
+.btn-big{
+    @include commonBtnBig();
+}
+
 @mixin linkBtn {
     color: $primaryColor;
     text-decoration: underline;
@@ -390,8 +400,14 @@ h1,
 }
 
 h2,
-.h2 {
+.h2,
+.mat-h2,
+.mat-title,
+.mat-typography .mat-h2,
+.mat-typography .mat-title,
+.mat-typography h2 {
     font-size: 3.6rem;
+    line-height: 1.5;
 }
 
 h3,
@@ -445,10 +461,16 @@ textarea {
     font-size: inherit;
     resize: none;
     color: $textColor;
+    @include transition(0.3s);
 
     @include placeholder {
         color: $placeholderColor;
         opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $primaryColor !important;
     }
 
     // @include box-shadow(2px 1px 5px rgba($blackColor, 0.1));
