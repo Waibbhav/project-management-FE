@@ -1,0 +1,84 @@
+@import '../../../assets/scss/config';
+
+.dvider {
+    text-align: center;
+    margin: 20px 0;
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        font-weight: 500;
+        font-size: 1.7rem;
+
+        color: $inputBorderColor1;
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: rgba($color: $inputBorderColor1, $alpha: 0.5);
+            height: 1px;
+            width: 56px;
+            display: inline-flex;
+            margin-inline: 10px;
+        }
+    }
+}
+
+.forgot_pass {
+    text-align: right;
+    margin-bottom: 20px;
+
+    a {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $primaryColor;
+
+        &:hover {
+            color: $blackColor;
+        }
+    }
+
+}
+
+.outlook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $whiteColor;
+    box-shadow: 0px 4px 30px rgba($color: $blackColor, $alpha:0.06);
+    @include radius(7px);
+    padding: 13px 12px;
+
+    span {
+        font-weight: 500;
+        font-size: 1.7rem;
+        display: inline-block;
+        text-transform: capitalize;
+        margin-left: 10px;
+        color: $textColor;
+    }
+}
+
+.cant-log {
+    margin-top: 25px;
+
+    p {
+        font-weight: 400;
+        font-size: 1.5rem;
+
+        text-align: center;
+        text-transform: capitalize;
+
+        color: $primaryColor;
+
+        a {
+            color: $primaryColor;
+
+            &:hover {
+                color: $blackColor;
+            }
+        }
+    }
+}
