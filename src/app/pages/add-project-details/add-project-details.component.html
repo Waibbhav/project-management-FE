@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="add-project-details-top">
+        <h3>Projects / Dev pro 01</h3>
+        <h2>Add Project Details</h2>
+    </div>
+    <div class="project-details-mid">
+        <form>
+        <div class="formcontainer">
+            <label>Project Description<span>*</span></label>
+            <textarea class="project-textarea"></textarea>
+        </div>
+        <div class="formcontainer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>Project Description<span>*</span></label>
+                    <input type="text" class="project-textarea-input" placeholder="Name / Email">
+                </div>
+                <div class="col-sm-6">
+                    <label>Assign Team<span>*</span></label>
+                    <input type="text" class="project-textarea-input" placeholder="Name / Email">
+                </div>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Start Date<span>*</span></label>
+                            <div class="stardateone datecssnew">
+                                <mat-form-field color="accent" appearance="fill">
+                                    <input matInput [matDatepicker]="picker1">
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                  </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>End Date<span>*</span></label>
+                            <div class="stardateone datecssnew">
+                                <mat-form-field color="accent" appearance="fill">
+                                    <input matInput [matDatepicker]="picker2">
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                                  </mat-form-field>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="activate-project">
+
+                        <div>
+                            <h2>Activate Project</h2>
+                            <p>Task reminder will be sent to task assignee and task creator</p>
+                        </div>
+                     <div class="right-switch">
+                        <mat-slide-toggle></mat-slide-toggle>
+
+                     </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <div class="col-sm-6">
+                <button class="savebuttonone">Save</button>
+                </div>
+        </div>
+
+    </form>
+    </div>
+</div>

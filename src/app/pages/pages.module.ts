@@ -11,9 +11,12 @@ import { TaskBoardComponent } from './task-board/task-board.component';
 import { ResourcePullComponent } from './resource-pull/resource-pull.component';
 import { ModalModule } from '@project/modal/modal.module';
 import { ResourcePullDetailsComponent } from './resource-pull-details/resource-pull-details.component';
+import { NewProjectAddedComponent } from './new-project-added/new-project-added.component';
+import { AddProjectDetailsComponent } from './add-project-details/add-project-details.component';
+import { ProjectDashboardComponent } from './project-dashboard/project-dashboard.component';
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent],
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent],
   imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule ],
 })
 export class PagesModule {}

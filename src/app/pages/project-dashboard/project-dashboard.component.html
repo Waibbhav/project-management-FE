@@ -1,0 +1,97 @@
+<div class="container comon-gap">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="tab-slider--nav">
+                <ul class="tab-slider--tabs">
+                  <li class="tab-slider--trigger" [class.active]="viewMode == 'tab1'" rel="tab1" (click)="viewMode ='tab1'">
+                    <figure>
+                    <img src="../../../assets/images/icon1.svg" >
+                    </figure>
+                    Project Dashboard
+                  </li>
+                  <li class="tab-slider--trigger" [class.active]="viewMode == 'tab2'" rel="tab2" (click)="viewMode ='tab2'">
+                    <figure>
+                        <img src="../../../assets/images/icon2.svg" >
+                        </figure>
+                    Roadmap
+                </li>
+                <li class="tab-slider--trigger" [class.active]="viewMode == 'tab3'" rel="tab3" (click)="viewMode ='tab3'">
+                    <figure>
+                        <img src="../../../assets/images/icon3.svg" >
+                        </figure>
+                        Backlog
+                </li>
+                <li class="tab-slider--trigger" [class.active]="viewMode == 'tab4'" rel="tab4" (click)="viewMode ='tab4'">
+                    <figure>
+                        <img src="../../../assets/images/icon4.svg" >
+                        </figure>
+                        Sprint
+                </li>
+                <li class="tab-slider--trigger" [class.active]="viewMode == 'tab5'" rel="tab5" (click)="viewMode ='tab5'">
+                    <figure>
+                        <img src="../../../assets/images/icon5.svg" >
+                        </figure>
+                        Manage Documents
+                </li>
+                </ul>
+              </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="tab-slider--container" [ngSwitch]="viewMode">
+                <div id="tab1" class="tab-slider--body" *ngSwitchCase="'tab1'">
+                 <div class="projectsectiontop">
+                    <div class="leftsection">
+                        <h3>Projects / Dev pro 01</h3>
+                     <h2>Project Dashboard</h2>
+                    </div>
+                    <div class="right-section">
+                        <img src="../../../assets/images/icon-calender.svg"/> <span>Friday, 21st April </span> 
+                       <button><img src="../../../assets/images/datedicon.svg"/></button>
+                    </div>
+                 </div>
+                 <div class="projectsectionmid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card-layout projectprogress">
+                                        <div class="projectprogresstop">
+                                            <div>
+                                               <h2>Project Progress</h2>
+                                               <p>Start from APR 10 -21, 2023</p>
+                                            </div>
+                                            <button>
+                                                <img src="../../../assets/images/datedicon.svg"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                <div id="tab2" class="tab-slider--body" *ngSwitchCase="'tab2'">
+                  <h2>Second Tab</h2>
+                  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo
+                    quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+                <div id="tab3" class="tab-slider--body" *ngSwitchCase="'tab3'">
+                    <h2>Second Tab</h2>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo
+                      quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  </div>
+                  <div id="tab4" class="tab-slider--body" *ngSwitchCase="'tab4'">
+                    <h2>Second Tab</h2>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo
+                      quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  </div>
+                  <div id="tab5" class="tab-slider--body" *ngSwitchCase="'tab5'">
+                    <h2>Second Tab</h2>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo
+                      quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>

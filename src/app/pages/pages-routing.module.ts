@@ -5,6 +5,9 @@ import { PagesComponent } from './pages.component';
 import { TaskBoardComponent } from './task-board/task-board.component';
 import { ResourcePullComponent } from './resource-pull/resource-pull.component';
 import { ResourcePullDetailsComponent } from './resource-pull-details/resource-pull-details.component';
+import { NewProjectAddedComponent } from './new-project-added/new-project-added.component';
+import { AddProjectDetailsComponent } from './add-project-details/add-project-details.component';
+import { ProjectDashboardComponent } from './project-dashboard/project-dashboard.component';
 
 const routes: Routes = [
   {
@@ -27,6 +30,18 @@ const routes: Routes = [
         path: 'resource-pull-details',
         component: ResourcePullDetailsComponent,
       },
+      {
+        path: 'new-project-added',
+        component: NewProjectAddedComponent,
+      },
+      {
+        path: 'add-project-details',
+        component: AddProjectDetailsComponent,
+      },
+      {
+        path: 'project-dashboard',
+        component: ProjectDashboardComponent,
+      }
     ],
   },
 ];
