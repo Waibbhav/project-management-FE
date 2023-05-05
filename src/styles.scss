@@ -472,6 +472,18 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
 
       color: $inputBorderColor1;
     }
+
+    .success-image {
+      width: 100%;
+      max-width: 133px;
+      max-height: 127px;
+      margin-inline: auto;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .login-form {
@@ -511,6 +523,7 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
     width: 28%;
   }
 }
-.comon-gap{
+
+.comon-gap {
   padding-top: 58px;
 }
