@@ -228,11 +228,12 @@
     line-height: 26px;
     text-transform: capitalize;
     color: #5B6D74;
-    padding: 5px 20px 5px 15px;
+    padding: 5px 30px 5px 15px;
     background-size: 9px;
     margin: 0 20px 0 0;
     background-color: rgba(86, 164, 200, 0.1);
   }
+
   button {
     font-weight: 500;
     font-size: 12px;
@@ -245,8 +246,76 @@
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
-    img{
-        margin: 0 5px 0 0;
+
+    img {
+      margin: 0 5px 0 0;
+    }
+  }
+}
+
+.project_topic_bar_sec {
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin: 30px 0;
+  padding: 20px;
+
+  .project_topic_bar {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+    margin: 0 0 20px 0;
+
+    .left_box {
+      img {
+        margin: 0 15px 0px 0;
+      }
+    }
+
+    .right_box {
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-transform: capitalize;
+        color: #092C38;
+        margin: 0;
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.5;
+        text-transform: capitalize;
+        color: #383F49;
+        margin: 0;
+      }
+    }
+  }
+
+  .project_cont {
+    h3 {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  .button_bar {
+    .add_btn {
+      background: #00BAFF;
+      box-shadow: 0px 8px 20px rgba(0, 186, 255, 0.11);
+      border-radius: 7px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: 1px solid #00BAFF;
+      &:hover{
+        border: 1px solid #00BAFF;
+        color: #00BAFF;
+        background: transparent;
+      }
     }
   }
 }
