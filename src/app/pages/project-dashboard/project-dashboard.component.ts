@@ -11,5 +11,5 @@ export class ProjectDashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  viewMode = 'tab1';
+
 }
