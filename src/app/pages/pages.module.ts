@@ -14,9 +14,14 @@ import { ResourcePullDetailsComponent } from './resource-pull-details/resource-p
 import { NewProjectAddedComponent } from './new-project-added/new-project-added.component';
 import { AddProjectDetailsComponent } from './add-project-details/add-project-details.component';
 import { ProjectDashboardComponent } from './project-dashboard/project-dashboard.component';
+import { RoadMapComponent } from './road-map/road-map.component';
+import { BacklogComponent } from './backlog/backlog.component';
+import { SprintComponent } from './sprint/sprint.component';
+import { ManageDocumentsComponent } from './manage-documents/manage-documents.component';
+
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent],
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent],
   imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule ],
 })
 export class PagesModule {}
