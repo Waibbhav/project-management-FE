@@ -1,0 +1,35 @@
+
+<div class="tab-slider--nav">
+        <ul class="tab-slider--tabs">
+          <li class="tab-slider--trigger" [class.active]="viewMode == 'tab1'" rel="tab1" (click)="viewMode ='tab1'">
+            <figure>
+            <img src="../../../assets/images/icon1.svg" >
+            </figure>
+            Project Dashboard
+          </li>
+          <li class="tab-slider--trigger" [class.active]="viewMode == 'tab2'" rel="tab2" (click)="viewMode ='tab2'">
+            <figure>
+                <img src="../../../assets/images/icon2.svg" >
+                </figure>
+            Roadmap
+        </li>
+        <li class="tab-slider--trigger" [class.active]="viewMode == 'tab3'" rel="tab3" (click)="viewMode ='tab3'">
+            <figure>
+                <img src="../../../assets/images/icon3.svg" >
+                </figure>
+                Backlog
+        </li>
+        <li class="tab-slider--trigger" [class.active]="viewMode == 'tab4'" rel="tab4" (click)="viewMode ='tab4'">
+            <figure>
+                <img src="../../../assets/images/icon4.svg" >
+                </figure>
+                Sprint
+        </li>
+        <li class="tab-slider--trigger" [class.active]="viewMode == 'tab5'" rel="tab5" (click)="viewMode ='tab5'">
+            <figure>
+                <img src="../../../assets/images/icon5.svg" >
+                </figure>
+                Manage Documents
+        </li>
+        </ul>
+      </div>
