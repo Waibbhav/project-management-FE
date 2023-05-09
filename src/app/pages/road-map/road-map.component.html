@@ -101,7 +101,7 @@
                   </div>
                 </mat-expansion-panel>
                 <mat-expansion-panel (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
+                                     (closed)="panelOpenState = false" [expanded]="true">
                   <mat-expansion-panel-header>
                     <mat-panel-description>
                       <div class="accordian_box">
@@ -110,7 +110,7 @@
                       </div>
                       
                     </mat-panel-description>
-                  </mat-expansion-panel-header>
+                  </mat-expansion-panel-header >
                   <div class="accordian_details_cont">
                     <ul class="number_list">
                       <li>
