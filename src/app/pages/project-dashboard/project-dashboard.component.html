@@ -1,91 +1,92 @@
 <div class="container comon-gap">
   <div class="row">
     <div class="col-md-3">
-<!--  -->
-<app-sidebar></app-sidebar>
-<!--  -->
+      <!--  -->
+      <app-sidebar></app-sidebar>
+      <!--  -->
 
 
-  </div>
-  <div class="col-md-9">
-    <div  class="tab-slider--body" >
-      <div class="projectsectiontop">
-        <div class="leftsection">
-          <h3>Projects / Dev pro 01</h3>
-          <h2>Project Dashboard</h2>
+    </div>
+    <div class="col-md-9">
+      <div class="tab-slider--body">
+        <div class="projectsectiontop">
+          <div class="leftsection">
+            <h3>Projects / Dev pro 01</h3>
+            <h2>Project Dashboard</h2>
+          </div>
+          <div class="right-section">
+            <img src="../../../assets/images/icon-calender.svg" /> <span>Friday, 21st April </span>
+            <button><img src="../../../assets/images/datedicon.svg" /></button>
+          </div>
         </div>
-        <div class="right-section">
-          <img src="../../../assets/images/icon-calender.svg" /> <span>Friday, 21st April </span>
-          <button><img src="../../../assets/images/datedicon.svg" /></button>
-        </div>
-      </div>
-      <div class="projectsectionmid">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="project-progress-sectiontop">
+        <div class="projectsectionmid">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="project-progress-sectiontop">
 
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="card-layout projectprogress">
-                    <div class="projectprogresstop">
-                      <div>
-                        <h2>Project Progress</h2>
-                        <p>Start from APR 10 -21, 2023</p>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card-layout projectprogress">
+                      <div class="projectprogresstop">
+                        <div>
+                          <h2>Project Progress</h2>
+                          <p>Start from APR 10 -21, 2023</p>
+                        </div>
+                        <button class="datediconone">
+                          <img src="../../../assets/images/dated-icon2.svg" />
+                        </button>
                       </div>
-                      <button class="datediconone">
-                        <img src="../../../assets/images/dated-icon2.svg" />
-                      </button>
-                    </div>
-                    <div class="progress-img-one">
-                      <img src="../../../assets/images/progress-img.png" />
+                      <div class="progress-img-one">
+                        <img src="../../../assets/images/progress-img.png" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card-layout total-project-section">
-                    <div class="project-right-section">
-                      <ul>
-                        <li *ngFor="let item of projectdatils">
-                          <a routerLink="">
-                            <figure>
-                              <img src={{item.projectimage}} alt="">
-                            </figure>
-                            <div>
-                              <h2>{{item.heading}}</h2>
-                              <p>{{item.description}}</p>
+                  <div class="col-sm-6">
+                    <div class="card-layout total-project-section">
+                      <div class="project-right-section">
+                        <ul>
+                          <li *ngFor="let item of projectdatils">
+                            <a routerLink="">
+                              <figure>
+                                <img src={{item.projectimage}} alt="">
+                              </figure>
+                              <div>
+                                <h2>{{item.heading}}</h2>
+                                <p>{{item.description}}</p>
 
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-layout asignmember">
+              <div class="card-layout asignmember">
 
-              <button><img src="../../../assets/images/assign-member1.svg" /></button>
-              <input type="text" placeholder="Assign Members" />
-            </div>
-            <div class="card-layout asignmembercontain">
-              <div class="leave-listing-table">
-                <ng-scrollbar>
-                  <table class="table">
-                    <tbody>
-                      <tr *ngFor="let item of projectmember">
-                        <td>
-                          <div class="leave-profile">
-                            <img src={{item.projectimage}} alt=""> 
-                            <p>{{item.heading}}</p>
-                          </div>
-                        </td>
-                        <td>
+                <button><img src="../../../assets/images/assign-member1.svg" /></button>
+                <input type="text" placeholder="Assign Members" />
+              </div>
+              <div class="card-layout asignmembercontain">
+                <div class="leave-listing-table">
+                  <ng-scrollbar>
+                    <table class="table">
+                      <tbody>
+                        <tr *ngFor="let item of projectmember">
+                          <td>
+                            <div class="leave-profile">
+                              <img src={{item.projectimage}} alt="">
+                              <p>{{item.heading}}</p>
+                            </div>
+                          </td>
+                          <td>
                             {{item.description}}
-                        </td>
-                        <td> <button class="button-datted-icon"><img src="/assets/images/datted-iconone.svg" alt=""></button></td>
-                      </tr>
-                     <!--   <tr>
+                          </td>
+                          <td> <button class="button-datted-icon"><img src="/assets/images/datted-iconone.svg"
+                                alt=""></button></td>
+                        </tr>
+                        <!--   <tr>
                         <td>
                           <div class="leave-profile">
                             <img src="/assets/images/leaveProfileImg1.png" alt="">
@@ -125,35 +126,41 @@
                           </div>
                         </td>
                       </tr> -->
-                    </tbody>
-                  </table>
-                </ng-scrollbar>
+                      </tbody>
+                    </table>
+                  </ng-scrollbar>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="project-right-details card-layout">
+            <div class="col-sm-6">
+              <div class="project-right-details card-layout">
                 <div class="project-staus-details">
-         <h2>Project Description</h2>           
+                  <h2>Project Description</h2>
                 </div>
 
-<p>Aliquam erat volutpat. Fusce sed nunc lacus. Sed at nisi eu dolor tempor suscipit. Phasellus ut tempor neque, a elementum nisi. Morbi sed sapien nec ante pulvinar dignissim. Donec dictum sit amet arcu id ornare. Vestibulum at elementum quam, nec placerat nunc. Integer posuere tellus quis tempor ultricies. Curabitur id consequat magna.   
-</p>
-<Button class="editbutton">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1.74367 6.26688L6.39555 1.615L8.38586 3.60531L3.73398 8.25719L1.74367 6.26688ZM6.60961 2.73688L6.39148 2.51906L2.64742 6.26281L2.86555 6.48094L6.60961 2.73688ZM7.04586 3.17313L6.82773 2.955L3.08367 6.69938L3.30148 6.91719L7.04586 3.17313ZM7.48211 3.60938L7.26398 3.39125L3.51992 7.13531L3.73805 7.35344L7.48211 3.60938ZM7.28648 0.736251C7.53055 0.491564 7.92555 0.490001 8.16773 0.732189L9.26523 1.82969C9.50742 2.07188 9.50586 2.46656 9.26148 2.71094L8.58336 3.38906L6.60836 1.41406L7.28648 0.736251ZM1.59055 6.52594L3.47492 8.41031L1.82367 8.99688L1.00398 8.17719L1.59055 6.52594ZM1.51086 9.09906L0.552734 9.44813L0.901797 8.49L1.51086 9.09906Z" fill="#0BAFFF"/>
-    </svg>
-         Edit 
-</Button>
-            </div>
-            <div class="project-right-details card-layout top-space">
-<div class="project-staus-details">
-<h2>Project Status</h2>
-<div class="inprogress-button">
-<button>
-    <img src="../../../assets/images/map-icon1.svg" />  <span>In Progress </span>  <img src="../../../assets/images/iconone22.svg" /> 
-</button>
-<!-- <mat-form-field appearance="fill">
+                <p>Aliquam erat volutpat. Fusce sed nunc lacus. Sed at nisi eu dolor tempor suscipit. Phasellus ut
+                  tempor neque, a elementum nisi. Morbi sed sapien nec ante pulvinar dignissim. Donec dictum sit amet
+                  arcu id ornare. Vestibulum at elementum quam, nec placerat nunc. Integer posuere tellus quis tempor
+                  ultricies. Curabitur id consequat magna.
+                </p>
+                <Button class="editbutton">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.74367 6.26688L6.39555 1.615L8.38586 3.60531L3.73398 8.25719L1.74367 6.26688ZM6.60961 2.73688L6.39148 2.51906L2.64742 6.26281L2.86555 6.48094L6.60961 2.73688ZM7.04586 3.17313L6.82773 2.955L3.08367 6.69938L3.30148 6.91719L7.04586 3.17313ZM7.48211 3.60938L7.26398 3.39125L3.51992 7.13531L3.73805 7.35344L7.48211 3.60938ZM7.28648 0.736251C7.53055 0.491564 7.92555 0.490001 8.16773 0.732189L9.26523 1.82969C9.50742 2.07188 9.50586 2.46656 9.26148 2.71094L8.58336 3.38906L6.60836 1.41406L7.28648 0.736251ZM1.59055 6.52594L3.47492 8.41031L1.82367 8.99688L1.00398 8.17719L1.59055 6.52594ZM1.51086 9.09906L0.552734 9.44813L0.901797 8.49L1.51086 9.09906Z"
+                      fill="#0BAFFF" />
+                  </svg>
+                  Edit
+                </Button>
+              </div>
+              <div class="project-right-details card-layout top-space">
+                <div class="project-staus-details">
+                  <h2>Project Status</h2>
+                  <div class="inprogress-button">
+                    <button>
+                      <img src="../../../assets/images/map-icon1.svg" /> <span>In Progress </span> <img
+                        src="../../../assets/images/iconone22.svg" />
+                    </button>
+                    <!-- <mat-form-field appearance="fill">
     <select matNativeControl required>
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
@@ -161,57 +168,57 @@
       <option value="audi">Audi</option>
     </select>
   </mat-form-field> -->
-</div>
-</div>
-<div class="add-commit-m">
-<h2>Add Comment</h2>
-<textarea placeholder="type" class="textareaone"></textarea>
-<div class="save-button">
-<button>Save</button>
-</div>
-</div>
+                  </div>
+                </div>
+                <div class="add-commit-m">
+                  <h2>Add Comment</h2>
+                  <textarea placeholder="type" class="textareaone"></textarea>
+                  <div class="save-button">
+                    <button>Save</button>
+                  </div>
+                </div>
 
-                
-               
-                                </div>
-                                <div class="project-right-details card-layout top-space">
-                                    <div class="project-staus-details ">
-                                     <h2>Hours History</h2>
-                                     <div class="save-button top-space">
-                                        <button>Request additional Hour</button>
-                                           </div>
-                                    </div>
-                                    <div class="hour-history-section">
-                                        <div class="leave-listing-table">
-                                            <ng-scrollbar>
-                                              <table class="table">
-                                                <tbody>
-                                                  <tr *ngFor="let item of hourhistorytext">
-                                                    <td>
-                                                      <div class="leave-profile">
-                                                        <img src={{item.projectimage}} alt="">  
-                                                      </div>
-                                                    </td>
-                                                   <td>
-                                                    <p> {{item.description}}</p>
-                                                    <div>
-                                                       <p> {{item.date}} <strong>  By {{item.heading}}</strong></p> 
-                                                      
-                                                    </div>
-                                                   </td>
-                                                  </tr>
-                                               
-                                                </tbody>
-                                              </table>
-                                            </ng-scrollbar>
-                                          </div>
-                                    </div>
+
+
+              </div>
+              <div class="project-right-details card-layout top-space">
+                <div class="project-staus-details ">
+                  <h2>Hours History</h2>
+                  <div class="save-button top-space">
+                    <button>Request additional Hour</button>
+                  </div>
+                </div>
+                <div class="hour-history-section">
+                  <div class="leave-listing-table">
+                    <ng-scrollbar>
+                      <table class="table">
+                        <tbody>
+                          <tr *ngFor="let item of hourhistorytext">
+                            <td>
+                              <div class="leave-profile">
+                                <img src={{item.projectimage}} alt="">
+                              </div>
+                            </td>
+                            <td>
+                              <p> {{item.description}}</p>
+                              <div>
+                                <p> {{item.date}} <strong> By {{item.heading}}</strong></p>
+
+                              </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </ng-scrollbar>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-
       </div>
-    </div>
-    </div>
 
+    </div>
   </div>
-</div>

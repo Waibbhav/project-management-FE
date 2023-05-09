@@ -4,137 +4,260 @@
     quas id dolore magnam vitae, alias consectetur cum ea pariatur maiores laudantium?
   </div>
 </ng-container>
+
+
 <ng-container *ngIf="data?.type === 'addnewresource'">
   <div class="addnewresourcemodal">
     <div class="addtaskmodal-head">
       <div class="modal-head-lft">
-        <h2>Add Your Property</h2>
+        <h2>Add Resource</h2>
         <button type="button" [mat-dialog-close]>
           <mat-icon>close</mat-icon>
         </button>
       </div>
 
-   <div class="modal-head-rgt">
-      <div class="addresourcecontain">
-        <label>Full Name<span>*</span></label>
-        <input type="text" class="inputname" />
-      </div>
-      <div class="addresourcecontain">
-        <label>Email Address<span>*</span></label>
-        <input type="text" class="inputname" />
-      </div>
-      <div class="addresourcecontain">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Employee Code<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
-          <div class="col-sm-6">
-            <label>Skype ID<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
+      <div class="modal-head-rgt">
+        <div class="addresourcecontain">
+          <label>Full Name<span>*</span></label>
+          <input type="text" class="inputname" />
         </div>
-        
-      </div>
-      <div class="addresourcecontain">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Designation<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
-          <div class="col-sm-6">
-            <label>Phone Number<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
+        <div class="addresourcecontain">
+          <label>Email Address<span>*</span></label>
+          <input type="text" class="inputname" />
         </div>
-        
-      </div>
-      <div class="save-button">
-        <button class="savebuttonone">Save</button>
-        <button class="cancelbutton">Cancel</button>
+        <div class="addresourcecontain">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Employee Code<span>*</span></label>
+              <input type="text" class="inputname" placeholder="Type" />
+            </div>
+            <div class="col-sm-6">
+              <label>Skype ID<span>*</span></label>
+              <input type="text" class="inputname" placeholder="Type" />
+            </div>
+          </div>
+
         </div>
-      </div> 
+        <div class="addresourcecontain">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Designation<span>*</span></label>
+              <input type="text" class="inputname" placeholder="Type" />
+            </div>
+            <div class="col-sm-6">
+              <label>Phone Number<span>*</span></label>
+              <input type="text" class="inputname" placeholder="Type" />
+            </div>
+          </div>
+
+        </div>
+        <div class="save-button">
+          <button class="savebuttonone">Save</button>
+          <button class="cancelbutton">Cancel</button>
+        </div>
+      </div>
     </div>
- 
-    </div>
+
+  </div>
 
 </ng-container>
+
+
 <ng-container *ngIf="data?.type === 'addproject'">
   <div class="addnewresourcemodal">
+    <div class="closebar">
+      <button type="button" [mat-dialog-close]>
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
     <div class="addtaskmodal-head">
-      <div class="modal-head-lft">
+      <div class="modal-head-lft modal_headbar">
         <h2>Add Project</h2>
-        <button type="button" [mat-dialog-close]>
-          <mat-icon>close</mat-icon>
-        </button>
+        <h3>Today 20/04/2023</h3>
       </div>
 
-   <div class="modal-head-rgt">
-      <div class="addresourcecontain">
-        <label>Project Name<span>*</span></label>
-        <input type="text" class="inputname" />
-      </div>
-      <div class="addresourcecontain">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Project Category<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
-          <div class="col-sm-6">
-            <label>Client Name<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Name / Email" />
-          </div>
-      </div>
-      </div>
-      <div class="addresourcecontain">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Business Type<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
-          <div class="col-sm-6">
-            <label>BDM<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Type" />
-          </div>
-        </div>
+      <div class="modal-head-rgt">
         
-      </div>
-      <div class="addresourcecontain">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Project Hours<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Add" />
-          </div>
-          <div class="col-sm-6">
-            <label>CSM/Delivery Manager<span>*</span></label>
-        <input type="text" class="inputname" placeholder="Name / Email" />
-          </div>
-        </div>
-        
-      </div>
-      <div class="addresourcecontain">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Project vertical<span>*</span></label>
-            <div>
-     <input type="radio" /> Custom <input type="radio" /> CMS          
+          <div class="scroll_box">
+            <div class="addresourcecontain">
+              <label>Project Name<span>*</span></label>
+              <input type="text" class="inputname" />
             </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Project Category<span>*</span></label>
+                  <select class="select_box">
+                    <option>Select</option>
+                    <option>Fixed Cost</option>
+                    <option>Flexi</option>
+                    <option>Dedicated</option>
+                  </select>
+                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
+                </div>
+                <div class="col-sm-6">
+                  <label>Client Name<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Name / Email" />
+                </div>
+              </div>
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Business Type<span>*</span></label>
+                  <select class="select_box">
+                    <option>Select</option>
+                    <option>NCNB</option>
+                    <option>ECEB</option>
+                    <option>ECNB</option>
+                  </select>
+                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
+                </div>
+                <div class="col-sm-6">
+                  <label>BDM<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Type" />
+                </div>
+              </div>
 
-      </div>
-          <div class="col-sm-6">
-            <label>Project Status<span>*</span></label>
-<button class="inactiveone">Inactive</button>         
- </div>
-        </div>
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Project Hours<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Add" />
+                </div>
+                <div class="col-sm-6">
+                  <label>CSM/Delivery Manager<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Name / Email" />
+                </div>
+              </div>
+
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Project vertical<span>*</span></label>
+                  <div class="custom_radio_bar">
+                    <input type="radio" /> <p>Custom</p> <input type="radio" /> <p>CMS</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label>Project Status<span>*</span></label>
+                  <button class="inactiveone">Inactive</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
         
-      </div>
-      <div class="save-button">
-        <button class="savebuttonone" >Save</button>
-        <button class="cancelbutton">Cancel</button>
+        <div class="save-button">
+          <button class="savebuttonone">Save</button>
+          <button class="cancelbutton">Cancel</button>
         </div>
-      </div> 
+      </div>
     </div>
- 
+
+  </div>
+
+</ng-container>
+
+<ng-container *ngIf="data?.type === 'createsprint'">
+  <div class="addnewresourcemodal">
+    <div class="closebar">
+      <button type="button" [mat-dialog-close]>
+        <mat-icon>close</mat-icon>
+      </button>
     </div>
+
+    <div class="addtaskmodal-head">
+      <div class="modal-head-lft modal_headbar">
+        <h2>Create Sprint</h2>
+        <p>Donec porttitor iaculis risus at egestas.</p>
+        <h3>Today 20/04/2023</h3>
+      </div>
+
+      <div class="modal-head-rgt">
+        
+          <div class="scroll_box">
+            <div class="addresourcecontain">
+              <label>Project Name<span>*</span></label>
+              <input type="text" class="inputname" />
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Project Category<span>*</span></label>
+                  <select class="select_box">
+                    <option>Select</option>
+                    <option>Fixed Cost</option>
+                    <option>Flexi</option>
+                    <option>Dedicated</option>
+                  </select>
+                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
+                </div>
+                <div class="col-sm-6">
+                  <label>Client Name<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Name / Email" />
+                </div>
+              </div>
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Business Type<span>*</span></label>
+                  <select class="select_box">
+                    <option>Select</option>
+                    <option>NCNB</option>
+                    <option>ECEB</option>
+                    <option>ECNB</option>
+                  </select>
+                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
+                </div>
+                <div class="col-sm-6">
+                  <label>BDM<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Type" />
+                </div>
+              </div>
+
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Project Hours<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Add" />
+                </div>
+                <div class="col-sm-6">
+                  <label>CSM/Delivery Manager<span>*</span></label>
+                  <input type="text" class="inputname" placeholder="Name / Email" />
+                </div>
+              </div>
+
+            </div>
+            <div class="addresourcecontain">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Project vertical<span>*</span></label>
+                  <div class="custom_radio_bar">
+                    <input type="radio" /> <p>Custom</p> <input type="radio" /> <p>CMS</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label>Project Status<span>*</span></label>
+                  <button class="inactiveone">Inactive</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        
+        <div class="save-button">
+          <button class="savebuttonone">Save</button>
+          <button class="cancelbutton">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </ng-container>
