@@ -190,6 +190,10 @@
   padding: 20px 23px;
   .form-select {
     width: 100%;
+    &:focus {
+      outline: none;
+      border-color: #00baff !important;
+    }
   }
   label {
     font-weight: 500;
