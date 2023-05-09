@@ -342,6 +342,9 @@
 }
 .dpo-spnt {
   ::ng-deep {
+    .mat-expansion-panel-content{
+      font-family: "Poppins", sans-serif !important;
+    }
     .mat-expansion-panel-header {
       flex-direction: row-reverse;
       height: auto;
@@ -461,7 +464,7 @@
 
         p {
           font-weight: 400;
-          font-size: 10px;
+          font-size: 8px;
           // color: $textColor;
           line-height: 1;
           margin: 0;
@@ -527,7 +530,7 @@
 }
 .sts-p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1;
   margin: 8px 0;
   color: #5a5a5a;

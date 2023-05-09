@@ -9,7 +9,7 @@
       <div class="projectsectiontop">
         <div class="leftsection">
           <h3>Projects / Dev pro 01</h3>
-          <h2>Sprints</h2>
+          <h2>Backlog</h2>
         </div>
         <div class="right-section">
           <button><img src="./assets/images/datedicon.svg" /></button>
@@ -75,368 +75,61 @@
           </div>
         </div>
       </div>
-      <div class="sprint-btm">
+      <div class="backlog-btm">
         <div class="row">
-          <div class="col-md-4 cus-col">
-            <div class="sprint-wrap">
-              <div class="sprnt-hdr">
-                <h4>Inactive <span>2</span></h4>
-                <div class="spnt-hdr-rgt">
-                  <button><img src="./assets/images/datedicon.svg" /></button>
-                </div>
-              </div>
-              <div class="dpo-spnt">
+          <div class="col-md-12 cus-col">
+            <div class="backlog-wrap">
+              <div class="dpo-backlog">
                 <mat-accordion>
                   <mat-expansion-panel
                     (opened)="panelOpenState = true"
                     (closed)="panelOpenState = false"
-                    
                   >
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         DPO Sprint 1
-                        <span> (3 Tasks) </span>
+                        <p>
+                          <img src="./assets/images/pen.svg" alt="" /> Add Dates
+                          <span>(3 issues)</span>
+                        </p>
+                        <div class="backlog-hdr-rgt">
+                          <span class="trans">0</span>
+                          <span class="blue">0</span>
+                          <span class="green">0</span>
+                          <button class="btn">Start Sprint</button>
+                          <div class="dots">
+                            <button>
+                              <img src="./assets/images/datedicon.svg" />
+                            </button>
+                          </div>
+                        </div>
                       </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <div class="project-item">
-                      <div class="card-layout">
-                        <div class="project-status">
-                          <div class="project-sts-wrp">
-                            <div class="project-icon">
-                              <img src="./assets/images/sutecase.svg" alt="" />
-                            </div>
-                            <div class="project-description">
-                              <h4>Dev pro 01</h4>
-                              <p>Team-managed software</p>
-                            </div>
-                          </div>
-
-                          <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
-                          </div>
+                    <ul class="backlog-list">
+                      <li>
+                        <div class="backlog-lft">
+                          <span
+                            ><img src="./assets/images/ic1.svg" alt=""
+                          /></span>
+                          <p class="para1">DP0-3</p>
+                          <p class="para2">404 not found</p>
                         </div>
-
-                        <p class="sts-p">
-                          Cras non nisl vel mi elementum convallis at non est.
-                          Fusce et placerat tortor.
-                        </p>
-
-                        <div class="project-members">
-                          <div class="member-group">
-                            <ul>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar1.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar2.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li><button>+5</button></li>
-                            </ul>
-
-                            <button>
-                              <img src="assets/images/plusIcon.svg" alt="" />
-                            </button>
-                          </div>
+                        <div class="backlog-rgt">
+                          <button mat-button [matMenuTriggerFor]="menu">
+                            TO DO <span><img src="./assets/images/arrw.svg" alt=""></span>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                            <button mat-menu-item>Item 1</button>
+                            <button mat-menu-item>Item 2</button>
+                          </mat-menu>
                         </div>
-                      </div>
-                    </div>
-                    <div class="project-item">
-                      <div class="card-layout">
-                        <div class="project-status">
-                          <div class="project-sts-wrp">
-                            <div class="project-icon">
-                              <img src="./assets/images/sutecase.svg" alt="" />
-                            </div>
-                            <div class="project-description">
-                              <h4>Dev pro 01</h4>
-                              <p>Team-managed software</p>
-                            </div>
-                          </div>
-
-                          <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
-                          </div>
-                        </div>
-
-                        <p class="sts-p">
-                          Cras non nisl vel mi elementum convallis at non est.
-                          Fusce et placerat tortor.
-                        </p>
-
-                        <div class="project-members">
-                          <div class="member-group">
-                            <ul>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar1.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar2.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li><button>+5</button></li>
-                            </ul>
-
-                            <button>
-                              <img src="assets/images/plusIcon.svg" alt="" />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item">
-                      <div class="card-layout">
-                        <div class="project-status">
-                          <div class="project-sts-wrp">
-                            <div class="project-icon">
-                              <img src="./assets/images/sutecase.svg" alt="" />
-                            </div>
-                            <div class="project-description">
-                              <h4>Dev pro 01</h4>
-                              <p>Team-managed software</p>
-                            </div>
-                          </div>
-
-                          <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
-                          </div>
-                        </div>
-
-                        <p class="sts-p">
-                          Cras non nisl vel mi elementum convallis at non est.
-                          Fusce et placerat tortor.
-                        </p>
-
-                        <div class="project-members">
-                          <div class="member-group">
-                            <ul>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar1.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar2.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li><button>+5</button></li>
-                            </ul>
-
-                            <button>
-                              <img src="assets/images/plusIcon.svg" alt="" />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-expansion-panel>
-                </mat-accordion>
-                <mat-accordion>
-                  <mat-expansion-panel
-                    (opened)="panelOpenState = true"
-                    (closed)="panelOpenState = false"
-                  >
-                    <mat-expansion-panel-header>
-                      <mat-panel-title> DPO Sprint 2      <span> (2 Tasks) </span></mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <div class="project-item">
-                      <div class="card-layout">
-                        <div class="project-status">
-                          <div class="project-sts-wrp">
-                            <div class="project-icon">
-                              <img src="./assets/images/sutecase.svg" alt="" />
-                            </div>
-                            <div class="project-description">
-                              <h4>Dev pro 01</h4>
-                              <p>Team-managed software</p>
-                            </div>
-                          </div>
-
-                          <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
-                          </div>
-                        </div>
-
-                        <p class="sts-p">
-                          Cras non nisl vel mi elementum convallis at non est.
-                          Fusce et placerat tortor.
-                        </p>
-
-                        <div class="project-members">
-                          <div class="member-group">
-                            <ul>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar1.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar2.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li><button>+5</button></li>
-                            </ul>
-
-                            <button>
-                              <img src="assets/images/plusIcon.svg" alt="" />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item">
-                      <div class="card-layout">
-                        <div class="project-status">
-                          <div class="project-sts-wrp">
-                            <div class="project-icon">
-                              <img src="./assets/images/sutecase.svg" alt="" />
-                            </div>
-                            <div class="project-description">
-                              <h4>Dev pro 01</h4>
-                              <p>Team-managed software</p>
-                            </div>
-                          </div>
-
-                          <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
-                          </div>
-                        </div>
-
-                        <p class="sts-p">
-                          Cras non nisl vel mi elementum convallis at non est.
-                          Fusce et placerat tortor.
-                        </p>
-
-                        <div class="project-members">
-                          <div class="member-group">
-                            <ul>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar1.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar2.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li><button>+5</button></li>
-                            </ul>
-
-                            <button>
-                              <img src="assets/images/plusIcon.svg" alt="" />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-expansion-panel>
-                </mat-accordion>
-                <mat-accordion>
-                  <mat-expansion-panel
-                    (opened)="panelOpenState = true"
-                    (closed)="panelOpenState = false"
-                  >
-                    <mat-expansion-panel-header>
-                      <mat-panel-title> DPO Sprint 3      <span> (1 Tasks) </span></mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <div class="project-item">
-                      <div class="card-layout">
-                        <div class="project-status">
-                          <div class="project-sts-wrp">
-                            <div class="project-icon">
-                              <img src="./assets/images/sutecase.svg" alt="" />
-                            </div>
-                            <div class="project-description">
-                              <h4>Dev pro 01</h4>
-                              <p>Team-managed software</p>
-                            </div>
-                          </div>
-
-                          <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
-                          </div>
-                        </div>
-
-                        <p class="sts-p">
-                          Cras non nisl vel mi elementum convallis at non est.
-                          Fusce et placerat tortor.
-                        </p>
-
-                        <div class="project-members">
-                          <div class="member-group">
-                            <ul>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar1.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li>
-                                <button>
-                                  <img
-                                    src="assets/images/homeAvatar2.png"
-                                    alt=""
-                                  />
-                                </button>
-                              </li>
-                              <li><button>+5</button></li>
-                            </ul>
-
-                            <button>
-                              <img src="assets/images/plusIcon.svg" alt="" />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                
+                      </li>
+                    </ul>
                   </mat-expansion-panel>
                 </mat-accordion>
               </div>
             </div>
           </div>
-    
         </div>
       </div>
     </div>
