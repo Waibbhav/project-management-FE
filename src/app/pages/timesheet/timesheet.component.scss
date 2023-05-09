@@ -25,6 +25,7 @@
   box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
   border-radius: 10px;
   padding: 20px 23px;
+  margin-bottom: 20px;
   h3 {
     font-weight: 600;
     font-size: 15px;
@@ -93,6 +94,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 12px;
   h3 {
     font-weight: 500;
     font-size: 18px;
@@ -134,9 +136,12 @@
   }
 }
 .aprove-table {
-  font-family: arial, sans-serif;
+  font-family: "Poppins";
   border-collapse: collapse;
   width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
+  border-radius: 10px;
   th {
     font-weight: 600;
     font-size: 12px;
@@ -144,6 +149,7 @@
     color: #5b6d74;
     padding: 12px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.496);
+    text-align: start;
   }
   td {
     font-weight: 500;
@@ -151,5 +157,154 @@
     font-size: 12px;
     text-transform: capitalize;
     color: #092c38;
+    .btn {
+      font-size: 12px;
+      min-height: 30px;
+      min-width: 85px;
+      padding: 4px 10px;
+    }
+  }
+  tbody {
+    tr {
+      border-left: 2px solid transparent;
+      &:hover {
+        background: #f0f5fc;
+        border-color: #08a0f7;
+      }
+    }
+  }
+}
+.table-responsive {
+  overflow: auto;
+  height: 300px;
+}
+.fil-form {
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px 23px;
+  .form-select {
+    width: 100%;
+  }
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 7px;
+    display: inline-block;
+    color: #0d062d;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .task {
+    text-align: right;
+  }
+  .cmn-add {
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+
+    color: #00baff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .form-btm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 45px;
+  }
+  form {
+    height: 420px;
+  }
+}
+.timesheet-btm {
+  margin-top: 20px;
+}
+.tme-table {
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+  ::ng-deep {
+    .mat-tab-labels {
+      justify-content: flex-end;
+    }
+    .mat-tab-label-active {
+      background-color: white;
+      opacity: 1;
+    }
+    .mat-ink-bar {
+      display: none;
+    }
+    .mat-tab-nav-bar,
+    .mat-tab-header {
+      border-bottom: 0;
+    }
+    .mat-tab-label {
+      border: 1px solid #ebeef2;
+      background-color: white;
+      min-height: auto;
+      min-width: auto;
+      height: auto;
+      padding: 6px 18px;
+      .mat-tab-label-content {
+        font-weight: 500;
+        font-size: 10px;
+      }
+    }
+  }
+}
+.mat-table {
+  border-collapse: collapse;
+  font-family: "Poppins";
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
+  border-radius: 10px;
+  th {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    color: #5b6d74;
+    padding: 13px 30px;
+    border: 1px solid rgba(205, 205, 205, 1);
+    border-top: 0;
+    &:first-child {
+      border-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  td {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #092c38;
+    border: 1px solid rgba(205, 205, 205, 1);
+    padding: 5px 30px;
+    &:first-child {
+        border-left: 0;
+      }
+      &:last-child {
+        border-right: 0;
+        border-bottom: 0;
+      }
+  }
+  tbody{
+    tr{
+        &:last-child{
+            td{
+                border-bottom: 0;
+            }
+        
+        }
+    }
   }
 }
