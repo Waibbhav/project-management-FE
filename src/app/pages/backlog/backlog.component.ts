@@ -7,7 +7,7 @@ import { DefaultComponent } from '@project/modal';
   styleUrls: ['./backlog.component.scss']
 })
 export class BacklogComponent implements OnInit {
-
+  panelOpenState = false;
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
