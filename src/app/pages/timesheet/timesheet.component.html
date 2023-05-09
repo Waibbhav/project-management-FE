@@ -35,11 +35,90 @@
             </div>
           </div>
           <div class="tme-table">
-            <h3>No animation</h3>
+            <h3>Timesheet History</h3>
 
             <mat-tab-group animationDuration="0ms">
-              <mat-tab label="First">Content 1</mat-tab>
-              <mat-tab label="Second">Content 2</mat-tab>
+              <mat-tab label="Own">
+                <div class="mat-table-responsive">
+                  <table class="mat-table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Project Name</th>
+                        <th>Working Hours</th>
+                        <th>Others</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">21st May 2023</td>
+                        <td>Dev pro 01</td>
+                        <td >4 Hours</td>
+                        <td>1 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 02</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 03</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">20th May 2023</td>
+                        <td>Dev pro 01</td>
+                        <td >4 Hours</td>
+                        <td>1 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 02</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 03</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">19th May 2023</td>
+                        <td>Dev pro 01</td>
+                        <td >4 Hours</td>
+                        <td>1 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 02</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 03</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">19th May 2023</td>
+                        <td>Dev pro 01</td>
+                        <td >4 Hours</td>
+                        <td>1 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 02</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                      <tr>
+                        <td>Dev pro 03</td>
+                        <td>2 Hours</td>
+                        <td>0 Hour</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </mat-tab>
+              <mat-tab label="Others">Content 2</mat-tab>
             </mat-tab-group>
           </div>
         </div>
@@ -58,132 +137,142 @@
           </div>
           <div class="fil-form">
             <form>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label>Project name*</label>
-                    <select class="form-select">
-                      <option>Add</option>
-                      <option>name1</option>
-                      <option>name2</option>
-                    </select>
+              <ng-scrollbar>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Project name*</label>
+                      <select class="form-select">
+                        <option>Add</option>
+                        <option>name1</option>
+                        <option>name2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Task name1*</label>
+                      <select class="form-select">
+                        <option>Add</option>
+                        <option>name1</option>
+                        <option>name2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Task Hours*</label>
+                      <input type="text" placeholder="Add" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Task name2*</label>
+                      <select class="form-select">
+                        <option>Add</option>
+                        <option>name1</option>
+                        <option>name2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Task Hours*</label>
+                      <input type="text" placeholder="Add" />
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Task name1*</label>
-                    <select class="form-select">
-                      <option>Add</option>
-                      <option>name1</option>
-                      <option>name2</option>
-                    </select>
-                  </div>
+                <div class="task">
+                  <a href="#" class="cmn-add">+Add Task</a>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Task Hours*</label>
-                    <input type="text" placeholder="Add" />
-                  </div>
+                <div class="form-btm">
+                  <a href="#" class="cmn-add">+Add Non-project Task</a>
+                  <button type="submit" class="btn">Submit</button>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Task name2*</label>
-                    <select class="form-select">
-                      <option>Add</option>
-                      <option>name1</option>
-                      <option>name2</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Task Hours*</label>
-                    <input type="text" placeholder="Add" />
-                  </div>
-                </div>
-              </div>
-              <div class="task">
-                <a href="#" class="cmn-add">+Add Task</a>
-              </div>
-              <div class="form-btm">
-                <a href="#" class="cmn-add">+Add Non-project Task</a>
-                <button type="submit" class="btn">Submit</button>
-              </div>
+              </ng-scrollbar>
             </form>
           </div>
         </div>
       </div>
     </div>
     <div class="timesheet-btm">
-        <div class="apprve-hdr">
-            <h3>Approve Timesheet</h3>
-            <form >
-                <div class="inputwrap">                <input type="text" placeholder="Search Emp." class="srch"></div>
-                <div class="inputwrap">            <input type="text" placeholder="dd/mm/yyyy" class="date"></div>
-
-    
-            </form>
-        </div>
-        <div class="table-responsive">
-            <table class="aprove-table">
-                <tr>
-                  <th>Emp. Code</th>
-                  <th>Name</th>
-                  <th>Weekly Hours</th>
-                  <th>Approve Hours</th>
-                  <th>Dispprove Hours</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>WS04585</td>
-                  <td>Karen William</td>
-                  <td>40 Hours</td>
-                  <td>25 Hours</td>
-                  <td>2 Hours</td>
-                  <td><button class="btn">Approve</button></td>
-                </tr>
-                <tr>
-                    <td>WS04585</td>
-                    <td>Samantha William</td>
-                    <td>40 Hours</td>
-                    <td>25 Hours</td>
-                    <td>4 Hours</td>
-                    <td><button class="btn">Approve</button></td>
-                  </tr>
-                  <tr>
-                    <td>WS04585</td>
-                    <td>Karen William</td>
-                    <td>40 Hours</td>
-                    <td>20 Hours</td>
-                    <td>3 Hours</td>
-                    <td><button class="btn">Approve</button></td>
-                  </tr>
-                  <tr>
-                    <td>WS04585</td>
-                    <td>Samantha William/td>
-                    <td>40 Hours</td>
-                    <td>26 Hours</td>
-                    <td>1 Hours</td>
-                    <td><button class="btn">Approve</button></td>
-                  </tr>
-                  <tr>
-                    <td>WS04585</td>
-                    <td>Karen William</td>
-                    <td>40 Hours</td>
-                    <td>24 Hours</td>
-                    <td>2 Hours</td>
-                    <td><button class="btn">Approve</button></td>
-                  </tr>
-                  <tr>
-                    <td>WS04585</td>
-                    <td>Samantha William</td>
-                    <td>40 Hours</td>
-                    <td>25 Hours</td>
-                    <td>2 Hours</td>
-                    <td><button class="btn">Approve</button></td>
-                  </tr>
-              </table>
-        </div>
+      <div class="apprve-hdr">
+        <h3>Approve Timesheet</h3>
+        <form>
+          <div class="inputwrap">
+            <input type="text" placeholder="Search Emp." class="srch" />
+          </div>
+          <div class="inputwrap">
+            <input type="text" placeholder="dd/mm/yyyy" class="date" />
+          </div>
+        </form>
+      </div>
+      <div class="table-responsive">
+        <ng-scrollbar>
+          <table class="aprove-table">
+            <thead>
+              <tr>
+                <th>Emp. Code</th>
+                <th>Name</th>
+                <th>Weekly Hours</th>
+                <th>Approve Hours</th>
+                <th>Dispprove Hours</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>WS04585</td>
+                <td>Karen William</td>
+                <td>40 Hours</td>
+                <td>25 Hours</td>
+                <td>2 Hours</td>
+                <td><button class="btn">Approve</button></td>
+              </tr>
+              <tr>
+                <td>WS04585</td>
+                <td>Samantha William</td>
+                <td>40 Hours</td>
+                <td>25 Hours</td>
+                <td>4 Hours</td>
+                <td><button class="btn">Approve</button></td>
+              </tr>
+              <tr>
+                <td>WS04585</td>
+                <td>Karen William</td>
+                <td>40 Hours</td>
+                <td>20 Hours</td>
+                <td>3 Hours</td>
+                <td><button class="btn">Approve</button></td>
+              </tr>
+              <tr>
+                <td>WS04585</td>
+                <td>Samantha William/td></td>
+                <td>40 Hours</td>
+                <td>26 Hours</td>
+                <td>1 Hours</td>
+                <td><button class="btn">Approve</button></td>
+              </tr>
+              <tr>
+                <td>WS04585</td>
+                <td>Karen William</td>
+                <td>40 Hours</td>
+                <td>24 Hours</td>
+                <td>2 Hours</td>
+                <td><button class="btn">Approve</button></td>
+              </tr>
+              <tr>
+                <td>WS04585</td>
+                <td>Samantha William</td>
+                <td>40 Hours</td>
+                <td>25 Hours</td>
+                <td>2 Hours</td>
+                <td><button class="btn">Approve</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </ng-scrollbar>
+      </div>
     </div>
   </div>
 </div>
