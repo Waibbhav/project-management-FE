@@ -318,6 +318,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 12px;
   h4 {
     font-weight: 500;
     font-size: 14px;
@@ -343,6 +344,17 @@
   ::ng-deep {
     .mat-expansion-panel-header {
       flex-direction: row-reverse;
+      height: auto;
+      padding: 10px 10px;
+    }
+    .mat-expansion-indicator {
+      margin-right: 7px;
+    }
+    .mat-expansion-panel {
+      box-shadow: none;
+      background: #f7f9fb;
+      border-radius: 6px;
+      margin-bottom: 10px;
     }
     .mat-expansion-panel-header-title {
       margin-right: 0;
@@ -363,7 +375,7 @@
       }
     }
     .mat-expansion-panel-body {
-      padding: 10px;
+      padding: 0 10px 10px;
     }
   }
   .project-item {
@@ -425,7 +437,7 @@
           }
 
           .status-tag {
-            font-size: 8px;
+            font-size: 9px;
             text-decoration: underline;
             color: #00baff;
             font-weight: 400;
@@ -440,7 +452,7 @@
         margin-left: 6px;
         h4 {
           font-weight: 500;
-          font-size: 10px;
+          font-size: 12px;
           text-transform: capitalize;
           // color: $titleColor;
           line-height: 1;
@@ -449,7 +461,7 @@
 
         p {
           font-weight: 400;
-          font-size: 8px;
+          font-size: 10px;
           // color: $textColor;
           line-height: 1;
           margin: 0;
@@ -515,9 +527,38 @@
 }
 .sts-p {
   font-weight: 400;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1;
   margin: 8px 0;
   color: #5a5a5a;
-  max-width: 206px;
+  max-width: 236px;
+}
+.sprint-wrap {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 15px 15px 20px;
+  height: 100%;
+}
+.spnt-hdr-rgt {
+  button {
+    background-color: transparent;
+  }
+}
+.sprint-btm {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.cus-col {
+  width: 30%;
+}
+.plus {
+  button {
+    background: #ffffff;
+    border-radius: 6px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
