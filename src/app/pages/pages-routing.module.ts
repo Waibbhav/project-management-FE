@@ -61,7 +61,32 @@ const routes: Routes = [
       {
         path:'manage-documents',
         component: ManageDocumentsComponent
-      }
+      },
+      {
+        path:'resource-pull',
+        component: ResourcePullComponent 
+      },
+      {
+        path:'task-board',
+        component:TaskBoardComponent 
+      },
+      {
+        path:'resource-pull-details',
+        component:ResourcePullDetailsComponent
+      },
+      {
+        path:'add-project-details',
+        component:AddProjectDetailsComponent
+      },
+      // {
+      //   path:'',
+      //   component:
+      // }
+      
+      // {
+      //   path:'',
+      //   component:
+      // },
     ],
   },
 ];
