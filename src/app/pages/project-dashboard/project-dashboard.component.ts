@@ -34,5 +34,5 @@ export class ProjectDashboardComponent implements OnInit {
       {heading:"Angela",date:"Aug 10",description:"Donec dictum sit amet arcu id ornare. Vestibulum at elementum quam, nec placerat nunc.",projectimage: "./assets/images/hours-history.svg"},
     ]
   }
-  viewMode = 'tab1';
+
 }

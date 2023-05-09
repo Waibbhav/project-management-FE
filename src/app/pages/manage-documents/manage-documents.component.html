@@ -1,1 +1,312 @@
-<app-sidebar></app-sidebar>
+<div class="container comon-gap">
+    <div class="row">
+      <div class="col-md-3">
+  <!--  -->
+  <app-sidebar></app-sidebar>
+  <!--  -->
+
+    </div>
+    <div class="col-md-9">
+
+      <div class="projectsectiontop">
+        <div class="leftsection">
+          <h3>Projects / Dev pro 01</h3>
+          <h2>Manage Documents</h2>
+        </div>
+        <div class="right-section">
+          <button><img src="../../../assets/images/datedicon.svg" /></button>
+        </div>
+      </div>
+      <div class="search_bar_box_bar">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="search_bar_box_sec">
+              <div class="search_bar_box">
+                <button>
+                  <mat-icon>search</mat-icon>
+                </button>
+                <input type="text" placeholder="Search" />
+              </div>
+              <div class="people_list">
+                <ul>
+                  <li><img src="../../../assets/images/person1.svg" alt="" /></li>
+                  <li><img src="../../../assets/images/person2.svg" alt="" /></li>
+                  <li><img src="../../../assets/images/round_plus_icon.svg" alt="" /></li>
+                </ul>
+              </div>
+              <div class="select_bar">
+                <select>
+                  <option>Epic</option>
+                  <option>Epic</option>
+                  <option>Epic</option>
+                </select>
+                <select>
+                  <option>Type</option>
+                  <option>Type</option>
+                  <option>Type</option>
+                </select>
+                <select>
+                  <option>Sprint</option>
+                  <option>Sprint</option>
+                  <option>Epic</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="right_select_bar">
+              <p>Group By</p>
+              <select>
+                <option>None</option>
+                <option>None</option>
+                <option>None</option>
+              </select>
+              <button><img src="../../../assets/images/graff.svg" alt="" /> Reports</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project_topic_bar_sec">
+        <div class="project_topic_bar">
+          <div class="left_box">
+            <img src="../../../assets/images/bag.svg" />
+          </div>
+          <div class="right_box">
+            <h2>Dev pro 01 <img src="../../../assets/images/edit.svg" alt="" class="edit_icon" /></h2>
+            <h3>Team-managed software</h3>
+          </div>
+        </div>
+        <div class="project_cont">
+          <h3>Project Topic*</h3>
+          <p>Quisque quis sapien vitae elit tristique hendrerit. In pulvinar condimentum mi, at imperdiet magna
+            egestas quis. Nunc iaculis, mauris eget molestie consectetur, odio libero vulputate odio, vel venenatis
+            lectus purus eu magna. Proin finibus felis nisl, eu malesuada purus consectetur vehicula.</p>
+          <div class="button_bar">
+            <button class="add_btn">Add Topic</button>
+            <button class="edit_btn">
+              <mat-icon>edit</mat-icon> Edit Topic
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sharedoc leave-listing-table">
+        <ng-scrollbar>
+          <div class="scroll_box">
+            <div class="sharedoc_file_headerbar">
+              <div class="sharedoc_file_headerbar_left">
+                <h2>Files and Documents*</h2>
+                <p>Documents and attachments that have been uploaded as part of this project.</p>
+              </div>
+              <div class="sharedoc_file_headerbar_right">
+                <button><img src="../../../assets/images/doc.svg" alt="" /> Share Doc</button>
+              </div>
+            </div>
+            <div class="custom_choose_file_box">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="custom_choose_file">
+                    <img src="../../../assets/images/upload-icon.svg" alt="" />
+                    <p>Drag & drop files or <a routerLink="#">Browse</a><br><span> Supported formates: JPEG, PNG, GIF,
+                        MP4, PDF, PSD, AI, Word, PPT</span></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="pdf_bar">
+                    <div class="pdf_left_cont">
+                      <img src="../../../assets/images/pdf.svg" alt="" />
+                    </div>
+                    <div class="pdf_right_cont">
+                      <div class="pdf_right_cont_box">
+                        <p>Lorem.pdf<span>4.5MB</span></p>
+                        <img src="../../../assets/images/blue_tick.svg" alt="" />
+                      </div>
+                      <div class="progress_bar_box">
+                        <div class="progress_bar">
+                          <span></span>
+                        </div>
+                        <p>100%</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="pdf_bar">
+                    <div class="pdf_left_cont">
+                      <img src="../../../assets/images/pdf.svg" alt="" />
+                    </div>
+                    <div class="pdf_right_cont">
+                      <div class="pdf_right_cont_box">
+                        <p>Lorem.pdf<span>4.5MB</span></p>
+                        <img src="../../../assets/images/delete.svg" alt="" />
+                      </div>
+                      <div class="progress_bar_box">
+                        <div class="progress_bar">
+                          <span></span>
+                        </div>
+                        <p>100%</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="attached_file_box">
+              <h2>Attached Files</h2>
+              <p>Files and assets that have been attached to this project.</p>
+              <div class="attached_tablebox">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" />File Name</th>
+                      <th>File Size</th>
+                      <th>Date Uploaded</th>
+                      <th>Last Uploaded</th>
+                      <th>Uploaded by</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox_bar">
+                          <input type="checkbox" />
+                          <img src="../../../assets/images/round_pdf.png" alt="" />
+                          <p>Dummy.pdf</p>
+                        </div>
+                      </td>
+                      <td>4.5MB</td>
+                      <td>Jan 4, 2023</td>
+                      <td>Jan 5, 2023</td>
+                      <td>
+                        <div class="avatar_box_bar">
+                          <div class="avatar_box">
+                            <img src="../../../assets/images/Avatar.svg" alt="" />
+                            <div class="avatar_box_right">
+                              <p>Jason William</p>
+                              <span>dummy@jason.com</span>
+                            </div>
+                          </div>
+                          <div class="edit_delete_bar">
+                            <img src="../../../assets/images/delete.svg" alt="" />
+                            <img src="../../../assets/images/edit.svg" alt="" />
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <div class="checkbox_bar">
+                            <input type="checkbox" />
+                            <img src="../../../assets/images/round_pdf.png" alt="" />
+                            <p>Dummy.pdf</p>
+                          </div>
+                        </td>
+                        <td>4.5MB</td>
+                        <td>Jan 4, 2023</td>
+                        <td>Jan 5, 2023</td>
+                        <td>
+                          <div class="avatar_box_bar">
+                            <div class="avatar_box">
+                              <img src="../../../assets/images/Avatar.svg" alt="" />
+                              <div class="avatar_box_right">
+                                <p>Jason William</p>
+                                <span>dummy@jason.com</span>
+                              </div>
+                            </div>
+                            <div class="edit_delete_bar">
+                              <img src="../../../assets/images/delete.svg" alt="" />
+                              <img src="../../../assets/images/edit.svg" alt="" />
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox_bar">
+                            <input type="checkbox" />
+                            <img src="../../../assets/images/round_pdf.png" alt="" />
+                            <p>Dummy.pdf</p>
+                          </div>
+                        </td>
+                        <td>4.5MB</td>
+                        <td>Jan 4, 2023</td>
+                        <td>Jan 5, 2023</td>
+                        <td>
+                          <div class="avatar_box_bar">
+                            <div class="avatar_box">
+                              <img src="../../../assets/images/Avatar.svg" alt="" />
+                              <div class="avatar_box_right">
+                                <p>Jason William</p>
+                                <span>dummy@jason.com</span>
+                              </div>
+                            </div>
+                            <div class="edit_delete_bar">
+                              <img src="../../../assets/images/delete.svg" alt="" />
+                              <img src="../../../assets/images/edit.svg" alt="" />
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox_bar">
+                            <input type="checkbox" />
+                            <img src="../../../assets/images/round_pdf.png" alt="" />
+                            <p>Dummy.pdf</p>
+                          </div>
+                        </td>
+                        <td>4.5MB</td>
+                        <td>Jan 4, 2023</td>
+                        <td>Jan 5, 2023</td>
+                        <td>
+                          <div class="avatar_box_bar">
+                            <div class="avatar_box">
+                              <img src="../../../assets/images/Avatar.svg" alt="" />
+                              <div class="avatar_box_right">
+                                <p>Jason William</p>
+                                <span>dummy@jason.com</span>
+                              </div>
+                            </div>
+                            <div class="edit_delete_bar">
+                              <img src="../../../assets/images/delete.svg" alt="" />
+                              <img src="../../../assets/images/edit.svg" alt="" />
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox_bar">
+                            <input type="checkbox" />
+                            <img src="../../../assets/images/round_pdf.png" alt="" />
+                            <p>Dummy.pdf</p>
+                          </div>
+                        </td>
+                        <td>4.5MB</td>
+                        <td>Jan 4, 2023</td>
+                        <td>Jan 5, 2023</td>
+                        <td>
+                          <div class="avatar_box_bar">
+                            <div class="avatar_box">
+                              <img src="../../../assets/images/Avatar.svg" alt="" />
+                              <div class="avatar_box_right">
+                                <p>Jason William</p>
+                                <span>dummy@jason.com</span>
+                              </div>
+                            </div>
+                            <div class="edit_delete_bar">
+                              <img src="../../../assets/images/delete.svg" alt="" />
+                              <img src="../../../assets/images/edit.svg" alt="" />
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </ng-scrollbar>
+      </div>
+
+    </div>
+  </div>
