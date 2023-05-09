@@ -12,6 +12,7 @@ import { RoadMapComponent } from './road-map/road-map.component';
 import { BacklogComponent } from './backlog/backlog.component';
 import { SprintComponent } from './sprint/sprint.component';
 import { ManageDocumentsComponent } from './manage-documents/manage-documents.component';
+import { TimesheetComponent } from './timesheet/timesheet.component';
 
 const routes: Routes = [
   {
@@ -78,6 +79,10 @@ const routes: Routes = [
         path:'add-project-details',
         component:AddProjectDetailsComponent
       },
+      {
+        path:"timesheet",
+        component:TimesheetComponent,
+      }
       // {
       //   path:'',
       //   component:

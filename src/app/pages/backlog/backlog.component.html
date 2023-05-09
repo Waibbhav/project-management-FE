@@ -115,16 +115,173 @@
                           <p class="para2">404 not found</p>
                         </div>
                         <div class="backlog-rgt">
-                          <button mat-button [matMenuTriggerFor]="menu">
-                            TO DO <span><img src="./assets/images/arrw.svg" alt=""></span>
-                          </button>
-                          <mat-menu #menu="matMenu">
-                            <button mat-menu-item>Item 1</button>
-                            <button mat-menu-item>Item 2</button>
-                          </mat-menu>
+                      
+                          <select class="back-slect">
+                            <option value="todo">To-Do</option>
+                            <option value="active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                          </select>
+                          <div class="user">
+                            <img src="../../../assets/images/ic4.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="backlog-lft">
+                          <span
+                            ><img src="./assets/images/ic2.svg" alt=""
+                          /></span>
+                          <p class="para1">DP0-4</p>
+                          <p class="para2">Lorem ipsum dolor sit amet</p>
+                          <p class="data">CRAETE THE DATABASE</p>
+                        </div>
+                        <div class="backlog-rgt">
+                      
+                          <select class="back-slect">
+                            <option value="todo">To-Do</option>
+                            <option value="active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                          </select>
+                          <div class="user">
+                            <img src="../../../assets/images/ic4.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="backlog-lft">
+                          <span
+                            ><img src="./assets/images/ic3.svg" alt=""
+                          /></span>
+                          <p class="para1">DP0-5</p>
+                          <p class="para2">Lorem ipsum dolor sit amet</p>
+                       
+                        </div>
+                        <div class="backlog-rgt">
+                      
+                          <select class="back-slect">
+                            <option value="todo">To-Do</option>
+                            <option value="active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                          </select>
+                          <div class="user">
+                            <img src="../../../assets/images/ic4.png" alt="">
+                          </div>
                         </div>
                       </li>
                     </ul>
+                    <button class="issue">
+                      <span><img src="../../../assets/images/plus5.svg" alt=""></span>Create issue
+                    </button>
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                  <mat-expansion-panel
+                    (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false"
+                  >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Backlog
+                        <p>
+                
+                          <span>(3 issues)</span>
+                        </p>
+                        <div class="backlog-hdr-rgt">
+                          <span class="trans">0</span>
+                          <span class="blue">0</span>
+                          <span class="green">0</span>
+                          <button (click)="createSprint()" class="btn">Create Sprint</button>
+                          <div class="dots">
+                            <button>
+                              <img src="./assets/images/datedicon.svg" />
+                            </button>
+                          </div>
+                        </div>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <ul class="backlog-list">
+                      <li>
+                        <div class="backlog-lft">
+                          <span
+                            ><img src="./assets/images/ic1.svg" alt=""
+                          /></span>
+                          <p class="para1">DP0-3</p>
+                          <p class="para2">404 not found</p>
+                          <p class="hrs grn">25 Hrs</p>
+                        </div>
+                        <div class="backlog-rgt">
+                      
+                          <select class="back-slect">
+                            <option value="todo">To-Do</option>
+                            <option value="active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                          </select>
+                          <div class="user">
+                            <img src="../../../assets/images/ic4.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="backlog-lft">
+                          <span
+                            ><img src="./assets/images/ic2.svg" alt=""
+                          /></span>
+                          <p class="para1">DP0-4</p>
+                          <p class="para2">Lorem ipsum dolor sit amet</p>
+                          <p class="data">CRAETE THE DATABASE</p>
+                          <p class="hrs yellow">35 Hrs</p>
+                        </div>
+                        <div class="backlog-rgt">
+                      
+                          <select class="back-slect">
+                            <option value="todo">To-Do</option>
+                            <option value="active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                          </select>
+                          <div class="user">
+                            <img src="../../../assets/images/ic4.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="backlog-lft">
+                          <span
+                            ><img src="./assets/images/ic3.svg" alt=""
+                          /></span>
+                          <p class="para1">DP0-5</p>
+                          <p class="para2">Lorem ipsum dolor sit amet</p>
+                          <p class="hrs red">35 Hrs</p>
+                       
+                        </div>
+                        <div class="backlog-rgt">
+                      
+                          <select class="back-slect">
+                            <option value="todo">To-Do</option>
+                            <option value="active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                          </select>
+                          <div class="user">
+                            <img src="../../../assets/images/ic4.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="backlog-input">
+                          <span
+                            ><img src="./assets/images/ic1.svg" alt=""
+                          /></span>
+                          <i class="arow"><img src="../../../assets/images/arrw.svg" alt=""></i>
+                          <p class="para3">What needs to be done?</p>
+                        
+                          <form  class="back-form">
+                            <textarea placeholder="Add Description"></textarea>
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                    <button class="issue">
+                      <span><img src="../../../assets/images/plus5.svg" alt=""></span>Create issue
+                    </button>
                   </mat-expansion-panel>
                 </mat-accordion>
               </div>

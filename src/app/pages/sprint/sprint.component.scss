@@ -345,6 +345,9 @@
     .mat-expansion-panel-content{
       font-family: "Poppins", sans-serif !important;
     }
+    .mat-expansion-indicator::after {
+      margin-bottom: 5px;
+    }
     .mat-expansion-panel-header {
       flex-direction: row-reverse;
       height: auto;
