@@ -1333,6 +1333,8 @@
       border: 1px solid #F5F6F7;
       border-radius: 0;
       height: 45px;
+      border-left: 0;
+      border-right: 0;
     }
   }
 
@@ -1393,6 +1395,8 @@
 .create_btn_box {
   padding: 10px 20px;
   border: 1px solid #F5F6F7;
+  border-left: 0;
+  border-right: 0;
   button {
     background: transparent;
     display: flex;
