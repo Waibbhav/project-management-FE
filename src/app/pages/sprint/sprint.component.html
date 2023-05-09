@@ -1,11 +1,9 @@
 <div class="container comon-gap">
-    <div class="row">
-      <div class="col-md-3">
-  <!--  -->
-  <app-sidebar></app-sidebar>
-  <!--  -->
-  
-
+  <div class="row">
+    <div class="col-md-3">
+      <!--  -->
+      <app-sidebar></app-sidebar>
+      <!--  -->
     </div>
     <div class="col-md-9">
       <div class="projectsectiontop">
@@ -29,9 +27,18 @@
               </div>
               <div class="people_list">
                 <ul>
-                  <li><img src="../../../assets/images/person1.svg" alt="" /></li>
-                  <li><img src="../../../assets/images/person2.svg" alt="" /></li>
-                  <li><img src="../../../assets/images/round_plus_icon.svg" alt="" /></li>
+                  <li>
+                    <img src="../../../assets/images/person1.svg" alt="" />
+                  </li>
+                  <li>
+                    <img src="../../../assets/images/person2.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      src="../../../assets/images/round_plus_icon.svg"
+                      alt=""
+                    />
+                  </li>
                 </ul>
               </div>
               <div class="select_bar">
@@ -51,9 +58,7 @@
                   <option>Epic</option>
                 </select>
               </div>
-
             </div>
-
           </div>
           <div class="col-sm-4">
             <div class="right_select_bar">
@@ -63,7 +68,9 @@
                 <option>None</option>
                 <option>None</option>
               </select>
-              <button><img src="../../../assets/images/graff.svg" alt="" /> Reports</button>
+              <button>
+                <img src="../../../assets/images/graff.svg" alt="" /> Reports
+              </button>
             </div>
           </div>
         </div>
@@ -78,9 +85,192 @@
                   <button><img src="./assets/images/datedicon.svg" /></button>
                 </div>
               </div>
+              <div class="dpo-spnt">
+                <mat-accordion>
+                  <mat-expansion-panel
+                    (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false"
+                  >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        DPO Sprint 1
+                        <span> (3 Tasks) </span>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="project-item">
+                      <div class="card-layout">
+                        <div class="project-status">
+                          <div class="project-sts-wrp">
+                            <div class="project-icon">
+                              <img src="./assets/images/sutecase.svg" alt="" />
+                            </div>
+                            <div class="project-description">
+                              <h4>Dev pro 01</h4>
+                              <p>Team-managed software</p>
+                            </div>
+                          </div>
+
+                          <div class="project-status-tag">
+                            <a class="status-tag">Assign Task</a>
+                          </div>
+                        </div>
+
+                        <p class="sts-p">
+                          Cras non nisl vel mi elementum convallis at non est.
+                          Fusce et placerat tortor.
+                        </p>
+
+                        <div class="project-members">
+                          <div class="member-group">
+                            <ul>
+                              <li>
+                                <button>
+                                  <img
+                                    src="assets/images/homeAvatar1.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button>
+                                  <img
+                                    src="assets/images/homeAvatar2.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </li>
+                              <li><button>+5</button></li>
+                            </ul>
+
+                            <button>
+                              <img src="assets/images/plusIcon.svg" alt="" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item">
+                      <div class="card-layout">
+                        <div class="project-status">
+                          <div class="project-sts-wrp">
+                            <div class="project-icon">
+                              <img src="./assets/images/sutecase.svg" alt="" />
+                            </div>
+                            <div class="project-description">
+                              <h4>Dev pro 01</h4>
+                              <p>Team-managed software</p>
+                            </div>
+                          </div>
+
+                          <div class="project-status-tag">
+                            <a class="status-tag">Assign Task</a>
+                          </div>
+                        </div>
+
+                        <p class="sts-p">
+                          Cras non nisl vel mi elementum convallis at non est.
+                          Fusce et placerat tortor.
+                        </p>
+
+                        <div class="project-members">
+                          <div class="member-group">
+                            <ul>
+                              <li>
+                                <button>
+                                  <img
+                                    src="assets/images/homeAvatar1.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button>
+                                  <img
+                                    src="assets/images/homeAvatar2.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </li>
+                              <li><button>+5</button></li>
+                            </ul>
+
+                            <button>
+                              <img src="assets/images/plusIcon.svg" alt="" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item">
+                      <div class="card-layout">
+                        <div class="project-status">
+                          <div class="project-sts-wrp">
+                            <div class="project-icon">
+                              <img src="./assets/images/sutecase.svg" alt="" />
+                            </div>
+                            <div class="project-description">
+                              <h4>Dev pro 01</h4>
+                              <p>Team-managed software</p>
+                            </div>
+                          </div>
+
+                          <div class="project-status-tag">
+                            <a class="status-tag">Assign Task</a>
+                          </div>
+                        </div>
+
+                        <p class="sts-p">
+                          Cras non nisl vel mi elementum convallis at non est.
+                          Fusce et placerat tortor.
+                        </p>
+
+                        <div class="project-members">
+                          <div class="member-group">
+                            <ul>
+                              <li>
+                                <button>
+                                  <img
+                                    src="assets/images/homeAvatar1.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button>
+                                  <img
+                                    src="assets/images/homeAvatar2.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </li>
+                              <li><button>+5</button></li>
+                            </ul>
+
+                            <button>
+                              <img src="assets/images/plusIcon.svg" alt="" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                  <mat-expansion-panel
+                    (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false"
+                  >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title> DPO Sprint 2 </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>I'm visible because I am open</p>
+                  </mat-expansion-panel>
+                </mat-accordion>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>

@@ -36,6 +36,21 @@ $jira-theme: mat.define-light-theme((color: (primary: $jira-primary,
 @import "./assets/scss/grid.scss";
 @import "./assets/scss/config";
 
+
+body,
+.mat-body,
+.mat-body-1,
+.mat-typography .mat-body,
+.mat-typography .mat-body-1,
+.mat-typography {
+    margin: 0;
+    padding: 0;
+    @include poppins();
+    font-weight: weight(regular) !important;
+    font-size: 1.2rem;
+    color: $textColor;
+    background-color: $bgColor;
+}
 .card-layout {
   @include card();
 }

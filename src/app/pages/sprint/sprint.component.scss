@@ -332,10 +332,192 @@
       justify-content: center;
       height: 20px;
       width: 20px;
-      color: #9333EA;
+      color: #9333ea;
       font-size: 10px;
       font-weight: 800;
       margin-left: 10px;
     }
   }
+}
+.dpo-spnt {
+  ::ng-deep {
+    .mat-expansion-panel-header {
+      flex-direction: row-reverse;
+    }
+    .mat-expansion-panel-header-title {
+      margin-right: 0;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 2;
+
+      text-transform: capitalize;
+
+      color: #5b6d74;
+      span {
+        font-weight: 500;
+        font-size: 10px;
+        display: inline-block;
+
+        color: #5b6d74;
+      }
+    }
+    .mat-expansion-panel-body {
+      padding: 10px;
+    }
+  }
+  .project-item {
+    padding: 11px;
+    background: #ffffff;
+    box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    .card-layout {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      .project-status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .project-icon {
+          background-color: rgba(44, 129, 231, 0.2);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 26px;
+          height: 26px;
+          border-radius: 100%;
+          // @include radius(100%);
+
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        .project-status-tag {
+          display: inline-flex;
+          align-items: center;
+
+          .project-flag {
+            font-size: 1.6rem;
+            margin-right: 7px;
+
+            &.green {
+              i {
+                color: green;
+              }
+            }
+
+            &.red {
+              i {
+                color: #ff2a00;
+              }
+            }
+
+            &.yellow {
+              i {
+                color: #f5cf00;
+              }
+            }
+          }
+
+          .status-tag {
+            font-size: 8px;
+            text-decoration: underline;
+            color: #00baff;
+            font-weight: 400;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .project-description {
+        margin-left: 6px;
+        h4 {
+          font-weight: 500;
+          font-size: 10px;
+          text-transform: capitalize;
+          // color: $titleColor;
+          line-height: 1;
+          margin: 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 8px;
+          // color: $textColor;
+          line-height: 1;
+          margin: 0;
+        }
+
+        .project-progressbar {
+          margin-bottom: 8px;
+
+          .mat-progress-bar-buffer {
+            background: #e6eeff;
+            border-radius: 50px;
+            height: 3px !important;
+          }
+
+          .mat-progress-bar-fill::after {
+            border-radius: 50px;
+          }
+
+          p {
+            font-size: 10px;
+            text-transform: capitalize;
+
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+              font-weight: 600;
+              font-size: 9px;
+            }
+          }
+        }
+
+        .project-timing {
+          p {
+            font-weight: 500;
+            font-size: 10px;
+            // color: $textColor;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 4px;
+
+            span {
+              background: #fff;
+              border: 1px solid #ebeef2;
+              border-radius: 16px;
+              font-weight: 600;
+              font-size: 9px;
+              padding: 2px 12px;
+              color: #606c80;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.project-sts-wrp {
+  display: flex;
+  align-items: center;
+}
+.sts-p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1;
+  margin: 8px 0;
+  color: #5a5a5a;
+  max-width: 206px;
 }
