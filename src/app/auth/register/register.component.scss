@@ -1,84 +1,160 @@
 @import '../../../assets/scss/config';
 
 .dvider {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 
-    span {
-        display: inline-flex;
-        align-items: center;
-        position: relative;
-        font-weight: 500;
-        font-size: 1.7rem;
+  span {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-weight: 500;
+    font-size: 1.7rem;
 
-        color: $inputBorderColor1;
+    color: $inputBorderColor1;
 
-        &::before,
-        &::after {
-            content: "";
-            background-color: rgba($color: $inputBorderColor1, $alpha: 0.5);
-            height: 1px;
-            width: 56px;
-            display: inline-flex;
-            margin-inline: 10px;
-        }
+    &::before,
+    &::after {
+      content: "";
+      background-color: rgba($color: $inputBorderColor1, $alpha: 0.5);
+      height: 1px;
+      width: 56px;
+      display: inline-flex;
+      margin-inline: 10px;
     }
+  }
 }
 
 .forgot_pass {
-    text-align: right;
-    margin-bottom: 20px;
+  text-align: right;
+  margin-bottom: 20px;
 
-    a {
-        display: inline-block;
-        font-weight: 400;
-        font-size: 1.5rem;
-        color: $primaryColor;
+  a {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $primaryColor;
 
-        &:hover {
-            color: $blackColor;
-        }
+    &:hover {
+      color: $blackColor;
     }
+  }
 
 }
 
 .outlook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $whiteColor;
-    box-shadow: 0px 4px 30px rgba($color: $blackColor, $alpha:0.06);
-    @include radius(7px);
-    padding: 13px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $whiteColor;
+  box-shadow: 0px 4px 30px rgba($color: $blackColor, $alpha:0.06);
+  @include radius(7px);
+  padding: 13px 12px;
 
-    span {
-        font-weight: 500;
-        font-size: 1.7rem;
-        display: inline-block;
-        text-transform: capitalize;
-        margin-left: 10px;
-        color: $textColor;
-    }
+  span {
+    font-weight: 500;
+    font-size: 1.7rem;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-left: 10px;
+    color: $textColor;
+  }
 }
 
 .cant-log {
-    margin-top: 25px;
+  margin-top: 25px;
 
-    p {
-        font-weight: 400;
-        font-size: 1.5rem;
+  p {
+    font-weight: 400;
+    font-size: 1.5rem;
 
-        text-align: center;
-        text-transform: capitalize;
+    text-align: center;
+    text-transform: capitalize;
 
-        color: $primaryColor;
+    color: $primaryColor;
 
-        a {
-            color: $primaryColor;
+    a {
+      color: $primaryColor;
 
-            &:hover {
-                color: $blackColor;
-            }
-        }
+      &:hover {
+        color: $blackColor;
+      }
     }
+  }
+}
+
+.register_area {
+  .form-group {
+    text-align: left;
+  }
+}
+
+.agree_text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #5B6D74;
+  text-align: left;
+
+  a {
+    color: #00BAFF;
+    font-weight: 600;
+  }
+}
+
+.required_text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #5B6D74;
+  margin: 10px 0 0 0;
+}
+
+.register_cont {
+    height: 100%;
+    padding: 150px 0;
+    text-align: left;
+
+  h2 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #092C38;
+    margin: 0 0 10px 0;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: #092C38;
+    margin: 0;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: #5B6D74;
+    margin: 20px 0 0 0;
+
+  }
+
+  ul {
+    list-style: disc;
+    padding: 0 0 0 23px;
+    li {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 40px;
+      text-transform: capitalize;
+      color: #092C38;
+    }
+  }
 }

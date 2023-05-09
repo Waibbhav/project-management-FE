@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./road-map.component.scss']
 })
 export class RoadMapComponent implements OnInit {
+  panelOpenState = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
