@@ -531,6 +531,9 @@
     display: inline-block;
     align-items: center;
   }
+  &:hover{
+    color: black;
+  }
 }
 .dpo-backlog {
   padding: 17px 14px;
