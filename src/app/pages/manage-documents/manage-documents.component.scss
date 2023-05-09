@@ -750,7 +750,7 @@
       display: flex;
       align-items: center;
       margin: 0 0 0 20px;
-      max-width: 150px;
+      max-width: 120px;
       width: 100%;
 
       ul {
@@ -792,8 +792,7 @@
         line-height: 26px;
         text-transform: capitalize;
         color: #5B6D74;
-        padding: 5px 20px 5px 15px;
-        max-width: 200px;
+        padding: 5px 25px 5px 15px;
         width: 100%;
         background-size: 9px;
         margin: 0 20px 0 0;
@@ -813,6 +812,7 @@
 
   p {
     margin: 0 10px 0 0;
+    text-transform: uppercase;
   }
 
   select {
