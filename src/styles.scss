@@ -519,8 +519,14 @@ body,
 
         &:hover {
           color: $blackColor;
+          background: #666;
         }
       }
+    }
+  }
+  .outlook{
+    &:hover{
+      background: #f2f2f2;
     }
   }
 
