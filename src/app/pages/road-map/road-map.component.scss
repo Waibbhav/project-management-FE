@@ -795,6 +795,9 @@
         padding: 5px 25px 5px 15px;
         background-size: 9px;
         margin: 0 20px 0 0;
+        &:focus-visible{
+          outline: #00BAFF;
+        }
 
         &:first-child {
           background-color: rgba(86, 164, 200, 0.1);
@@ -1341,6 +1344,9 @@
       height: 45px;
       border-left: 0;
       border-right: 0;
+      &:hover{
+        background: rgba(0, 0, 0, 0.04);
+      }
     }
   }
 
