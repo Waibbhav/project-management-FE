@@ -97,21 +97,21 @@
                         <span> (3 Tasks) </span>
                       </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <div class="project-item">
+                    <div class="project-item" >
                       <div class="card-layout">
                         <div class="project-status">
                           <div class="project-sts-wrp">
                             <div class="project-icon">
                               <img src="./assets/images/sutecase.svg" alt="" />
                             </div>
-                            <div class="project-description">
+                            <div class="project-description" (click)="sprintdetails()"> 
                               <h4>Dev pro 01</h4>
                               <p>Team-managed software</p>
                             </div>
                           </div>
 
                           <div class="project-status-tag">
-                            <a class="status-tag">Assign Task</a>
+                            <a class="status-tag" (click)="assignTask()" >Assign Task</a>
                           </div>
                         </div>
 

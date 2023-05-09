@@ -261,3 +261,19 @@
   </div>
 
 </ng-container>
+
+<ng-container *ngIf="data?.type === 'assigntask'">
+<h1>Assign Task</h1>
+</ng-container>
+
+
+<ng-container *ngIf="data?.type === 'sprint-details'">
+  <h1>Sprint Details</h1>
+ <button (click)="addChildtask()" [mat-dialog-close]>Add Child Task</button>
+  </ng-container>
+
+  <ng-container *ngIf="data?.type === 'createchildtask'">
+    <h1>create child task</h1>
+    </ng-container>
+
+
