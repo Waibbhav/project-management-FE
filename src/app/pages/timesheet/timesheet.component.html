@@ -269,7 +269,7 @@
                   <a href="#" class="cmn-add">+Add Task</a>
                 </div>
                 <div class="form-btm">
-                  <a href="#" class="cmn-add">+Add Non-project Task</a>
+                  <a class="cmn-add" (click)="addNonProjectTask()">+Add Non-project Task</a>
                   <button type="submit" class="btn">Submit</button>
                 </div>
               </ng-scrollbar>
@@ -310,7 +310,7 @@
                 <td>40 Hours</td>
                 <td>25 Hours</td>
                 <td>2 Hours</td>
-                <td><button class="btn">Approve</button></td>
+                <td><button class="btn" (click)="approvetTimesheet()">Approve</button></td>
               </tr>
               <tr>
                 <td>WS04585</td>

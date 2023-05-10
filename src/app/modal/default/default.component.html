@@ -277,3 +277,12 @@
     </ng-container>
 
 
+    <ng-container *ngIf="data?.type === 'Non-Project-Task'">
+      <h1>Add Non-Project Task</h1>
+    </ng-container>
+
+    <ng-container *ngIf="data?.type === 'Approve-Timesheet'">
+      <h1>Approve-Timesheet</h1>
+    </ng-container>
+
+
