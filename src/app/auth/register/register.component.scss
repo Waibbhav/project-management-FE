@@ -129,6 +129,9 @@
     text-transform: capitalize;
     color: #092C38;
     margin: 0 0 10px 0;
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+    }
   }
 
   h3 {
@@ -138,6 +141,9 @@
     text-transform: capitalize;
     color: #092C38;
     margin: 0;
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 
   h4 {
@@ -147,6 +153,9 @@
     text-transform: capitalize;
     color: #5B6D74;
     margin: 30px 0 0 0;
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
 
   }
 
@@ -159,6 +168,9 @@
       line-height: 40px;
       text-transform: capitalize;
       color: #092C38;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
     }
   }
 }
