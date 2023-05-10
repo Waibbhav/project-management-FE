@@ -548,3 +548,8 @@ body,
 .comon-gap {
   padding-top: 58px;
 }
+select{
+  &:focus-visible{
+    outline: none;
+  }
+}
