@@ -229,16 +229,16 @@
 }
 
 
- .scroll_box {
-   -ms-overflow-style: none;
+.scroll_box {
+  -ms-overflow-style: none;
   scrollbar-width: none;
-   overflow-y: scroll;
-   height: 400px;
- }
+  overflow-y: scroll;
+  height: 400px;
+}
 
- .scroll_box::-webkit-scrollbar {
-   display: none;
- }
+.scroll_box::-webkit-scrollbar {
+  display: none;
+}
 
 .custom_radio_bar {
   display: flex;
@@ -255,6 +255,29 @@
 }
 
 
+
+.modal_headbar_left1 {
+  margin: 0 0 20px 0;
+
+  h2 {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 32px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      margin: 8px 0 0 10px;
+    }
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
 .modal_headbar_left {
   margin: 0 0 20px 0;
 
@@ -262,6 +285,13 @@
     margin: 0;
     line-height: 1.5;
     font-size: 24px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+    }
   }
 
   h3 {
@@ -278,9 +308,73 @@
     margin: 0;
   }
 }
-.textarea_box{
+
+.textarea_box {
   margin: 20px 0 0 0;
-  textarea{
+
+  textarea {
     height: 100px;
   }
+}
+
+.task_table {
+  background: #F1F5FF;
+  border-radius: 8px;
+  width: 100%;
+  border-spacing: 0;
+
+  thead {
+    tr {
+      th {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        color: #5B6D74;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #e3e3e3;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 10px 20px;
+        text-transform: capitalize;
+        color: #092C38;
+
+        input {
+          width: 20px;
+          height: 20px;
+          min-height: 20px;
+          padding: 0 2px;
+          text-align: center;
+          border: 1px solid rgba(0, 0, 0, 0.12);
+          border-radius: 2px;
+        }
+        .custom_checkbox[type="checkbox"]{
+          background: #F1F5FF;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #CCCCCC;
+          &:checked{
+            background: url(../../../assets/images/green_tic.svg) 0 0 no-repeat;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+.table-responsive {
+  overflow: auto;
+  height: 300px;
 }

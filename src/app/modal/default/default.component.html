@@ -5,7 +5,6 @@
   </div>
 </ng-container>
 
-
 <ng-container *ngIf="data?.type === 'addnewresource'">
   <div class="addnewresourcemodal">
     <div class="addtaskmodal-head">
@@ -62,7 +61,6 @@
 
 </ng-container>
 
-
 <ng-container *ngIf="data?.type === 'addproject'">
   <div class="addnewresourcemodal">
     <div class="closebar">
@@ -78,79 +76,81 @@
       </div>
 
       <div class="modal-head-rgt">
-        
-          <div class="scroll_box">
-            <div class="addresourcecontain">
-              <label>Project Name<span>*</span></label>
-              <input type="text" class="inputname" />
-            </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label>Project Category<span>*</span></label>
-                  <select class="select_box">
-                    <option>Select</option>
-                    <option>Fixed Cost</option>
-                    <option>Flexi</option>
-                    <option>Dedicated</option>
-                  </select>
-                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
-                </div>
-                <div class="col-sm-6">
-                  <label>Client Name<span>*</span></label>
-                  <input type="text" class="inputname" placeholder="Name / Email" />
-                </div>
-              </div>
-            </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label>Business Type<span>*</span></label>
-                  <select class="select_box">
-                    <option>Select</option>
-                    <option>NCNB</option>
-                    <option>ECEB</option>
-                    <option>ECNB</option>
-                  </select>
-                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
-                </div>
-                <div class="col-sm-6">
-                  <label>BDM<span>*</span></label>
-                  <input type="text" class="inputname" placeholder="Type" />
-                </div>
-              </div>
 
-            </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label>Project Hours<span>*</span></label>
-                  <input type="text" class="inputname" placeholder="Add" />
-                </div>
-                <div class="col-sm-6">
-                  <label>CSM/Delivery Manager<span>*</span></label>
-                  <input type="text" class="inputname" placeholder="Name / Email" />
-                </div>
+        <div class="scroll_box">
+          <div class="addresourcecontain">
+            <label>Project Name<span>*</span></label>
+            <input type="text" class="inputname" />
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Project Category<span>*</span></label>
+                <select class="select_box">
+                  <option>Select</option>
+                  <option>Fixed Cost</option>
+                  <option>Flexi</option>
+                  <option>Dedicated</option>
+                </select>
+                <!-- <input type="text" class="inputname" placeholder="Type" /> -->
               </div>
-
-            </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label>Project vertical<span>*</span></label>
-                  <div class="custom_radio_bar">
-                    <input type="radio" /> <p>Custom</p> <input type="radio" /> <p>CMS</p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label>Project Status<span>*</span></label>
-                  <button class="inactiveone">Inactive</button>
-                </div>
+              <div class="col-sm-6">
+                <label>Client Name<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Name / Email" />
               </div>
-
             </div>
           </div>
-        
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Business Type<span>*</span></label>
+                <select class="select_box">
+                  <option>Select</option>
+                  <option>NCNB</option>
+                  <option>ECEB</option>
+                  <option>ECNB</option>
+                </select>
+                <!-- <input type="text" class="inputname" placeholder="Type" /> -->
+              </div>
+              <div class="col-sm-6">
+                <label>BDM<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Type" />
+              </div>
+            </div>
+
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Project Hours<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Add" />
+              </div>
+              <div class="col-sm-6">
+                <label>CSM/Delivery Manager<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Name / Email" />
+              </div>
+            </div>
+
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Project vertical<span>*</span></label>
+                <div class="custom_radio_bar">
+                  <input type="radio" />
+                  <p>Custom</p> <input type="radio" />
+                  <p>CMS</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label>Project Status<span>*</span></label>
+                <button class="inactiveone">Inactive</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <div class="save-button">
           <button class="savebuttonone">Save</button>
           <button class="cancelbutton">Cancel</button>
@@ -182,57 +182,60 @@
       </div>
 
       <div class="modal-head-rgt">
-        
-          <div class="scroll_box">
-            <div class="addresourcecontain">
-              <label>Sprint name<span>*</span></label>
-              <input type="text" class="inputname" />
-            </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-12">
-                  <label>Duration<span>*</span></label>
-                  <select class="select_box">
-                    <option>Select</option>
-                    <option>Fixed Cost</option>
-                    <option>Flexi</option>
-                    <option>Dedicated</option>
-                  </select>
-                  <!-- <input type="text" class="inputname" placeholder="Type" /> -->
-                </div>
-              </div>
-            </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label>Start date<span>*</span></label>
-                  <input type="date" class="inputname" />
-                </div>
-                <div class="col-sm-6">
-                  <label>End date<span>*</span></label>
-                  <input type="date" class="inputname"/>
-                </div>
-              </div>
 
-            </div>
-           
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-12">
-                  <label>Project Priority<span>*</span></label>
-                  <div class="custom_radio_bar">
-                    <input type="radio" /> <p>Highest</p> <input type="radio" /> <p>Medium</p> <input type="radio" /> <p>Low</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 textarea_box">
-                  <label>Sprint goal<span>*</span></label>
-                  <textarea placeholder=""></textarea>
-                </div>
+        <div class="scroll_box">
+          <div class="addresourcecontain">
+            <label>Sprint name<span>*</span></label>
+            <input type="text" class="inputname" />
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-12">
+                <label>Duration<span>*</span></label>
+                <select class="select_box">
+                  <option>Select</option>
+                  <option>Fixed Cost</option>
+                  <option>Flexi</option>
+                  <option>Dedicated</option>
+                </select>
+                <!-- <input type="text" class="inputname" placeholder="Type" /> -->
               </div>
-
             </div>
           </div>
-        
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Start date<span>*</span></label>
+                <input type="date" class="inputname" />
+              </div>
+              <div class="col-sm-6">
+                <label>End date<span>*</span></label>
+                <input type="date" class="inputname" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-12">
+                <label>Project Priority<span>*</span></label>
+                <div class="custom_radio_bar">
+                  <input type="radio" />
+                  <p>Highest</p> <input type="radio" />
+                  <p>Medium</p> <input type="radio" />
+                  <p>Low</p>
+                </div>
+              </div>
+              <div class="col-sm-12 textarea_box">
+                <label>Sprint goal<span>*</span></label>
+                <textarea placeholder=""></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <div class="save-button">
           <button class="savebuttonone">Save</button>
           <button class="cancelbutton">Cancel</button>
@@ -260,22 +263,105 @@
       </div>
 
       <div class="modal-head-rgt">
-        
 
-            <div class="addresourcecontain">
-              <label>Assign Developer<span>*</span></label>
+
+        <div class="addresourcecontain">
+          <label>Assign Developer<span>*</span></label>
+          <input type="text" class="inputname" placeholder="Name / Email" />
+        </div>
+        <div class="addresourcecontain">
+          <div class="row">
+            <div class="col-sm-12">
+              <label>Assign QA<span>*</span></label>
               <input type="text" class="inputname" placeholder="Name / Email" />
             </div>
-            <div class="addresourcecontain">
-              <div class="row">
-                <div class="col-sm-12">
-                  <label>Assign QA<span>*</span></label>
-                  <input type="text" class="inputname" placeholder="Name / Email"/>
-                </div>
+          </div>
+        </div>
+
+
+        <div class="save-button">
+          <button class="savebuttonone">Save</button>
+          <button class="cancelbutton">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ng-container>
+
+<ng-container *ngIf="data?.type === 'sprint-details'">
+  <h1>Sprint Details</h1>
+  <button (click)="addChildtask()" [mat-dialog-close]>Add Child Task</button>
+</ng-container>
+
+
+<ng-container *ngIf="data?.type === 'createchildtask'">
+  <div class="addnewresourcemodal">
+    <div class="closebar">
+      <button type="button" [mat-dialog-close]>
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <div class="addtaskmodal-head">
+      <div class="modal-head-lft modal_headbar">
+        <div class="modal_headbar_left">
+          <h2>Add Child Task</h2>
+          <p>Donec porttitor iaculis risus at egestas.</p>
+        </div>
+        <div class="modal_headbar_right">
+          <h3>Today 20/04/2023</h3>
+        </div>
+      </div>
+
+      <div class="modal-head-rgt">
+
+        <div class="scroll_box">
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Task name<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Task 1" />
+              </div>
+              <div class="col-sm-6">
+                <label>Task Hours<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Add" />
+              </div>
+            </div>
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-12 textarea_box">
+                <label>Task name<span>*</span></label>
+                <textarea placeholder=""></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Assign developers<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Name / Email" />
+              </div>
+              <div class="col-sm-6">
+                <label>Assing QA<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Name / Email" />
               </div>
             </div>
 
-        
+          </div>
+
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-12 textarea_box">
+                <label>Add Comments<span>*</span></label>
+                <textarea placeholder=""></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <div class="save-button">
           <button class="savebuttonone">Save</button>
           <button class="cancelbutton">Cancel</button>
@@ -287,95 +373,144 @@
 </ng-container>
 
 
-<ng-container *ngIf="data?.type === 'sprint-details'">
-  <h1>Sprint Details</h1>
- <button (click)="addChildtask()" [mat-dialog-close]>Add Child Task</button>
-  </ng-container>
-
-  <ng-container *ngIf="data?.type === 'createchildtask'">
-    <div class="addnewresourcemodal">
-      <div class="closebar">
-        <button type="button" [mat-dialog-close]>
-          <mat-icon>close</mat-icon>
-        </button>
-      </div>
-  
-      <div class="addtaskmodal-head">
-        <div class="modal-head-lft modal_headbar">
-          <div class="modal_headbar_left">
-            <h2>Add Child Task</h2>
-            <p>Donec porttitor iaculis risus at egestas.</p>
-          </div>
-          <div class="modal_headbar_right">
-            <h3>Today 20/04/2023</h3>
-          </div>
-        </div>
-  
-        <div class="modal-head-rgt">
-          
-            <div class="scroll_box">
-              <div class="addresourcecontain">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <label>Task name<span>*</span></label>
-                    <input type="text" class="inputname" placeholder="Task 1" />
-                  </div>
-                  <div class="col-sm-6">
-                    <label>Task Hours<span>*</span></label>
-                    <input type="text" class="inputname" placeholder="Add" />
-                  </div>
-                </div>
-              </div>
-              <div class="addresourcecontain">
-                <div class="row">
-                  <div class="col-sm-12 textarea_box">
-                    <label>Task name<span>*</span></label>
-                   <textarea placeholder=""></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="addresourcecontain">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <label>Assign developers<span>*</span></label>
-                    <input type="text" class="inputname" placeholder="Name / Email" />
-                  </div>
-                  <div class="col-sm-6">
-                    <label>Assing QA<span>*</span></label>
-                    <input type="text" class="inputname" placeholder="Name / Email" />
-                  </div>
-                </div>
-  
-              </div>
-             
-              <div class="addresourcecontain">
-                <div class="row">
-                  <div class="col-sm-12 textarea_box">
-                    <label>Add Comments<span>*</span></label>
-                    <textarea placeholder=""></textarea>
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-          
-          <div class="save-button">
-            <button class="savebuttonone">Save</button>
-            <button class="cancelbutton">Cancel</button>
-          </div>
-        </div>
-      </div>
-  
+<ng-container *ngIf="data?.type === 'Non-Project-Task'">
+  <div class="addnewresourcemodal">
+    <div class="closebar">
+      <button type="button" [mat-dialog-close]>
+        <mat-icon>close</mat-icon>
+      </button>
     </div>
-  </ng-container>
+
+    <div class="addtaskmodal-head">
+      <div class="modal-head-lft modal_headbar">
+        <div class="modal_headbar_left">
+          <h2>Add Non-Project Task</h2>
+        </div>
+      </div>
+      <div class="modal-head-rgt">
+        <div class="addresourcecontain">
+          <div class="row">
+            <div class="col-sm-12">
+              <label>Task Type<span>*</span></label>
+              <select class="select_box">
+                <option>Add</option>
+                <option>Project discussion call</option>
+                <option>Client Call</option>
+                <option>Documentation</option>
+                <option>KT</option>
+                <option>Process work</option>
+                <option>Management meeting</option>
+                <option>Idle</option>
+                <option>Training/Event</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="addresourcecontain">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Task Details<span>*</span></label>
+              <input type="text" class="inputname" placeholder="Add" />
+            </div>
+            <div class="col-sm-6">
+              <label>Task Hours<span>*</span></label>
+              <input type="text" class="inputname" placeholder="Add" />
+            </div>
+          </div>
+        </div>
+        <div class="save-button">
+          <button class="savebuttonone">Save</button>
+          <button class="cancelbutton">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
 
 
-    <ng-container *ngIf="data?.type === 'Non-Project-Task'">
-      <h1>Add Non-Project Task</h1>
-    </ng-container>
+<ng-container *ngIf="data?.type === 'Approve-Timesheet'">
+  <div class="addnewresourcemodal">
+    <div class="closebar">
+      <button type="button" [mat-dialog-close]>
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
 
-    <ng-container *ngIf="data?.type === 'Approve-Timesheet'">
-      <h1>Approve-Timesheet</h1>
-    </ng-container>
-
-
+    <div class="addtaskmodal-head">
+      <div class="modal-head-lft modal_headbar">
+        <div class="modal_headbar_left1">
+          <h2>Karen William<span>WS04585</span></h2>
+        </div>
+        <div class="modal_headbar_right">
+          <h3>Today 20/04/2023</h3>
+        </div>
+      </div>
+      <div class="modal-head-rgt">
+        <div class="addresourcecontain">
+          <div class="table-responsive">
+            <ng-scrollbar>
+              <table class="task_table">
+                <thead>
+                  <tr>
+                    <th>Task Name</th>
+                    <th>Log Hours</th>
+                    <th>Approve Hours</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>8 Hours</td>
+                    <td><input type="text" placeholder="8" /> Hours</td>
+                    <td><input type="checkbox" class="custom_checkbox" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </ng-scrollbar>
+          </div>
+        </div>
+        <div class="save-button">
+          <button class="savebuttonone">Approve</button>
+          <button class="cancelbutton">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
