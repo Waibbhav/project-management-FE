@@ -290,8 +290,244 @@
 </ng-container>
 
 <ng-container *ngIf="data?.type === 'sprint-details'">
-  <h1>Sprint Details</h1>
-  <button (click)="addChildtask()" [mat-dialog-close]>Add Child Task</button>
+  <div class="addnewresourcemodal1">
+
+    <div class="add_epic">
+      <div class="add_epic_left">
+        <ul>
+          <li> <img src="../../../assets/images/edit.svg" alt="" /> Add Epic</li>
+          <li>/</li>
+          <li> <img src="../../../assets/images/dpo_icon.svg" alt="" /> DP0-3</li>
+        </ul>
+      </div>
+      <div class="add_epic_right">
+        <ul>
+          <li><img src="../../../assets/images/lock.svg" alt="" /></li>
+          <li><img src="../../../assets/images/view.svg" alt="" /><span>1</span></li>
+          <li><img src="../../../assets/images/share1.svg" alt="" /></li>
+          <li><img src="../../../assets/images/datedicon.svg" alt="" /></li>
+          <li>
+            <div class="closebar">
+              <button type="button" [mat-dialog-close]>
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="custom_scroll_bar">
+          <ng-scrollbar>
+            <div class="left_modal_cont_box">
+              <h2>Dev Pro 01 - Lorem ipsum dolor sit amet</h2>
+              <h3>Donec porttitor iaculis risus at egestas.</h3>
+              <ul>
+                <li>
+                  <button><img src="../../../assets/images/attached.svg" alt="" /> Attach</button>
+                </li>
+                <li>
+                  <button (click)="addChildtask()"><img src="../../../assets/images/add_group.svg" alt="" /> Add a child Task</button>
+                </li>
+                <li>
+                  <button><img src="../../../assets/images/datedicon.svg" alt="" /></button>
+                </li>
+              </ul>
+              <div class="description_box">
+                <h2>Description</h2>
+                <p>Add a description...</p>
+              </div>
+              <div class="url_box">
+                <label>url</label>
+                <input type="text" placeholder="None" />
+              </div>
+              <div class="activity_part">
+                <h2>Activity</h2>
+                <div class="show_part">
+                  <div class="show_part_left">
+                    <ul>
+                      <li>Show:</li>
+                      <li><button>All</button></li>
+                      <li><button>Comments</button></li>
+                      <li><button>History</button></li>
+                    </ul>
+                  </div>
+                  <div class="show_part_right">
+                    <ul>
+                      <li><button><img src="../../../assets/images/nearest_icon.svg" alt="" /> Newest first</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comment_part_box_sec">
+                  <div class="comment_part_sec">
+                    <div class="comment_left_part">
+                      <img src="../../../assets/images/user.svg" alt="" />
+                    </div>
+                    <div class="comment_right_part">
+                      <input type="text" placeholder="None" />
+                      <p><strong>Pro tip:</strong> press <strong>M</strong> to comment</p>
+                    </div>
+                  </div>
+                  <div class="comment_part_sec">
+                    <div class="comment_left_part">
+                      <img src="../../../assets/images/user.svg" alt="" />
+                    </div>
+                    <div class="comment_right_part">
+                      <h2>Karen William <span>last week</span></h2>
+                      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <ul>
+                        <li>Edit </li>
+                        <li> . </li>
+                        <li>Delete </li>
+                        <li> . </li>
+                        <li><img src="../../../assets/images/smile_plus.svg" alt="" /></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="comment_part_sec">
+                    <div class="comment_left_part">
+                      <img src="../../../assets/images/user.svg" alt="" />
+                    </div>
+                    <div class="comment_right_part">
+                      <h2>Karen William <span>last week</span></h2>
+                      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <ul>
+                        <li>Edit </li>
+                        <li> . </li>
+                        <li>Delete </li>
+                        <li> . </li>
+                        <li><img src="../../../assets/images/smile_plus.svg" alt="" /></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </ng-scrollbar>
+        </div>
+
+
+      </div>
+      <div class="col-md-5">
+          <div class="inactive_box">
+            <select>
+              <option>Inactive</option>
+              <option>Active</option>
+            </select>
+          </div>
+          <div class="details_accordian">
+            <mat-accordion>
+              
+              <mat-expansion-panel (opened)="panelOpenState = true"
+                                   (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Details
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="details_cont">
+                  <ul>
+                    <li>
+                      <div class="cont_left">
+                        <p>Assignee</p>
+                      </div>
+                      <div class="cont_right">
+                        <div class="cont_right_box">
+                          <div class="user_list">
+                            <img src="../../../assets/images/details_user.svg" alt="" />
+                            <span>Karen William</span>
+                          </div>
+                          <div class="user_list">
+                            <img src="../../../assets/images/details_user1.svg" alt="" />
+                            <span>Angela Smith</span>
+                          </div>
+                        </div>
+                        <div class="cont_right_box">
+                          <div class="user_list">
+                            <img src="../../../assets/images/details_user2.svg" alt="" />
+                            <span>Karen William</span>
+                          </div>
+                          <div class="user_list">
+                            <img src="../../../assets/images/details_user3.svg" alt="" />
+                            <span>Angela Smith</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cont_left">
+                        <p>Labels</p>
+                      </div>
+                      <div class="cont_right">
+                        <p>None</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cont_left">
+                        <p>Sprint</p>
+                      </div>
+                      <div class="cont_right">
+                        <p><a href="#">DPO Sprint1</a> </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cont_left">
+                        <p>Story point estimate</p>
+                      </div>
+                      <div class="cont_right">
+                        <p>None</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cont_left">
+                        <p>Assign Hours</p>
+                      </div>
+                      <div class="cont_right">
+                        <p>None</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cont_left">
+                        <p>Reporter</p>
+                      </div>
+                      <div class="cont_right">
+                        <div class="user_list">
+                          <img src="../../../assets/images/details_user.svg" alt="" />
+                          <span>Karen William</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          
+          <div class="created_box">
+            <div class="created_left_box">
+              <p>Created last week<br>
+                Updated 2 days ago</p>
+            </div>
+            <div class="created_right_box"><img src="../../../assets/images/setting.svg" alt="" /> Configure</div>
+          </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- <button (click)="addChildtask()" [mat-dialog-close]>Add Child Task</button> -->
+
+  </div>
+
 </ng-container>
 
 
