@@ -643,6 +643,13 @@
         display: flex;
         align-items: center;
         padding: 5px 15px;
+        &:hover{
+          background: #56A4C8;
+          color: #fff;
+          img{
+            filter: invert(1) brightness(2);
+          }
+        }
 
         img {
           margin: 0 5px 0 0;
@@ -755,7 +762,11 @@
 
     }
 
-    .show_part_right {}
+    .show_part_right {
+      img{
+        margin: 0 5px 0 0!important;
+      }
+    }
   }
 
   .comment_part_sec {
@@ -823,7 +834,22 @@
           color: #121212;
 
           img {
-            margin: -3px 0 0 0;
+            margin: 0;
+          }
+          button{
+            font-weight: 600;
+          font-size: 12px;
+          line-height: 23px;
+          color: #121212;
+          background: transparent;
+          padding: 0;
+            &:hover{
+              opacity: 0.5;
+              img{
+                opacity: 0.8;
+                filter: inherit;
+              }
+            }
           }
         }
       }
