@@ -1,5 +1,5 @@
 {
-  "name": "jira",
+  "name": "WTS",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run jira:serve-ssr",
-    "serve:ssr": "node dist/jira/server/main.js",
-    "build:ssr": "ng build && ng run jira:server",
-    "prerender": "ng run jira:prerender"
+    "dev:ssr": "ng run WTS:serve-ssr",
+    "serve:ssr": "node dist/WTS/server/main.js",
+    "build:ssr": "ng build && ng run WTS:server",
+    "prerender": "ng run WTS:prerender"
   },
   "private": true,
   "dependencies": {
