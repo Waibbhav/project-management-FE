@@ -15,7 +15,8 @@
       @include radius(10px);
       margin-top: 24px;
       font-size: 1.6rem;
-      color: $primaryColor;
+      color: #3B82F6;
+      text-transform: uppercase;
       &:hover{
         background: #f7f7f7;
       }
@@ -123,6 +124,13 @@
           }
         }
       }
+    }
+  }
+}
+.card-layout{
+  a{
+    &:hover{
+      background: #f7f7f7;
     }
   }
 }

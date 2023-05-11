@@ -54,6 +54,7 @@ body,
 }
 .card-layout {
   @include card();
+  cursor: pointer;
 }
 
 .project-items {
@@ -90,6 +91,9 @@ body,
     }
 
     .card-layout {
+      &:hover{
+        opacity: 0.8;
+      }
       .project-status {
         display: flex;
         align-items: center;
@@ -162,6 +166,7 @@ body,
           font-size: 11px;
           color: $textColor;
           margin: 0;
+          text-transform: capitalize;
         }
 
         .project-progressbar {
@@ -573,4 +578,12 @@ select{
     width: calc(100% + 10px);
     opacity: 0;
 }
+}
+
+.card-layout{
+  a{
+    &:hover{
+      background: #f7f7f7;
+    }
+  }
 }

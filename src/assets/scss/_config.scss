@@ -584,26 +584,41 @@ input[type="submit"] {
 @mixin purple_tag {
     background-color: rgba($color: $purpleColor, $alpha: 0.1);
     color: $purpleColor;
+    &:hover{
+        background: #f7f7f7;
+    }
 }
 
 @mixin yellow_tag {
     background-color: $lightYellowColor;
     color: $yellowColor;
+    &:hover{
+        background: #f7f7f7;
+    }
 }
 
 @mixin orange_tag {
     background-color: $lightOrangeColor;
     color: $orangeColor;
+    &:hover{
+        background: #f7f7f7;
+    }
 }
 
 @mixin green_tag {
     background-color: $lightGreenColor;
     color: $greenColor;
+    &:hover{
+        background: #f7f7f7;
+    }
 }
 
 @mixin blue_tag {
     background-color: rgba($color: $blueColor, $alpha: 0.1);
     color: $blueColor;
+    &:hover{
+        background: #f7f7f7;
+    }
 }
 
 .p-30 {
