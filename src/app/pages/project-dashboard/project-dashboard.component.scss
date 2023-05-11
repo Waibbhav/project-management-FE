@@ -51,8 +51,8 @@
 }
 
 .project-progress-sectiontop {
-  @media (max-width: 991px) {
-    .col-lg-6 {
+  @media (max-width: 767px) {
+    .col-md-6 {
       margin-bottom: 15px;
     }
   }
@@ -818,6 +818,7 @@
 
     .select_bar {
       display: flex;
+
       @media screen and (max-width: 767px) {
         margin: 10px 0 0 0;
       }
@@ -851,6 +852,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   @media screen and (max-width: 767px) {
     justify-content: flex-start;
     margin: 10px 0 0 0;
@@ -1372,6 +1374,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 20px 0;
+
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     margin: 10px 0;
