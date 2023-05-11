@@ -138,8 +138,10 @@
   .task-board-body-wrapper {
     display: flex;
     margin: 0 -11px;
-    @media screen and (max-width: 767px) {
+    
+    @media screen and (max-width: 991px) {
       flex-wrap: wrap;
+      margin: 0;
     }
   }
 
@@ -147,6 +149,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -11px;
+    
     @media screen and (max-width: 767px) {
       margin: 0;
     }
@@ -155,6 +158,9 @@
       flex: 0 0 auto;
       width: 20%;
       padding: 11px;
+      @media screen and (min-device-width: 768px) and (max-device-width: 991px) { 
+        width: 30%;
+      }
       @media screen and (max-width: 767px) {
         width: 100%;
       }
