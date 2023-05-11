@@ -1,10 +1,20 @@
+@import '../../../assets/scss/config';
+
 .tab-slider--body {
   padding-left: 29px;
+
+  @media (max-width: 1199px) {
+    padding-left: 0;
+  }
 }
 
 .projectsectionmid {
   .projectprogress {
     padding: 28px;
+
+    @media (max-width: 1199px) {
+      padding: 15px;
+    }
 
     .projectprogresstop {
       display: flex;
@@ -40,6 +50,14 @@
 
 }
 
+.project-progress-sectiontop {
+  @media (max-width: 991px) {
+    .col-lg-6 {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 .progress-img-one {
   padding-top: 48px;
   display: flex;
@@ -66,6 +84,10 @@
       align-items: center;
       width: 100%;
 
+      @media (max-width: 1199px) {
+        padding: 15px 10px;
+      }
+
       &:hover {
         background: #000 !important;
         color: #fff !important;
@@ -87,6 +109,10 @@
       figure {
         width: 58px;
         margin-right: 10px;
+
+        @media (max-width: 1199px) {
+          width: 40px;
+        }
       }
 
       h2 {
@@ -201,6 +227,14 @@
       td {
         padding: 18px 28px;
 
+        @media (max-width: 1199px) {
+          padding: 15px;
+
+          &:last-child {
+            min-width: 40px;
+          }
+        }
+
         .leave-profile {
           display: flex;
           align-items: center;
@@ -231,6 +265,10 @@
 
 .project-right-details {
   padding: 25px 30px;
+
+  @media (max-width: 1199px) {
+    padding: 15px;
+  }
 
   &.top-space {
     margin-top: 20px;
@@ -960,15 +998,17 @@
 .sharedoc {
   background: #FFFFFF;
   border-radius: 6px;
- height: 500px;
- overflow-y: auto;
+  height: 500px;
+  overflow-y: auto;
   margin: 0 0 30px 0;
+
   & .leave-listing-table {
     height: 400px;
     overflow: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 11px rgba(0, 186, 255, 0.05);
   }
+
   .sharedoc_file_headerbar {
     padding: 20px 20px 0 20px;
     display: flex;
@@ -1330,9 +1370,9 @@
     margin: 0;
     line-height: 1.5;
     font-weight: 400;
-font-size: 12px;
-text-transform: capitalize;
-color: #5B6D74;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #5B6D74;
 
   }
 
@@ -1346,8 +1386,29 @@ color: #5B6D74;
 
     color: #000000;
   }
+
+  .right-section {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $textColor
+    }
+
+    button {
+      background-color: transparent;
+      margin-left: 10px;
+    }
+  }
 }
-.edit_icon{
+
+.edit_icon {
   width: 15px;
   height: 15px;
 }
