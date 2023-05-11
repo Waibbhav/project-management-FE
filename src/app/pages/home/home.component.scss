@@ -25,6 +25,9 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+      }
 
       h3 {
         text-transform: capitalize;
@@ -41,6 +44,12 @@
 
   .leave-listing-wrapper {
     .leave-listing {
+      h3{
+        @media screen and (max-width: 991px) {
+          margin: 20px 0 10px 0;
+        }
+        
+      }
       .leave-listing-table {
         height: 200px;
         overflow: auto;
