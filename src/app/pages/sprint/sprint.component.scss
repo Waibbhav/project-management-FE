@@ -48,6 +48,7 @@
   padding-bottom: 24px;
   @media screen and (max-width: 767px) {
     margin: 10px 0 0 0;
+    padding-bottom: 0;
   }
 
   .leftsection {
@@ -112,11 +113,15 @@
   .search_bar_box_sec {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .search_bar_box {
       position: relative;
       max-width: 186px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
 
       button {
         position: absolute;
@@ -157,7 +162,7 @@
       max-width: 150px;
       width: 100%;
       @media screen and (max-width: 767px) {
-        margin: 20px 0;
+        margin: 10px 5px;
       }
 
       ul {
@@ -185,7 +190,7 @@
     .select_bar {
       display: flex;
       @media screen and (max-width: 767px) {
-        margin: 10px 0 0 0;
+        margin: 0;
       }
 
       select {
@@ -217,6 +222,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin: 10px 0 0 0;
+  }
 
   p {
     margin: 0 10px 0 0;
@@ -596,6 +605,26 @@
     justify-content: center;
     &:hover{
       background-color: #00baff;
+    }
+  }
+}
+
+.table-responsive{
+  @media screen and (max-width: 767px) {
+    width: 600px;
+    overflow-x: auto;
+  }
+  table{
+    @media screen and (max-width: 767px) {
+      width: 1000px;
+      overflow-x: auto;
+    }
+  }
+}
+::ng-deep{
+  .ng-scroll-content{
+    @media screen and (max-width: 767px) {
+      display: block;
     }
   }
 }

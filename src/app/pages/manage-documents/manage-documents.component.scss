@@ -989,6 +989,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .sharedoc_file_headerbar_left {
       h2 {
@@ -1177,6 +1178,10 @@
     table {
       border-spacing: 0;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        width: 1000px;
+        overflow-x: auto;
+      }
 
       thead {
         padding: 0 10px;
@@ -1370,4 +1375,25 @@
 .edit_icon {
   width: 15px;
   height: 15px;
+}
+
+
+.table-responsive{
+  @media screen and (max-width: 767px) {
+    width: 300px;
+    overflow-x: auto;
+  }
+  table{
+    @media screen and (max-width: 767px) {
+      width: 1000px;
+      overflow-x: auto;
+    }
+  }
+}
+::ng-deep{
+  .ng-scroll-content{
+    @media screen and (max-width: 767px) {
+      display: block!important;
+    }
+  }
 }

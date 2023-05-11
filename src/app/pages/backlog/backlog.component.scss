@@ -121,6 +121,9 @@
       position: relative;
       max-width: 186px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
 
       button {
         position: absolute;
@@ -224,6 +227,7 @@
   @media screen and (max-width: 767px) {
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 10px 0 0 0;
   }
 
   p {
@@ -337,6 +341,9 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin: 5px 0;
+  }
   span {
     background: #d4d8dd;
     border-radius: 16px;
@@ -417,10 +424,9 @@
       font-size: 12px;
       line-height: 1;
       margin-left: 5px;
-
       text-transform: capitalize;
-
       color: #5b6d74;
+      flex-wrap: wrap;
 
       p {
         margin-bottom: 0;
@@ -428,9 +434,7 @@
         font-size: 12px;
         line-height: 1;
         margin-left: 10px;
-
         text-transform: capitalize;
-
         color: #5b6d74;
         span {
           font-weight: 500;
@@ -491,12 +495,15 @@
 }
 .backlog-list {
   margin: 0;
+ 
   li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // flex-wrap: wrap;
     padding: 7px 13px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
     &:nth-child(odd) {
       background-color: #ffffff;
     }
@@ -513,6 +520,9 @@
 .backlog-rgt {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    margin: 10px 0;
+  }
   .back-slect {
     font-weight: 700;
     font-size: 10px;
