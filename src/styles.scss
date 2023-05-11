@@ -166,6 +166,9 @@ body,
 
         .project-progressbar {
           margin-bottom: 8px;
+          svg{
+            opacity: 0;
+          }
 
           .mat-progress-bar-buffer {
             background: #E6EEFF;
@@ -560,4 +563,14 @@ select{
   &:focus-visible{
     outline: none;
   }
+}
+
+::ng-deep{
+  .mat-progress-bar{
+    background: #E6EEFF;
+  }
+  .mat-progress-bar .mat-progress-bar-background {
+    width: calc(100% + 10px);
+    opacity: 0;
+}
 }
