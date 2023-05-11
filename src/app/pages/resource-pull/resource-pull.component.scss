@@ -54,6 +54,9 @@
       display: flex;
       flex-wrap: wrap;
       margin: 0 -11px;
+      @media screen and (max-width: 991px) {
+        margin: 0;
+      }
 
       .resource-item {
         padding: 11px;
