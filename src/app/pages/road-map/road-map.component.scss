@@ -878,11 +878,11 @@
   position: relative;
   max-height: 487px;
   min-height: 487px;
-  width: 1000px;
-  overflow-x: auto;
+  // width: 1000px;
+  // overflow-x: auto;
   @media screen and (max-width: 767px) {
-    max-height: inherit;
-    min-height: auto;
+    // max-height: inherit;
+    // min-height: auto;
   }
 
   .month_list {
@@ -950,6 +950,9 @@
         width: 100%;
         text-align: center;
         margin: 0;
+        @media screen and (max-width: 767px) {
+          font-size: 10px;
+        }
       }
 
       span {
@@ -971,6 +974,10 @@
   right: 0;
   top: 69px;
   width: 585px;
+  @media screen and (max-width: 991px) {
+    width: 60%;
+    top: 65px;
+  }
   img{
     width: 100%;
     height: 418px;
@@ -1379,6 +1386,9 @@
     p {
       border: 0 !important;
       padding: 10px !important;
+      @media screen and (max-width: 767px) {
+        padding: 6.2px 10px !important;
+      }
     }
 
     .number_list {
