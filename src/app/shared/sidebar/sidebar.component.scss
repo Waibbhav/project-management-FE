@@ -2,6 +2,9 @@
     border: 2px solid #EDEFF2;
     border-radius: 20px;
     padding: 15px;
+    @media screen and (max-width: 767px) {
+        margin: 10px 0;
+    }
 
     li {
         background: #FFFFFF;

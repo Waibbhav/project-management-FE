@@ -1,5 +1,8 @@
 .tab-slider--body {
   padding-left: 29px;
+  @media screen and (max-width: 767px) {
+    margin: 10px 0;
+  }
 }
 
 .projectsectionmid {
@@ -532,6 +535,7 @@
   justify-content: space-between;
 
   .leftsectionone {
+    
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -708,6 +712,7 @@
   .search_bar_box_sec {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .search_bar_box {
       position: relative;
@@ -780,6 +785,9 @@
 
     .select_bar {
       display: flex;
+      @media screen and (max-width: 767px) {
+        margin: 10px 0 0 0;
+      }
 
       select {
         height: 36px;
@@ -809,6 +817,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin: 10px 0 0 0;
+  }
+  
 
   p {
     margin: 0 10px 0 0;
@@ -1037,6 +1050,9 @@
     border-radius: 8px;
     text-align: center;
     padding: 30px;
+    @media screen and (max-width: 767px) {
+      margin: 10px 0 ;
+    }
 
     img {}
 
@@ -1342,11 +1358,12 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-
-
     text-transform: capitalize;
-
     color: #000000;
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
   }
 }
 
