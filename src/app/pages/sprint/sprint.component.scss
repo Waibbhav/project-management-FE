@@ -46,6 +46,9 @@
   width: 100%;
   align-items: center;
   padding-bottom: 24px;
+  @media screen and (max-width: 767px) {
+    margin: 10px 0 0 0;
+  }
 
   .leftsection {
     h2 {
@@ -153,6 +156,9 @@
       margin: 0 0 0 20px;
       max-width: 150px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        margin: 20px 0;
+      }
 
       ul {
         display: flex;
@@ -556,11 +562,27 @@
 .sprint-btm {
   margin-top: 30px;
   margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  .row{
+    position: relative;
+  }
 }
 .cus-col {
   width: 30%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .plus {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  @media screen and (max-width: 767px) {
+    right: 10px;
+    top: -40px;
+  }
   button {
     background: #ffffff;
     border-radius: 6px;

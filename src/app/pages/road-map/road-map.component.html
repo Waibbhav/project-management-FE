@@ -1,11 +1,11 @@
 <div class="container comon-gap">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3 col-xs-12">
       <!--  -->
       <app-sidebar></app-sidebar>
       <!--  -->
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9 col-xs-12">
       <div class="projectsectiontop">
         <div class="leftsection">
           <h3>Projects / Dev pro 01</h3>
@@ -20,7 +20,7 @@
       </div>
       <div class="search_bar_box_bar">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8 col-xs-12">
             <div class="search_bar_box_sec">
               <div class="search_bar_box">
                 <button>
@@ -46,115 +46,128 @@
                   <option>Epic</option>
                   <option>Epic</option>
                 </select>
-                
+
               </div>
 
             </div>
 
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 col-xs-12">
             <div class="right_select_bar">
               <button><img src="../../../assets/images/view_setting.svg" alt="" /> View settings</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="project_topic_bar_sec">
-        <ul class="month_list">
-          <li>
-            <p>Month and Year</p>
-            <span>Sprints</span>
-            <div class="accordian_box_sec">
-              <mat-accordion>
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-description>
-                      <div class="accordian_box">
-                        <img src="../../../assets/images/round_bag.svg" alt="" />
-                        <p>Develop Chat Application</p>
-                      </div>
-                      
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <div class="accordian_details_cont">
-                    <ul class="number_list">
-                      <li>
-                        <span class="yellow">1</span><p>Proin at pulvinar risus</p>
-                      </li>
-                      <li>
-                        <span class="green">2</span><p>Class aptent taciti sociosqu</p>
-                      </li>
-                      <li>
-                        <span class="purple">3</span><p>Proin at pulvinar risus</p>
-                      </li>
-                      <li>
-                        <span class="sky">4</span><p>Class aptent taciti sociosqu</p>
-                      </li>
-                      <li>
-                        <span class="red">5</span><p>Nunc viverra semper auctor</p>
-                      </li>
-                      <li>
-                        <span class="blue">6</span><p>Nunc viverra semper auctor</p>
-                      </li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false" [expanded]="true">
-                  <mat-expansion-panel-header>
-                    <mat-panel-description>
-                      <div class="accordian_box">
-                        <img src="../../../assets/images/round_bag.svg" alt="" />
-                        <p>City Advertising Campaign</p>
-                      </div>
-                      
-                    </mat-panel-description>
-                  </mat-expansion-panel-header >
-                  <div class="accordian_details_cont">
-                    <ul class="number_list">
-                      <li>
-                        <span class="yellow">1</span><p>Proin at pulvinar risus</p>
-                      </li>
-                      <li>
-                        <span class="green">2</span><p>Class aptent taciti sociosqu</p>
-                      </li>
-                      <li>
-                        <span class="purple">3</span><p>Proin at pulvinar risus</p>
-                      </li>
-                      <li>
-                        <span class="sky">4</span><p>Class aptent taciti sociosqu</p>
-                      </li>
-                      <li>
-                        <span class="red">5</span><p>Nunc viverra semper auctor</p>
-                      </li>
-                      <li>
-                        <span class="blue">6</span><p>Nunc viverra semper auctor</p>
-                      </li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-              </mat-accordion>
-            </div>
-            <div class="create_btn_box">
-              <button><img src="../../../assets/images/round_plus.svg" alt="" /> Create Epic</button>
-            </div>
-          </li>
-          <li>
-            <p>March</p>
-            <span></span>
-          </li>
-          <li>
-            <p>April</p>
-            <span></span>
-          </li>
-          <li>
-            <p>MAY</p>
-            <span></span>
-          </li>
-        </ul>
-        <div class="right_table">
-          <img src="../../../assets/images/Table.png" alt="" />
+      <div class="project_scroll_box">
+        <div class="project_topic_bar_sec">
+          <ul class="month_list">
+            <li>
+              <p>Month and Year</p>
+              <span>Sprints</span>
+              <div class="accordian_box_sec">
+                <mat-accordion>
+                  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-description>
+                        <div class="accordian_box">
+                          <img src="../../../assets/images/round_bag.svg" alt="" />
+                          <p>Develop Chat Application</p>
+                        </div>
+
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="accordian_details_cont">
+                      <ul class="number_list">
+                        <li>
+                          <span class="yellow">1</span>
+                          <p>Proin at pulvinar risus</p>
+                        </li>
+                        <li>
+                          <span class="green">2</span>
+                          <p>Class aptent taciti sociosqu</p>
+                        </li>
+                        <li>
+                          <span class="purple">3</span>
+                          <p>Proin at pulvinar risus</p>
+                        </li>
+                        <li>
+                          <span class="sky">4</span>
+                          <p>Class aptent taciti sociosqu</p>
+                        </li>
+                        <li>
+                          <span class="red">5</span>
+                          <p>Nunc viverra semper auctor</p>
+                        </li>
+                        <li>
+                          <span class="blue">6</span>
+                          <p>Nunc viverra semper auctor</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </mat-expansion-panel>
+                  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                      <mat-panel-description>
+                        <div class="accordian_box">
+                          <img src="../../../assets/images/round_bag.svg" alt="" />
+                          <p>City Advertising Campaign</p>
+                        </div>
+
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="accordian_details_cont">
+                      <ul class="number_list">
+                        <li>
+                          <span class="yellow">1</span>
+                          <p>Proin at pulvinar risus</p>
+                        </li>
+                        <li>
+                          <span class="green">2</span>
+                          <p>Class aptent taciti sociosqu</p>
+                        </li>
+                        <li>
+                          <span class="purple">3</span>
+                          <p>Proin at pulvinar risus</p>
+                        </li>
+                        <li>
+                          <span class="sky">4</span>
+                          <p>Class aptent taciti sociosqu</p>
+                        </li>
+                        <li>
+                          <span class="red">5</span>
+                          <p>Nunc viverra semper auctor</p>
+                        </li>
+                        <li>
+                          <span class="blue">6</span>
+                          <p>Nunc viverra semper auctor</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </mat-expansion-panel>
+                </mat-accordion>
+              </div>
+              <div class="create_btn_box">
+                <button><img src="../../../assets/images/round_plus.svg" alt="" /> Create Epic</button>
+              </div>
+            </li>
+            <li>
+              <p>March</p>
+              <span></span>
+            </li>
+            <li>
+              <p>April</p>
+              <span></span>
+            </li>
+            <li>
+              <p>MAY</p>
+              <span></span>
+            </li>
+          </ul>
+          <div class="right_table">
+            <img src="../../../assets/images/Table.png" alt="" />
+          </div>
         </div>
       </div>
     </div>

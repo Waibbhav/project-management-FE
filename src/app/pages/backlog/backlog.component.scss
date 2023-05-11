@@ -46,6 +46,9 @@
   width: 100%;
   align-items: center;
   padding-bottom: 24px;
+  @media screen and (max-width: 767px) {
+    margin: 20px 0 0 0 ;
+  }
 
   .leftsection {
     h2 {
@@ -64,6 +67,12 @@
   }
 
   .right-section {
+    button{
+      background: transparent;
+      &:hover{
+        background: transparent;
+      }
+    }
     span {
       font-size: 14px;
       line-height: 21px;
@@ -106,6 +115,7 @@
   .search_bar_box_sec {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .search_bar_box {
       position: relative;
@@ -150,6 +160,9 @@
       margin: 0 0 0 20px;
       max-width: 150px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        margin: 20px 0;
+      }
 
       ul {
         display: flex;
@@ -205,6 +218,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 
   p {
     margin: 0 10px 0 0;
@@ -475,7 +492,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 7px 13px;
     &:nth-child(odd) {
       background-color: #ffffff;
@@ -539,6 +556,12 @@
   padding: 17px 14px;
   background: white;
   margin-top: 20px;
+  ::ng-deep{
+    .mat-accordion{
+      margin: 10px 0;
+    }
+  }
+  
 }
 .hrs {
   background: #00b661;
@@ -585,3 +608,4 @@
     display: inline-block;
   }
 }
+

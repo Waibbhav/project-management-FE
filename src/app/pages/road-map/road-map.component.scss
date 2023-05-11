@@ -708,11 +708,15 @@
   .search_bar_box_sec {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .search_bar_box {
       position: relative;
       max-width: 186px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        margin: 0 0 10px 0;
+      }
 
       button {
         position: absolute;
@@ -752,6 +756,9 @@
       margin: 0 0 0 20px;
       max-width: 120px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        margin: 10px 5px;
+      }
 
       ul {
         display: flex;
@@ -811,6 +818,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin: 10px 0 0 0;
+  }
 
   p {
     margin: 0 10px 0 0;
@@ -856,7 +867,9 @@
     }
   }
 }
-
+.project_scroll_box{
+  overflow: hidden;
+}
 .project_topic_bar_sec {
   background: #FFFFFF;
   border-radius: 6px;
@@ -865,6 +878,12 @@
   position: relative;
   max-height: 487px;
   min-height: 487px;
+  width: 1000px;
+  overflow-x: auto;
+  @media screen and (max-width: 767px) {
+    max-height: inherit;
+    min-height: auto;
+  }
 
   .month_list {
     display: flex;
@@ -1257,6 +1276,11 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 20px 0;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    margin: 20px 0;
+  }
 
   h3 {
     margin: 0;
@@ -1287,6 +1311,7 @@
 
 .right-section {
   display: flex;
+  flex-wrap: wrap;
 
   .feed_btn {
     background: transparent;
@@ -1358,6 +1383,9 @@
 
     .number_list {
       padding: 0 0 0 35px;
+      @media screen and (max-width: 767px) {
+        padding: 0;
+      }
 
       li {
         display: flex;
