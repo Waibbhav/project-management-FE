@@ -223,6 +223,7 @@
         width: 100%;
         cursor: pointer;
         padding: 12px;
+        align-items: center;
 
         .leftsectionmain {
           display: flex;
@@ -241,7 +242,7 @@
           figure {
             width: 26px;
             height: 26px;
-            background: #2C81E7;
+            background: #c4dcf2;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -281,7 +282,7 @@
       }
 
       .projectblockconatin {
-        padding: 15px 45px;
+        padding: 5px 45px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -331,8 +332,8 @@
           }
 
           button {
-            background: rgb(78 149 182 / 30%);
-            opacity: 0.3;
+            background: #dfedf2;
+            // opacity: 0.3;
             border-radius: 2px;
             padding: 5px 10px;
             font-weight: 700;
