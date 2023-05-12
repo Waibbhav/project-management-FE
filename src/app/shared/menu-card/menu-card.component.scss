@@ -23,7 +23,7 @@
             &>* {
                 @include radius(10px);
                 display: flex;
-                flex-wrap: wrap;
+                // flex-wrap: wrap;
                 align-items: center;
                 min-height: 110px;
                 @media screen and (max-width: 767px) {
