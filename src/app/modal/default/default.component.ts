@@ -10,6 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class DefaultComponent implements OnInit {
 
   panelOpenState = false;
+  selectDrop = true
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -34,6 +35,10 @@ export class DefaultComponent implements OnInit {
     })
     .afterClosed()
     .subscribe((result) => {});
+  }
+
+  selectProjectCatagory(){
+    this.selectDrop=!this.selectDrop
   }
 
 }
