@@ -339,6 +339,12 @@
 }
 .tme-table {
   margin-top: 20px;
+  .mat_table{
+    .mat-table-responsive{
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
 }
 .mat-table-responsive {
   height: 380px;
@@ -351,3 +357,6 @@
     min-width: 177px;
   }
 }
+
+
+
