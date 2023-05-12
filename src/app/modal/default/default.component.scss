@@ -79,7 +79,7 @@
 
     label {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 30px;
       text-transform: capitalize;
       color: #0D062D;
       font-weight: 500;
@@ -126,6 +126,7 @@
       margin-top: 2px;
       width: 100%;
       background-size: 10px;
+      height: 60px;
 
       &::placeholder {
         font-weight: 500;
@@ -344,8 +345,8 @@
 }
 
 .inactiveone {
-  background: rgba(86, 164, 200, 0.454);
-  opacity: 0.3;
+  background: #e4f0f5;
+  // opacity: 0.3;
   border-radius: 8px;
   font-weight: 500;
   font-size: 16px;
@@ -355,6 +356,11 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #5B6D74;
 }
 
 .closebar {
@@ -988,9 +994,11 @@
     }
   }
 }
-.select_box_sec{
+
+.select_box_sec {
   position: relative;
 }
+
 .select_drop_down {
   background: #FFFFFF;
   border: 0.910839px solid rgba(120, 116, 134, 0.35);
@@ -1004,6 +1012,7 @@
 
   ul {
     margin: 0;
+
     li {
       font-weight: 500;
       font-size: 14px;
@@ -1022,10 +1031,11 @@
 }
 
 
-.custom_checkbox1{
+.custom_checkbox1 {
   position: relative;
   padding: 0 10px 0 0;
 }
+
 .custom_checkbox1 input {
   position: absolute;
   opacity: 0;
@@ -1050,14 +1060,14 @@
 }
 
 /* On mouse-over, add a grey background color */
-.custom_checkbox1:hover input ~ .checkmark {
+.custom_checkbox1:hover input~.checkmark {
   background-color: transparent;
   border: 1px solid #CCCCCC;
   border-radius: 2px;
 }
 
 /* When the checkbox is checked, add a blue background */
-.custom_checkbox1 input:checked ~ .checkmark {
+.custom_checkbox1 input:checked~.checkmark {
   background-color: transparent;
   border: 1px solid #66BB00;
   border-radius: 2px;
@@ -1071,7 +1081,7 @@
 }
 
 /* Show the checkmark when checked */
-.custom_checkbox1 input:checked ~ .checkmark:after {
+.custom_checkbox1 input:checked~.checkmark:after {
   display: block;
 }
 
