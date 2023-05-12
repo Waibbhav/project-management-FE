@@ -2,12 +2,36 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 logo-with-search">
-        <a routerLink="/home" class="logo"
-          ><img src="./assets/images/logo.svg" alt=""
-        /></a>
-        <form class="search-task">
-          <input type="search" placeholder="Search Tasks" />
-        </form>
+        <a routerLink="/home" class="logo"><img src="./assets/images/logo.svg" alt="" /></a>
+
+        <div class="mobile_bar">
+          <ul>
+            <li>
+              <form class="search-task">
+                <input type="search" placeholder="Search Tasks" />
+              </form>
+            </li>
+            <li>
+              <a href="#" class="header-notification">
+                <i class="fa-solid fa-bell"></i>
+                <span class="notification-count">1</span>
+              </a>
+            </li>
+            <li>
+              <div class="abtar-account-holder">
+                <button type="button" class="header-user">
+                  <img src="./assets/images/avater.png" alt="" />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="desktop_view">
+          <form class="search-task">
+            <input type="search" placeholder="Search Tasks" />
+          </form>
+        </div>
       </div>
       <div class="col-12 col-md-6 my-account-header">
         <button type="button" class="text-uppercase btn-link" routerLink="/home">
@@ -17,7 +41,7 @@
           <i class="fa-solid fa-bell"></i>
           <span class="notification-count">1</span>
         </a>
-         <!-- <button type="button" class="header-user" routerLink="/login">
+        <!-- <button type="button" class="header-user" routerLink="/login">
            Logout
           </button> -->
         <div class="abtar-account-holder">

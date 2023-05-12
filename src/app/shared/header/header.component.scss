@@ -55,65 +55,97 @@
             @media screen and (max-width: 767px) {
                 justify-content: center;
                 margin: 0 0 5px 0; 
+                display: none;
             }
 
             .btn-link {
                 margin-right: 22px;
             }
 
-            .header-notification {
-                width: 40px;
-                height: 40px;
-                @include radius(50%);
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.6rem;
-                position: relative;
-                @include purple_tag();
+            
+        }
+    }
+}
 
-                .notification-count {
-                    width: 15px;
-                    height: 15px;
-                    @include radius(50%);
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: $whiteColor;
-                    font-size: 8px;
-                    background-color: $purpleColor;
-                    font-weight: 700;
-                    position: absolute;
-                    top: -2px;
-                    right: -2px;
-                }
-            }
+.header-notification {
+    width: 40px;
+    height: 40px;
+    @include radius(50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    position: relative;
+    @include purple_tag();
 
-            .abtar-account-holder {
-                margin-left: 21px;
-                width: 40px;
-                height: 40px;
-                display: inline-flex;
-                @include radius(50%);
-                align-items: center;
-                justify-content: center;
-                background: url('../../../assets/images/progress.svg') no-repeat center;
-                background-size: 100% 100%;
+    .notification-count {
+        width: 15px;
+        height: 15px;
+        @include radius(50%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $whiteColor;
+        font-size: 8px;
+        background-color: $purpleColor;
+        font-weight: 700;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+    }
+}
 
-                .header-user {
-                    border-radius: 50%;
-                    width: 34px;
-                    height: 34px;
-                    padding: 0;
-                }
+.abtar-account-holder {
+    margin-left: 21px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    @include radius(50%);
+    align-items: center;
+    justify-content: center;
+    background: url('../../../assets/images/progress.svg') no-repeat center;
+    background-size: 100% 100%;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                    @include radius(50%);
+    .header-user {
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        @include radius(50%);
+    }
+}
+
+
+
+.desktop_view{
+    display: block;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.mobile_bar{
+    display: none;
+    ul{
+        display: flex;
+        li{
+            .search-task{
+                width: 50px;
+                input{
+                    border: 0!important;
+                    box-shadow: none!important;
+                    max-width: 10%!important;
+                    padding: 0 20px;
                 }
             }
         }
+    }
+    @media screen and (max-width: 767px) {
+        display: block;
     }
 }
