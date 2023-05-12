@@ -96,6 +96,7 @@
   text-transform: capitalize;
   color: #5B6D74;
   text-align: left;
+  
 
   a {
     color: #00BAFF;
@@ -121,6 +122,9 @@
     height: 100%;
     padding: 150px 0;
     text-align: left;
+    @media (max-width: 767px) {
+      padding: 10px 0;
+    }
 
   h2 {
     font-weight: 600;
@@ -130,7 +134,7 @@
     color: #092C38;
     margin: 0 0 10px 0;
     @media screen and (max-width: 767px) {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
 

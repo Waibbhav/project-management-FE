@@ -571,6 +571,9 @@ select {
     position: relative;
     z-index: 1;
     padding: 25px 40px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
   }
 
   .submit-inn {
@@ -684,6 +687,9 @@ select {
       font-weight: 600;
       color: $titleColor;
       margin-bottom: 5px;
+      @media (max-width: 767px) {
+        font-size: 25px;
+      }
     }
 
     p {
