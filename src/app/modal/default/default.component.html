@@ -86,14 +86,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <label>Project Category<span>*</span></label>
-                <div class="select_box_sec">
-                  <select class="select_box">
-                    <!-- <option>Select</option>
+                <div class="select_box_sec" >
+                  <!-- <select class="select_box" >
+                    <option>Select</option>
                     <option>Fixed Cost</option>
                     <option>Flexi</option>
-                    <option>Dedicated</option> -->
-                  </select>
-                  <div class="select_drop_down">
+                    <option>Dedicated</option>
+                  </select> -->
+                  <input type="text" class="select_box_sec" (click)="selectProjectCatagory()">
+                  <div class="select_drop_down" *ngIf="selectDrop">
                     <ul>
                       <li>Select</li>
                       <li>Fixed Cost</li>
