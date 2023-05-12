@@ -1047,6 +1047,9 @@
   top: 60px;
   width: 100%;
   left: 0;
+  @media screen and (max-width: 767px) {
+    top: 50px;
+  }
 
   ul {
     margin: 0;
