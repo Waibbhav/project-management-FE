@@ -7,6 +7,7 @@ import { DefaultComponent } from '@project/modal';
   styleUrls: ['./timesheet.component.scss']
 })
 export class TimesheetComponent implements OnInit {
+  selectDrop = false
 
   constructor(private dialog: MatDialog) { }
 
@@ -37,5 +38,9 @@ export class TimesheetComponent implements OnInit {
       })
       .afterClosed()
       .subscribe((result) => {});
+  }
+
+  selectProjectCatagory(){
+    this.selectDrop=!this.selectDrop
   }
 }

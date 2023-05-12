@@ -231,8 +231,8 @@
                         <option>name1</option>
                         <option>name2</option>
                       </select> -->
-                      <input type="text"/>
-                      <div class="select_drop_down">
+                      <input type="text"  (click)="selectProjectCatagory()">
+                      <div class="select_drop_down" *ngIf="selectDrop">
                         <ul>
                           <li>Select</li>
                           <li>Fixed Cost</li>

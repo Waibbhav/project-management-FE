@@ -10,7 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class DefaultComponent implements OnInit {
 
   panelOpenState = false;
-  selectDrop = true
+  selectDrop = false
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -22,6 +22,8 @@ export class DefaultComponent implements OnInit {
   }
 
   ngOnInit(): void {
+   
+    
   }
 
   addChildtask(){
