@@ -83,6 +83,9 @@
               color: #606C80;
               font-weight: 500;
               font-size: 12px;
+              &:hover{
+                background: #FAFBFC;
+              }
 
               img {
                 margin-right: 8px;
@@ -249,4 +252,7 @@
       }
     }
   }
+}
+.active_box{
+  background: #FAFBFC;
 }
