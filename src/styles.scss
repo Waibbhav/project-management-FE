@@ -214,6 +214,11 @@ input[type=number] {
   background-size: .9em;
   background-position: calc(100% - 1.5em) center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    padding: 8px 15px;
+    min-height: 22px;
+    line-height: 30px;
+  }
   }
 }
 select {
@@ -774,6 +779,17 @@ select {
   a {
     &:hover {
       background: #f7f7f7;
+    }
+  }
+}
+
+.title-holder{
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+  h3{
+    @media (max-width: 767px) {
+      margin-bottom: 10px!important;
     }
   }
 }

@@ -31,6 +31,7 @@
   @media screen and (max-width: 991px) {
     width: 100%;
     max-width: 100%;
+    padding: 15px;
   }
 
   h2 {
@@ -42,7 +43,7 @@
     margin-bottom: 25px;
 
     @media screen and (max-width: 991px) {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 
@@ -60,6 +61,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: 991px) {
+        top: 0px;
+      }
 
       &:hover {
         background: #00BAFF;
@@ -76,6 +80,9 @@
 
   .addresourcecontain {
     margin-bottom: 15px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
 
     label {
       font-size: 16px;
@@ -100,6 +107,11 @@
       text-transform: capitalize;
       color: #787486;
       margin-top: 2px;
+      @media screen and (max-width: 767px) {
+        padding: 8px 15px;
+        height: 50px;
+        margin-bottom: 15px;
+      }
 
       &::placeholder {
         font-weight: 500;
@@ -162,6 +174,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: 767px) {
+        height: 40px;
+      }
 
       &:hover {
         background: #383F49;
@@ -386,12 +401,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   h2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 54px;
     color: #000000;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 1.5;
+      margin: 0;
+    }
   }
 
   h3 {
@@ -408,6 +429,9 @@
   scrollbar-width: none;
   overflow-y: scroll;
   height: 400px;
+  @media screen and (max-width: 767px) {
+    height: 200px;
+  }
 }
 
 .scroll_box::-webkit-scrollbar {
@@ -997,6 +1021,11 @@
 
 .select_box_sec {
   position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 8px 15px;
+    min-height: 22px;
+    line-height: 30px;
+  }
 }
 
 .select_drop_down {

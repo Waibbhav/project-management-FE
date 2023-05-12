@@ -17,7 +17,8 @@
       font-size: 1.6rem;
       color: #3B82F6;
       text-transform: uppercase;
-      &:hover{
+
+      &:hover {
         background: #f7f7f7;
       }
     }
@@ -29,6 +30,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
+
       @media screen and (max-width: 767px) {
         flex-wrap: wrap;
       }
@@ -48,12 +50,13 @@
 
   .leave-listing-wrapper {
     .leave-listing {
-      h3{
+      h3 {
         @media screen and (max-width: 991px) {
           margin: 20px 0 10px 0;
         }
-        
+
       }
+
       .leave-listing-table {
         height: 200px;
         overflow: auto;
@@ -68,26 +71,26 @@
             position: relative;
 
             &::after {
-                position: absolute;
-                z-index: 9;
-                background: #08A0F7;
-                border-radius: 10px;
-                width: 2px;
-                height: 0px;
-                content: "";
-                top: 50%;
-                left: 0;
-                transform: translate(0%, -50%);
-                transition: all ease-in 0.4s;
-                visibility: hidden;
+              position: absolute;
+              z-index: 9;
+              background: #08A0F7;
+              border-radius: 10px;
+              width: 2px;
+              height: 0px;
+              content: "";
+              top: 50%;
+              left: 0;
+              transform: translate(0%, -50%);
+              transition: all ease-in 0.4s;
+              visibility: hidden;
             }
 
-            &:hover{
-                &::after{
-                    height: 73px;
-                    transition: all ease-in 0.4s;
-                    visibility: visible;
-                }
+            &:hover {
+              &::after {
+                height: 73px;
+                transition: all ease-in 0.4s;
+                visibility: visible;
+              }
             }
 
             &:nth-child(odd) {
@@ -127,10 +130,27 @@
     }
   }
 }
-.card-layout{
-  a{
-    &:hover{
+
+.card-layout {
+  a {
+    &:hover {
       background: #f7f7f7;
     }
+  }
+}
+
+.menu-holder {
+  .card-layout{
+    a {
+      @media screen and (max-width: 767px) {
+        min-height: 80px!important;
+        padding: 0 20px!important;
+      }
+    }
+  }
+}
+.project-item{
+  .card-layout{
+    cursor: pointer;
   }
 }

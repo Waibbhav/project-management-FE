@@ -16,39 +16,41 @@
       </div>
 
       <div class="modal-head-rgt">
-        <div class="addresourcecontain">
-          <label>Full Name<span>*</span></label>
-          <input type="text" class="inputname" />
-        </div>
-        <div class="addresourcecontain">
-          <label>Email Address<span>*</span></label>
-          <input type="text" class="inputname" />
-        </div>
-        <div class="addresourcecontain">
-          <div class="row">
-            <div class="col-sm-6">
-              <label>Employee Code<span>*</span></label>
-              <input type="text" class="inputname" placeholder="Type" />
-            </div>
-            <div class="col-sm-6">
-              <label>Skype ID<span>*</span></label>
-              <input type="text" class="inputname" placeholder="Type" />
-            </div>
+        <div class="scroll_box">
+          <div class="addresourcecontain">
+            <label>Full Name<span>*</span></label>
+            <input type="text" class="inputname" />
           </div>
-
-        </div>
-        <div class="addresourcecontain">
-          <div class="row">
-            <div class="col-sm-6">
-              <label>Designation<span>*</span></label>
-              <input type="text" class="inputname" placeholder="Type" />
-            </div>
-            <div class="col-sm-6">
-              <label>Phone Number<span>*</span></label>
-              <input type="text" class="inputname" placeholder="Type" />
-            </div>
+          <div class="addresourcecontain">
+            <label>Email Address<span>*</span></label>
+            <input type="text" class="inputname" />
           </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Employee Code<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Type" />
+              </div>
+              <div class="col-sm-6">
+                <label>Skype ID<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Type" />
+              </div>
+            </div>
 
+          </div>
+          <div class="addresourcecontain">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Designation<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Type" />
+              </div>
+              <div class="col-sm-6">
+                <label>Phone Number<span>*</span></label>
+                <input type="text" class="inputname" placeholder="Type" />
+              </div>
+            </div>
+
+          </div>
         </div>
         <div class="save-button">
           <button class="savebuttonone">Save</button>
@@ -86,7 +88,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <label>Project Category<span>*</span></label>
-                <div class="select_box_sec" >
+                <div class="select_box_sec">
                   <!-- <select class="select_box" >
                     <option>Select</option>
                     <option>Fixed Cost</option>
@@ -103,7 +105,7 @@
                     </ul>
                   </div>
                 </div>
-                
+
                 <!-- <input type="text" class="inputname" placeholder="Type" /> -->
               </div>
               <div class="col-sm-6">
@@ -150,7 +152,7 @@
                 <label>Project vertical<span>*</span></label>
                 <div class="custom_radio_bar">
                   <input type="radio" name="custom" value="custom" />
-                  <p>Custom</p> 
+                  <p>Custom</p>
                   <input type="radio" name="custom" value="cms" />
                   <p>CMS</p>
                 </div>
@@ -343,7 +345,8 @@
                   <button><img src="../../../assets/images/attached.svg" alt="" /> Attach</button>
                 </li>
                 <li>
-                  <button (click)="addChildtask()"><img src="../../../assets/images/add_group.svg" alt="" /> Add a child Task</button>
+                  <button (click)="addChildtask()"><img src="../../../assets/images/add_group.svg" alt="" /> Add a child
+                    Task</button>
                 </li>
                 <li>
                   <button><img src="../../../assets/images/datedicon.svg" alt="" /></button>
@@ -427,107 +430,106 @@
 
       </div>
       <div class="col-md-5">
-          <div class="inactive_box">
-            <select>
-              <option>Inactive</option>
-              <option>Active</option>
-            </select>
-          </div>
-          <div class="details_accordian">
-            <mat-accordion>
-              
-              <mat-expansion-panel (opened)="panelOpenState = true"
-                                   (closed)="panelOpenState = false" [expanded]="true">
-                <mat-expansion-panel-header >
-                  <mat-panel-title>
-                    Details
-                  </mat-panel-title>
-                </mat-expansion-panel-header >
-                <div class="details_cont">
-                  <ul>
-                    <li>
-                      <div class="cont_left">
-                        <p>Assignee</p>
-                      </div>
-                      <div class="cont_right">
-                        <div class="cont_right_box">
-                          <div class="user_list">
-                            <img src="../../../assets/images/details_user.svg" alt="" />
-                            <span>Karen William</span>
-                          </div>
-                          <div class="user_list">
-                            <img src="../../../assets/images/details_user1.svg" alt="" />
-                            <span>Angela Smith</span>
-                          </div>
-                        </div>
-                        <div class="cont_right_box">
-                          <div class="user_list">
-                            <img src="../../../assets/images/details_user2.svg" alt="" />
-                            <span>Karen William</span>
-                          </div>
-                          <div class="user_list">
-                            <img src="../../../assets/images/details_user3.svg" alt="" />
-                            <span>Angela Smith</span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="cont_left">
-                        <p>Labels</p>
-                      </div>
-                      <div class="cont_right">
-                        <p>None</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="cont_left">
-                        <p>Sprint</p>
-                      </div>
-                      <div class="cont_right">
-                        <p><a href="#">DPO Sprint1</a> </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="cont_left">
-                        <p>Story point estimate</p>
-                      </div>
-                      <div class="cont_right">
-                        <p>None</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="cont_left">
-                        <p>Assign Hours</p>
-                      </div>
-                      <div class="cont_right">
-                        <p>None</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="cont_left">
-                        <p>Reporter</p>
-                      </div>
-                      <div class="cont_right">
+        <div class="inactive_box">
+          <select>
+            <option>Inactive</option>
+            <option>Active</option>
+          </select>
+        </div>
+        <div class="details_accordian">
+          <mat-accordion>
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Details
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="details_cont">
+                <ul>
+                  <li>
+                    <div class="cont_left">
+                      <p>Assignee</p>
+                    </div>
+                    <div class="cont_right">
+                      <div class="cont_right_box">
                         <div class="user_list">
                           <img src="../../../assets/images/details_user.svg" alt="" />
                           <span>Karen William</span>
                         </div>
+                        <div class="user_list">
+                          <img src="../../../assets/images/details_user1.svg" alt="" />
+                          <span>Angela Smith</span>
+                        </div>
                       </div>
-                    </li>
-                  </ul>
-                </div>
-              </mat-expansion-panel>
-            </mat-accordion>
+                      <div class="cont_right_box">
+                        <div class="user_list">
+                          <img src="../../../assets/images/details_user2.svg" alt="" />
+                          <span>Karen William</span>
+                        </div>
+                        <div class="user_list">
+                          <img src="../../../assets/images/details_user3.svg" alt="" />
+                          <span>Angela Smith</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cont_left">
+                      <p>Labels</p>
+                    </div>
+                    <div class="cont_right">
+                      <p>None</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cont_left">
+                      <p>Sprint</p>
+                    </div>
+                    <div class="cont_right">
+                      <p><a href="#">DPO Sprint1</a> </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cont_left">
+                      <p>Story point estimate</p>
+                    </div>
+                    <div class="cont_right">
+                      <p>None</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cont_left">
+                      <p>Assign Hours</p>
+                    </div>
+                    <div class="cont_right">
+                      <p>None</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cont_left">
+                      <p>Reporter</p>
+                    </div>
+                    <div class="cont_right">
+                      <div class="user_list">
+                        <img src="../../../assets/images/details_user.svg" alt="" />
+                        <span>Karen William</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <div class="created_box">
+          <div class="created_left_box">
+            <p>Created last week<br>
+              Updated 2 days ago</p>
           </div>
-          
-          <div class="created_box">
-            <div class="created_left_box">
-              <p>Created last week<br>
-                Updated 2 days ago</p>
-            </div>
-            <div class="created_right_box"><img src="../../../assets/images/setting.svg" alt="" /> Configure</div>
-          </div>
+          <div class="created_right_box"><img src="../../../assets/images/setting.svg" alt="" /> Configure</div>
+        </div>
 
 
 
