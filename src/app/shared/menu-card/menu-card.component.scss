@@ -26,6 +26,10 @@
                 // flex-wrap: wrap;
                 align-items: center;
                 min-height: 110px;
+
+                @media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
+                    min-height: 132px;
+                }
                 @media screen and (max-width: 767px) {
                     min-height: 80px;
                     padding: 0 20px;
