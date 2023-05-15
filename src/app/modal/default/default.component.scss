@@ -181,6 +181,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: "Poppins", sans-serif !important;
 
       @media screen and (max-width: 767px) {
         height: 40px;
@@ -198,6 +199,7 @@
       text-transform: capitalize;
       color: #000;
       margin-top: 10px;
+      font-family: "Poppins", sans-serif !important;
       background: transparent;
 
       &:hover {
@@ -243,6 +245,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: "Poppins", sans-serif !important;
 
       &:hover {
         background: #00BAFF;
@@ -481,7 +484,7 @@
       font-size: 14px;
     }
 
-    
+
     input[type="radio"]:not(:checked)+label:before {
       content: '';
       position: absolute;
@@ -494,8 +497,7 @@
       background: #fff;
     }
 
-    input[type="radio"]:checked+label:before
-     {
+    input[type="radio"]:checked+label:before {
       content: '';
       position: absolute;
       left: 0;
@@ -914,7 +916,7 @@
     }
 
     .comment_right_part {
-      max-width: 576px;
+      max-width: 515px;
       width: 100%;
 
       input {
@@ -1183,8 +1185,8 @@
   position: absolute;
   top: -10px;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 14px;
+  width: 14px;
   background-color: transparent;
   border: 1px solid #CCCCCC;
   border-radius: 2px;
@@ -1218,10 +1220,10 @@
 
 /* Style the checkmark/indicator */
 .custom_checkbox1 .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 7px;
   border: solid #66BB00;
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
@@ -1229,4 +1231,22 @@
 
 .left_modal_cont_box {
   padding: 0 10px 0 0;
+}
+
+.hours_box {
+  input {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #092C38;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: #092C38;
+    }
+  }
 }
