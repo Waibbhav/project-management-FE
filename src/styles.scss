@@ -564,7 +564,7 @@ select {
     align-items: center;
     justify-content: center;
     background-color: #e6f9ff;
-    padding-top: 84px;
+    padding-top: 60px;
     overflow: hidden;
     position: relative;
 
@@ -717,6 +717,7 @@ select {
       font-weight: 600;
       color: $titleColor;
       margin-bottom: 5px;
+      line-height: 1.2;
 
       @media (max-width: 767px) {
         font-size: 25px;

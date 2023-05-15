@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AuthHeaderComponent } from './auth-header/auth-header.component';
 import { ForgotPassword2Component } from './forgot-password2/forgot-password2.component';
+import { ForgotPassword3Component } from './forgot-password3/forgot-password3.component';
+import { ForgotPassword4Component } from './forgot-password4/forgot-password4.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ForgotPassword2Component } from './forgot-password2/forgot-password2.co
     ForgotPasswordComponent,
     AuthHeaderComponent,
     ForgotPassword2Component,
+    ForgotPassword3Component,
+    ForgotPassword4Component,
   ],
   imports: [CommonModule, AuthRoutingModule],
   exports: [AuthHeaderComponent],
