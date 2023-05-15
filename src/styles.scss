@@ -616,6 +616,7 @@ select {
       padding: 0 20px;
       color: $blackColor;
       font-size: 15px;
+      text-transform: capitalize;
 
       &.error {
         border-color: $errorColor !important;
