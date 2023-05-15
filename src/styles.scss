@@ -712,6 +712,9 @@ select {
   .login-hdr {
     text-align: center;
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
 
     h2 {
       font-weight: 600;
@@ -728,10 +731,11 @@ select {
       font-size: 1.7rem;
       @include poppins();
       line-height: 1.5;
-
       text-transform: capitalize;
-
       color: $inputBorderColor1;
+      @media (max-width: 767px) {
+        font-size:12px;
+      }
     }
 
     .success-image {
