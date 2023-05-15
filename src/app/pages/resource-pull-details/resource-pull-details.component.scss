@@ -160,6 +160,9 @@
       border: 1px solid #EBEEF2;
       margin: 0px;
       border-radius: 8px;
+      .active{
+        background: #FAFBFC!important;
+      }
 
       li {
         padding: 10px;
@@ -277,6 +280,7 @@
             display: flex;
             align-items: center;
             margin-left: 15px;
+            font-family: "Poppins", sans-serif !important;
           }
         }
       }
@@ -342,6 +346,7 @@
             color: #5B6D74;
             display: inline-flex;
             align-items: center;
+            font-family: "Poppins", sans-serif !important;
 
             svg {
               margin-left: 5px;
