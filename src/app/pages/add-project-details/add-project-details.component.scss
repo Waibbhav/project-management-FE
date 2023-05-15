@@ -112,6 +112,9 @@
 
       input.mat-input-element {
         margin-top: 0px;
+        color: #0D062D;
+        font-weight: 500;
+        font-size: 14px;
       }
 
       .mat-form-field-infix {
@@ -263,6 +266,7 @@
   color: #FFFFFF;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif !important;
 
   @media (max-width:767px) {
     width: 90%;
