@@ -221,6 +221,7 @@ input[type=number] {
     background-size: .9em;
     background-position: calc(100% - 1.8em) center;
     background-repeat: no-repeat;
+    cursor: pointer;
 
     &::placeholder {
       font-weight: 500;
