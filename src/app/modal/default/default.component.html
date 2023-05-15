@@ -118,12 +118,21 @@
             <div class="row">
               <div class="col-sm-6">
                 <label>Business Type<span>*</span></label>
-                <select class="select_box">
+                <!-- <select class="select_box">
                   <option>Select</option>
                   <option>NCNB</option>
                   <option>ECEB</option>
                   <option>ECNB</option>
-                </select>
+                </select> -->
+                <input type="text" (click)="selectBusinessType()">
+                <div class="select_drop_down" *ngIf="selectBusiness">
+                  <ul>
+                    <li>Select</li>
+                    <li>NCNB</li>
+                    <li>ECEB</li>
+                    <li>ECNB</li>
+                  </ul>
+                </div>
                 <!-- <input type="text" class="inputname" placeholder="Type" /> -->
               </div>
               <div class="col-sm-6">

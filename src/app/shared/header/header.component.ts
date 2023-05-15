@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   openSearchText(){
-    this.searchText=true
+    this.searchText=!this.searchText
   }
 
 }
