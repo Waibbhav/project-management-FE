@@ -268,14 +268,14 @@
                         </div>
                       </li>
                       <li>
-                        <div class="backlog-input">
+                        <div class="backlog-input" (click)="drop()">
                           <span
                             ><img src="./assets/images/ic1.svg" alt=""
                           /></span>
                           <i class="arow"><img src="../../../assets/images/arrw.svg" alt=""></i>
                           <p class="para3">What needs to be done?</p>
                         
-                          <form  class="back-form">
+                          <form  class="back-form" *ngIf="backlogDrop">
                             <textarea placeholder="Add Description"></textarea>
                           </form>
                         </div>

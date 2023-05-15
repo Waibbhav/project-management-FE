@@ -9,6 +9,7 @@ import { DefaultComponent } from '@project/modal';
 export class BacklogComponent implements OnInit {
   panelOpenState = false;
   constructor(private dialog: MatDialog) { }
+ backlogDrop:boolean= false
 
   ngOnInit(): void {
   }
@@ -26,4 +27,7 @@ export class BacklogComponent implements OnInit {
     .subscribe((result) => {});
   }
 
+  drop(){
+this.backlogDrop = ! this.backlogDrop
+  }
 }
