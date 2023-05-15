@@ -4,6 +4,7 @@ import { AuthComponent } from './auth.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ForgotPassword2Component } from './forgot-password2/forgot-password2.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'forgot_password',
         component: ForgotPasswordComponent,
+      },
+      {
+        path: 'forgot_password2',
+        component: ForgotPassword2Component,
       },
     ],
   },

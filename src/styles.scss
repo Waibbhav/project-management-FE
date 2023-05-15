@@ -154,6 +154,7 @@ textarea {
   resize: none;
   color: $textColor;
   @include transition(0.3s);
+
   @media screen and (max-width: 767px) {
     min-height: 50px;
     line-height: 50px;
@@ -185,7 +186,8 @@ input[type=number] {
   appearance: textfield;
   -moz-appearance: textfield;
 }
-.select_box_sec{
+
+.select_box_sec {
   @include appearance(none);
   padding: 0 12px;
   border: 1px solid $inputBorderColor;
@@ -204,7 +206,8 @@ input[type=number] {
   font-family: 'Poppins', sans-serif !important;
   height: 60px;
   border-radius: 10px;
-  input{
+
+  input {
     border: 0;
     border-radius: 10px;
     width: 100%;
@@ -215,22 +218,25 @@ input[type=number] {
     top: 0;
     width: 100%;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  background-size: .9em;
-  background-position: calc(100% - 1.8em) center;
-  background-repeat: no-repeat;
-  &::placeholder {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #787486;
-  }
-  @media screen and (max-width: 767px) {
-    padding: 8px 15px;
-    min-height: 22px;
-    line-height: 30px;
-  }
+    background-size: .9em;
+    background-position: calc(100% - 1.8em) center;
+    background-repeat: no-repeat;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #787486;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 8px 15px;
+      min-height: 22px;
+      line-height: 30px;
+    }
   }
 }
+
 select {
   @include appearance(none);
   padding: 0 12px;
@@ -349,6 +355,18 @@ select {
             font-weight: 600;
             padding: 5px 10px;
             font-size: 1.2rem;
+          }
+
+          .inactive-tag {
+            background: rgba(56, 63, 73, 0.1);
+            border-radius: 16px;
+            font-weight: 600;
+            line-height: 12px;
+            text-align: center;
+            color: #444444;
+            padding: 8px 10px;
+            font-size: 1.2rem;
+            min-height: 20px;
           }
         }
       }
@@ -581,6 +599,7 @@ select {
     position: relative;
     z-index: 1;
     padding: 25px 40px;
+
     @media (max-width: 767px) {
       padding: 20px;
     }
@@ -698,6 +717,7 @@ select {
       font-weight: 600;
       color: $titleColor;
       margin-bottom: 5px;
+
       @media (max-width: 767px) {
         font-size: 25px;
       }
@@ -800,16 +820,18 @@ select {
   }
 }
 
-.title-holder{
+.title-holder {
   @media (max-width: 767px) {
     justify-content: center;
   }
-  h3{
+
+  h3 {
     @media (max-width: 767px) {
-      margin-bottom: 10px!important;
+      margin-bottom: 10px !important;
     }
   }
 }
-main{
-  padding-block: 100px!important;
+
+main {
+  padding-block: 100px !important;
 }
