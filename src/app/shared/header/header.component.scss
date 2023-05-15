@@ -142,7 +142,7 @@
     margin: 0;
     ul{
         display: flex;
-        margin: 0;
+        margin: 0 10px 0 0;
         .projects_icon{
             width: 42px;
             border: 1px solid #eee;
@@ -171,4 +171,14 @@
     @media screen and (max-width: 767px) {
         display: block;
     }
+}
+.search_icon{
+    position: relative;    
+    margin: 12px;
+}
+.search_input{
+    position: absolute;
+    right: 0;
+    width: 150px;
+    top: 30px;
 }
