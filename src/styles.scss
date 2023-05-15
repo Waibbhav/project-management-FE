@@ -154,6 +154,10 @@ textarea {
   resize: none;
   color: $textColor;
   @include transition(0.3s);
+  @media screen and (max-width: 767px) {
+    min-height: 50px;
+    line-height: 50px;
+  }
 
   @include placeholder {
     color: $placeholderColor;
