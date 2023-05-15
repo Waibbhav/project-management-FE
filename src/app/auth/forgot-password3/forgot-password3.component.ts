@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ForgotPassword3Component implements OnInit {
 hidepass:boolean= false
 hidepass2:boolean= false
+
   constructor() { }
 
   ngOnInit(): void {
