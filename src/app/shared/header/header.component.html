@@ -8,10 +8,12 @@
           <ul>
             <li>
               <div class="search_icon">
-                <img src="./assets/images/search.svg" alt=""/>
+                <img src="./assets/images/search.svg" alt="" (click)="openSearchText()"/>
+                <ng-container *ngIf="searchText===true">
                 <form class="search_input">
                   <input type="search" placeholder="Search Tasks" />
                 </form>
+              </ng-container>
               </div>
               
               
