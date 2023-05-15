@@ -804,6 +804,9 @@
         width: 100%;
         background-size: 9px;
         margin: 0 4px 0 0;
+        &:last-child{
+          width: 85px;
+        }
 
         &:first-child {
           background-color: rgba(86, 164, 200, 0.1);

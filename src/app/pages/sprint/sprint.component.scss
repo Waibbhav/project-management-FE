@@ -213,6 +213,9 @@
         &:first-child {
           background-color: rgba(86, 164, 200, 0.1);
         }
+        &:last-child{
+          width: 85px;
+        }
       }
     }
   }
