@@ -206,11 +206,11 @@
         line-height: 26px;
         text-transform: capitalize;
         color: #5b6d74;
-        padding: 5px 20px 5px 15px;
+        padding: 5px 36px 5px 15px;
         max-width: 200px;
         width: 100%;
         background-size: 9px;
-        margin: 0 20px 0 0;
+        margin: 0 4px 0 0;
 
         &:first-child {
           background-color: rgba(86, 164, 200, 0.1);
@@ -474,9 +474,7 @@
     font-size: 11px;
     line-height: 1;
     margin: 0;
-
     text-transform: capitalize;
-
     color: #092c38;
   }
   .data {
@@ -534,6 +532,7 @@
     border-radius: 2px;
     color: #5b6d74;
     padding-right: 18px;
+    height: auto;
   }
   .user {
     width: 20px;
