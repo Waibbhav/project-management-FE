@@ -159,7 +159,7 @@
       display: flex;
       align-items: center;
       margin: 0 0 0 20px;
-      max-width: 150px;
+      max-width: 105px;
       width: 100%;
       @media screen and (max-width: 767px) {
         margin: 10px 5px;
@@ -204,11 +204,11 @@
         line-height: 26px;
         text-transform: capitalize;
         color: #5b6d74;
-        padding: 5px 20px 5px 15px;
+        padding: 5px 30px 5px 15px;
         max-width: 200px;
         width: 100%;
         background-size: 9px;
-        margin: 0 20px 0 0;
+        margin: 0 4px 0 0;
 
         &:first-child {
           background-color: rgba(86, 164, 200, 0.1);
