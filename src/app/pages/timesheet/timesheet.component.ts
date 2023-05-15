@@ -8,6 +8,8 @@ import { DefaultComponent } from '@project/modal';
 })
 export class TimesheetComponent implements OnInit {
   selectDrop = false
+  addNameStatus=false
+  addNameStatus2=false
 
   constructor(private dialog: MatDialog) { }
 
@@ -42,5 +44,11 @@ export class TimesheetComponent implements OnInit {
 
   selectProjectCatagory(){
     this.selectDrop=!this.selectDrop
+  }
+  addName1(){
+    this.addNameStatus=!this.addNameStatus
+  }
+  addName2(){
+   this.addNameStatus2=!this.addNameStatus2 
   }
 }

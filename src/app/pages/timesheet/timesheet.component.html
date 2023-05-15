@@ -247,11 +247,21 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>Task name1*</label>
-                      <select class="form-select">
+                      <!-- <select class="form-select">
                         <option>Add</option>
                         <option>name1</option>
                         <option>name2</option>
-                      </select>
+                      </select> -->
+                      <div class="select_box_sec">
+                        <input type="text" (click)="addName1()">
+                        <div class="select_drop_down" *ngIf="addNameStatus">
+                          <ul>
+                            <li>Add</li>
+                            <li>name1</li>
+                            <li>name2</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -263,11 +273,16 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>Task name2*</label>
-                      <select class="form-select">
-                        <option>Add</option>
-                        <option>name1</option>
-                        <option>name2</option>
-                      </select>
+                      <div class="select_box_sec">
+                        <input type="text" (click)="addName2()">
+                        <div class="select_drop_down" *ngIf="addNameStatus2">
+                          <ul>
+                            <li>Add</li>
+                            <li>name1</li>
+                            <li>name2</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-6">
