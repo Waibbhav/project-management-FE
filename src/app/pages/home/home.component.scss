@@ -2,6 +2,9 @@
 
 .home-main-wrapper {
   padding-block: 30px;
+  @media (max-width: 767px) {
+    padding-block: 0;
+  }
 
   .container {
     .timesheet-management {
