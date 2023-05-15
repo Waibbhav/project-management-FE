@@ -29,6 +29,7 @@
     "@nguniversal/express-engine": "^14.1.0",
     "crypto-ts": "^1.0.2",
     "express": "^4.15.2",
+    "google-charts": "^2.0.0",
     "ngx-cookie-service": "^14.0.1",
     "ngx-scrollbar": "^10.0.1",
     "rxjs": "~7.5.0",
