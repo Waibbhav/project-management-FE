@@ -11,6 +11,7 @@ export class DefaultComponent implements OnInit {
 
   panelOpenState = false;
   selectDrop = false
+  selectBusiness=false
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -41,6 +42,9 @@ export class DefaultComponent implements OnInit {
 
   selectProjectCatagory(){
     this.selectDrop=!this.selectDrop
+  }
+  selectBusinessType(){
+    this.selectBusiness=!this.selectBusiness
   }
 
 }
