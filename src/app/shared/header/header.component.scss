@@ -135,12 +135,14 @@
     padding: 0 20px;
 
     ul {
+        flex-wrap: wrap;
       li {
         border-bottom: 1px solid #eee;
         padding: 10px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
         &:last-child{
             border-bottom: none;
         }
