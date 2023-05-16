@@ -135,7 +135,8 @@
     padding: 0 20px;
 
     ul {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
+
       li {
         border-bottom: 1px solid #eee;
         padding: 10px 0;
@@ -143,36 +144,42 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        &:last-child{
-            border-bottom: none;
+
+        &:last-child {
+          border-bottom: none;
         }
-        a{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: #121212;
-            &:hover{
-                color: #00BAFF;
-                span{
-                    color: #00BAFF;
-                }
-                img{
-                    filter: brightness(0) saturate(100%) invert(49%) sepia(46%) saturate(1970%) hue-rotate(167deg) brightness(103%) contrast(112%);
-                }
-            }
+
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #121212;
+
+          &:hover {
+            color: #00BAFF;
+
             span {
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 23px;
-                letter-spacing: 0.5px;
-                color: #121212;
-              }
-      
-              img {
-                width: 15px;
-                border-radius: 0;
-              }
+              color: #00BAFF;
+            }
+
+            img {
+              filter: brightness(0) saturate(100%) invert(49%) sepia(46%) saturate(1970%) hue-rotate(167deg) brightness(103%) contrast(112%);
+            }
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 23px;
+            letter-spacing: 0.5px;
+            color: #121212;
+          }
+
+          img {
+            width: 15px;
+            border-radius: 0;
+          }
         }
       }
     }
@@ -230,11 +237,23 @@
       .search-task {
         width: 60px;
 
+        @media screen and (max-width: 767px) {
+
+          width: 180px;
+          position: absolute;
+          top: 35px;
+          left: -30px;
+
+        }
+
         input {
           border: 0 !important;
           box-shadow: none !important;
-          max-width: 10% !important;
-          padding: 0 20px;
+          max-width: 100% !important;
+          background: none !important;
+          background-color: #fff !important;
+          border: 1px solid #EBEEF2 !important;
+          padding: 0 10px !important;
         }
       }
     }
