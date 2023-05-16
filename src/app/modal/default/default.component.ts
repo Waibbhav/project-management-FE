@@ -19,7 +19,8 @@ export class DefaultComponent implements OnInit {
     private dialog: MatDialog
   ) {
     // this.modalData = data;
-    // console.log(modalData);
+    // console.log(modalData)
+    dialogRef.disableClose= true ;
   }
 
   ngOnInit(): void {
