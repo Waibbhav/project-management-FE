@@ -11,7 +11,8 @@
                 <img src="./assets/images/search.svg" alt="" (click)="openSearchText()"/>
                 <ng-container *ngIf="searchText">
                   <form class="search-task">
-                    <input type="search" placeholder="Search Tasks" />
+                    <input type="text" placeholder="Search Tasks" />
+                    <button class="close_icon">X</button>
                   </form>
               </ng-container>
               </div>
@@ -47,7 +48,8 @@
         
         <div class="desktop_view">
           <form class="search-task">
-            <input type="search" placeholder="Search Tasks" />
+            <input type="text" placeholder="Search Tasks" />
+            <button class="close_icon">X</button>
           </form>
         </div>
       </div>
