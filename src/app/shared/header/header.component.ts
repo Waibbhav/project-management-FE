@@ -41,7 +41,6 @@ export class HeaderComponent implements OnInit {
   
   }
   removeX(e:any){
-    console.log(e.target.value);
     
     if(e.target.value!='')
     {
