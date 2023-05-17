@@ -216,6 +216,8 @@
           overflow: inherit;
           display: block;
           transition: all 1s ease;
+          background: #f9fafb;
+          padding: 20px 0;
         }
       }
 
@@ -357,12 +359,12 @@
     }
   }
 
-  .yourprojectmain:nth-child(odd) {
+  .yourprojectmain:nth-child(even) {
     background: #F6F7F9;
   }
 
-  .yourprojectmain:nth-child(even) {
-    background: #fff;
+  .yourprojectmain:nth-child(odd) {
+    background: #f9fafb;
   }
 }
 
