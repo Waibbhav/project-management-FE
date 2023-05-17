@@ -29,7 +29,7 @@
   max-width: 600px;
 
   @media screen and (max-width: 991px) {
-    width: 100%;
+    // width: 100%;
     max-width: 100%;
     padding: 15px 20px;
   }
@@ -399,6 +399,10 @@
     border-radius: 5px;
     width: 27px;
     height: 27px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     mat-icon {
       font-size: 17px;
@@ -438,19 +442,20 @@
 
 
 .scroll_box {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
+  overflow: auto;
   height: 350px;
 
   @media screen and (max-width: 767px) {
     height: 200px;
   }
+  .scroll_cont{
+    padding: 0 10px 0 0;
+  }
 }
 
-.scroll_box::-webkit-scrollbar {
-  display: none;
-}
+// .scroll_box::-webkit-scrollbar {
+//   display: none;
+// }
 
 .custom_radio_bar {
   display: flex;
