@@ -684,6 +684,7 @@
 .table-responsive {
   overflow: auto;
   height: 300px;
+
   @media screen and (max-width: 767px) {
     width: 100%;
     overflow-x: auto;
@@ -1010,7 +1011,8 @@
 .inactive_box {
   margin: 0 0 10px 0;
 
-  select {
+  input {
+    width: 100px;
     height: 36px;
     line-height: 1.5;
     min-height: 36px;
@@ -1025,6 +1027,28 @@
     background-size: 9px;
     margin: 0 20px 0 0;
     background-color: rgba(86, 164, 200, 0.1);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1.5em) center;
+  }
+
+  .inactive_drop {
+    background: #FFFFFF;
+    border: 0.910839px solid rgba(120, 116, 134, 0.35);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    max-width: 150px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 0;
+
+    ul {
+      margin: 0;
+      li {
+        line-height: 1.5;
+        padding: 2px 0;
+      }
+    }
   }
 }
 
