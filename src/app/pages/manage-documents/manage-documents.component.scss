@@ -1055,9 +1055,9 @@
   .custom_choose_file {
     background: #F1F5FF;
     border: 1px dashed #5D4CF3;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
-    padding: 30px;
+    padding: 27px;
 
     @media screen and (max-width: 767px) {
       margin: 10px 0;
@@ -1390,7 +1390,7 @@
 
 .table-responsive {
   @media screen and (max-width: 767px) {
-    width: 300px;
+    width:100%;
     overflow-x: auto;
   }
 

@@ -684,6 +684,10 @@
 .table-responsive {
   overflow: auto;
   height: 300px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    overflow-x: auto;
+  }
 }
 
 .big_modal {
