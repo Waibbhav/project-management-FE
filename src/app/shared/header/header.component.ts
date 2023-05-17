@@ -13,9 +13,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openSearchText(){
-    this.searchText=!this.searchText
-  }
 
   addprojectModal(){
     this.dialog
@@ -29,7 +26,5 @@ export class HeaderComponent implements OnInit {
       .afterClosed()
       .subscribe((result) => {});
   }
-  closeDrop(){
-    this.drop=!this.drop
-  }
+  
 }

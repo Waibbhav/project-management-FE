@@ -8,7 +8,7 @@
           <ul>
             <li>
               <div class="search_icon">
-                <img src="./assets/images/search.svg" alt="" (click)="openSearchText()"/>
+                <img src="./assets/images/search.svg" alt="" (click)="searchText = !searchText"/>
                 <ng-container *ngIf="searchText">
                   <form class="search-task">
                     <input type="text" placeholder="Search Tasks" />
@@ -32,7 +32,7 @@
             <li>
               <div class="abtar-account-holder">
                 <button type="button" class="header-user">
-                  <img src="./assets/images/avater.png" alt="" (click)="closeDrop()"/>
+                  <img src="./assets/images/avater.png" alt="" (click)="drop=!drop"/>
                 </button>
                 <div class="my_account_box">
                   <ul *ngIf="drop">
@@ -66,7 +66,7 @@
           </button> -->
         <div class="abtar-account-holder">
           <button type="button" class="header-user">
-            <img src="./assets/images/avater.png" alt="" (click)="closeDrop()"/>
+            <img src="./assets/images/avater.png" alt="" (click)="drop=!drop"/>
           </button>
           <div class="my_account_box">
             <ul *ngIf="drop">
