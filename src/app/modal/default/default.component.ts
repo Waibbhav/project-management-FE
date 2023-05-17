@@ -11,6 +11,7 @@ export class DefaultComponent implements OnInit {
 
   panelOpenState = false;
   selectDrop = false
+  selectDrop2 = false
   selectBusiness=false
 
   constructor(
@@ -46,6 +47,9 @@ export class DefaultComponent implements OnInit {
   }
   selectBusinessType(){
     this.selectBusiness=!this.selectBusiness
+  }
+  selectProjectCatagory2(){
+    this.selectDrop2=!this.selectDrop2
   }
 
 }
