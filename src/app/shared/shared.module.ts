@@ -5,6 +5,7 @@ import { MenuCardComponent } from './menu-card/menu-card.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { AuthModule } from '@project/auth/auth.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -12,6 +13,6 @@ import { AuthModule } from '@project/auth/auth.module';
 @NgModule({
   declarations: [HeaderComponent, MenuCardComponent, SidebarComponent],
   exports: [HeaderComponent, MenuCardComponent, SidebarComponent],
-  imports: [CommonModule,RouterModule,AuthModule],
+  imports: [CommonModule,RouterModule,AuthModule,ReactiveFormsModule],
 })
 export class SharedModule {}
