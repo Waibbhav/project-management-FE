@@ -11,8 +11,11 @@
                 <img src="./assets/images/search.svg" alt="" (click)="searchText = !searchText"/>
                 <ng-container *ngIf="searchText">
                   <form class="search-task">
-                    <input type="text" placeholder="Search Tasks" />
-                    <button class="close_icon">X</button>
+                      <input type="text" placeholder="Search Tasks" (change)="removeX($event)" /> 
+                    <ng-container *ngIf="removeX1">
+                      <button class="close_icon" (click)="removeText()">X</button>
+                    </ng-container>
+                    
                   </form>
               </ng-container>
               </div>
@@ -47,9 +50,11 @@
         </div>
         
         <div class="desktop_view">
-          <form class="search-task">
-            <input type="text" placeholder="Search Tasks" />
-            <button class="close_icon">X</button>
+          <form class="search-task" [formGroup]="addForm">
+            <input type="text" placeholder="Search Tasks" (keyup)="removeX($event)" formControlName="search"/>
+            <ng-container *ngIf="removeX1">
+              <button class="close_icon" (click)="removeText()">X</button>
+            </ng-container>
           </form>
         </div>
       </div>
