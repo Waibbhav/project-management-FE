@@ -38,8 +38,8 @@
                 <div class="col-md-12">
                     <label>Technology Tag<span>*</span></label>
                     <div class="select_box_sec">
-                        <input type="text" placeholder="Select">
-                        <div class="select_drop_down">
+                        <input type="text" placeholder="Select" (click)="closeDrop2=!closeDrop2">
+                        <div class="select_drop_down" *ngIf="closeDrop2">
                           <ul>
                             <li>Select</li>
                             <li>Select</li>

@@ -7,6 +7,7 @@ import {FormControl} from '@angular/forms';
 })
 export class AddProjectDetailsComponent implements OnInit {
   closeDrop:boolean=false
+  closeDrop2:boolean=false
   constructor() { }
 
   ngOnInit(): void {
