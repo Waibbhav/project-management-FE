@@ -8,6 +8,7 @@ import { DefaultComponent } from '@project/modal';
 })
 export class HeaderComponent implements OnInit {
   searchText:boolean=false
+  drop:boolean=false
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
@@ -27,5 +28,8 @@ export class HeaderComponent implements OnInit {
       })
       .afterClosed()
       .subscribe((result) => {});
+  }
+  closeDrop(){
+    this.drop=!this.drop
   }
 }

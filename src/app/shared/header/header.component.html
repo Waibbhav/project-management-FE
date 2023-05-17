@@ -10,13 +10,14 @@
               <div class="search_icon">
                 <img src="./assets/images/search.svg" alt="" (click)="openSearchText()"/>
                 <ng-container *ngIf="searchText">
-                <form class="search_input">
-                  <input type="search" placeholder="Search Tasks" />
-                </form>
+                  <form class="search-task">
+                    <input type="search" placeholder="Search Tasks" />
+                  </form>
               </ng-container>
               </div>
               
-              
+
+
             </li>
             <li class="projects_icon">
               <img src="./assets/images/project.svg" alt=""  />
@@ -30,15 +31,15 @@
             <li>
               <div class="abtar-account-holder">
                 <button type="button" class="header-user">
-                  <img src="./assets/images/avater.png" alt="" />
+                  <img src="./assets/images/avater.png" alt="" (click)="closeDrop()"/>
                 </button>
-                <!-- <div class="my_account_box">
-                  <ul>
-                    <li>View Profile <img src="./assets/images/my_profile_icon1.png" alt="" /></li>
-                    <li>Edit Profile <img src="./assets/images/my_profile_icon2.png" alt="" /></li>
-                    <li>logout <img src="./assets/images/my_profile_icon3.png" alt="" /></li>
+                <div class="my_account_box">
+                  <ul *ngIf="drop">
+                    <li><a href="#"><span>View Profile</span> <img src="./assets/images/my_profile_icon1.svg" alt="" /></a></li>
+                    <li><a href="#"><span>Edit Profile</span> <img src="./assets/images/my_profile_icon2.svg" alt="" /></a></li>
+                    <li><a routerLink="/login"><span>logout</span> <img src="./assets/images/my_profile_icon3.svg" alt="" /></a></li>
                   </ul>
-                </div> -->
+                </div> 
               </div>
             </li>
           </ul>
@@ -63,8 +64,15 @@
           </button> -->
         <div class="abtar-account-holder">
           <button type="button" class="header-user">
-            <img src="./assets/images/avater.png" alt="" />
+            <img src="./assets/images/avater.png" alt="" (click)="closeDrop()"/>
           </button>
+          <div class="my_account_box">
+            <ul *ngIf="drop">
+              <li><a href="#"><span>View Profile</span> <img src="./assets/images/my_profile_icon1.svg" alt="" /></a></li>
+              <li><a href="#"><span>Edit Profile</span> <img src="./assets/images/my_profile_icon2.svg" alt="" /></a></li>
+              <li><a routerLink="/login"><span>logout</span> <img src="./assets/images/my_profile_icon3.svg" alt="" /></a></li>
+            </ul>
+          </div> 
         </div>
       </div>
     </div>

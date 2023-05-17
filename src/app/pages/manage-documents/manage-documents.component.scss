@@ -1,5 +1,6 @@
 .tab-slider--body {
   padding-left: 29px;
+
   @media screen and (max-width: 767px) {
     margin: 10px 0;
   }
@@ -535,7 +536,7 @@
   justify-content: space-between;
 
   .leftsectionone {
-    
+
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -785,6 +786,7 @@
 
     .select_bar {
       display: flex;
+
       @media screen and (max-width: 767px) {
         margin: 10px 0 0 0;
       }
@@ -804,7 +806,8 @@
         width: 100%;
         background-size: 9px;
         margin: 0 4px 0 0;
-        &:last-child{
+
+        &:last-child {
           width: 85px;
         }
 
@@ -820,11 +823,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   @media screen and (max-width: 767px) {
     justify-content: flex-start;
     margin: 10px 0 0 0;
   }
-  
+
 
   p {
     margin: 0 10px 0 0;
@@ -1054,8 +1058,9 @@
     border-radius: 8px;
     text-align: center;
     padding: 30px;
+
     @media screen and (max-width: 767px) {
-      margin: 10px 0 ;
+      margin: 10px 0;
     }
 
     img {}
@@ -1181,6 +1186,7 @@
     table {
       border-spacing: 0;
       width: 100%;
+
       @media screen and (max-width: 767px) {
         width: 1000px;
         overflow-x: auto;
@@ -1382,22 +1388,59 @@
 }
 
 
-.table-responsive{
+.table-responsive {
   @media screen and (max-width: 767px) {
     width: 300px;
     overflow-x: auto;
   }
-  table{
+
+  table {
     @media screen and (max-width: 767px) {
       width: 1000px;
       overflow-x: auto;
     }
   }
 }
-::ng-deep{
-  .ng-scroll-content{
+
+::ng-deep {
+  .ng-scroll-content {
     @media screen and (max-width: 767px) {
-      display: block!important;
+      display: block !important;
     }
   }
+}
+
+.add_url {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+
+  p {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 26px;
+    color: #5B6D74;
+    margin: 0;
+  }
+  .add_input{
+    width: 85%;
+    position: relative;
+    input {
+      background: #f6f6f7;
+      border: 0;
+      height: 40px;
+      min-height: 40px;
+      padding: 0 20px;
+    }
+    .plus_icon{
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 17px;
+      opacity: 0.8;
+    }
+  }
+
+  
 }
