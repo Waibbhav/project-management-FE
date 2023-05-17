@@ -20,8 +20,8 @@
                 <div class="col-md-6 col-sm-12">
                     <label>Project Type<span>*</span></label>
                     <div class="select_box_sec">
-                        <input type="text" placeholder="Select">
-                        <div class="select_drop_down">
+                        <input type="text" placeholder="Select" (click)="closeDrop=!closeDrop">
+                        <div class="select_drop_down" *ngIf="closeDrop">
                           <ul>
                             <li>Select</li>
                             <li>Select</li>

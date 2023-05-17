@@ -6,7 +6,7 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./add-project-details.component.scss']
 })
 export class AddProjectDetailsComponent implements OnInit {
-
+  closeDrop:boolean=false
   constructor() { }
 
   ngOnInit(): void {
