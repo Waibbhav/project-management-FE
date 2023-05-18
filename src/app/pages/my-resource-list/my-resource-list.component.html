@@ -11,9 +11,11 @@
           </div>
           <div class="right-section">
             <div class="search_icon">
-              <form class="search-task">
-                <input type="text" placeholder="Search Tasks" />
-                <button class="close_icon">X</button>
+              <form class="search-task" [formGroup]="addForm">
+                <input type="text" placeholder="Search Tasks" (keyup)="removeX($event)" formControlName="search"/>
+                <ng-container *ngIf="removeX1">
+                  <button class="close_icon" (click)="removeText()">X</button>
+                </ng-container>
               </form>
             </div>
           </div>

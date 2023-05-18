@@ -20,10 +20,12 @@ import { SprintComponent } from './sprint/sprint.component';
 import { ManageDocumentsComponent } from './manage-documents/manage-documents.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
+import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, MyResourceListComponent],
-  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule ],
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, MyResourceListComponent,LeaveApplyComponent],
+  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule,ReactiveFormsModule],
 })
 export class PagesModule {}
