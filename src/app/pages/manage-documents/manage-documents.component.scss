@@ -1,7 +1,7 @@
 .tab-slider--body {
   padding-left: 29px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     margin: 10px 0;
   }
 }
@@ -787,7 +787,7 @@
     .select_bar {
       display: flex;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         margin: 10px 0 0 0;
       }
 
@@ -824,7 +824,7 @@
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     justify-content: flex-start;
     margin: 10px 0 0 0;
   }
@@ -1059,7 +1059,7 @@
     text-align: center;
     padding: 27px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       margin: 10px 0;
     }
 
@@ -1187,7 +1187,7 @@
       border-spacing: 0;
       width: 100%;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         width: 1000px;
         overflow-x: auto;
       }
@@ -1376,7 +1376,7 @@
     color: #000000;
     margin: 0;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       margin: 0;
     }
   }
@@ -1389,13 +1389,13 @@
 
 
 .table-responsive {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     width:100%;
     overflow-x: auto;
   }
 
   table {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       width: 1000px;
       overflow-x: auto;
     }
@@ -1404,7 +1404,7 @@
 
 ::ng-deep {
   .ng-scroll-content {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       display: block !important;
     }
   }
