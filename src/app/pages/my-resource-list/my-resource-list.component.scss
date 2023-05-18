@@ -1676,6 +1676,9 @@
     &:first-child {
       opacity: 1;
     }
+    &:last-child{
+      text-align: right;
+    }
 
     .btn_dots {
       font-size: 12px;
