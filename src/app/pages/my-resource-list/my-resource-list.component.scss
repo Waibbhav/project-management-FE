@@ -1678,6 +1678,11 @@
     }
     &:last-child{
       text-align: right;
+      button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
     }
 
     .btn_dots {
