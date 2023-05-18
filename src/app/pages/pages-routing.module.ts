@@ -13,6 +13,7 @@ import { BacklogComponent } from './backlog/backlog.component';
 import { SprintComponent } from './sprint/sprint.component';
 import { ManageDocumentsComponent } from './manage-documents/manage-documents.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
+import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'project-dashboard',
         component: ProjectDashboardComponent,
+      },
+      {
+        path: 'my-resource-list',
+        component: MyResourceListComponent,
       },
       {
         path: 'road-map',
