@@ -19,11 +19,23 @@ import { BacklogComponent } from './backlog/backlog.component';
 import { SprintComponent } from './sprint/sprint.component';
 import { ManageDocumentsComponent } from './manage-documents/manage-documents.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
+<<<<<<< HEAD
 import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
 
 
 @NgModule({
   declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, MyResourceListComponent],
+=======
+import { ProjectSignOffComponent } from './project-sign-off/project-sign-off.component';
+import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
+import { CompanyPolicyComponent } from './company-policy/company-policy.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
+
+
+@NgModule({
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, ProjectSignOffComponent, MyResourceListComponent, CompanyPolicyComponent, AttendanceComponent, LeaveApplyComponent],
+>>>>>>> 0ea969778b18a9dbf1e0131969bfa862af6835c8
   imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule ],
 })
 export class PagesModule {}

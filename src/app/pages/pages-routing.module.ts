@@ -13,7 +13,15 @@ import { BacklogComponent } from './backlog/backlog.component';
 import { SprintComponent } from './sprint/sprint.component';
 import { ManageDocumentsComponent } from './manage-documents/manage-documents.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
+<<<<<<< HEAD
 import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
+=======
+import { ProjectSignOffComponent } from './project-sign-off/project-sign-off.component';
+import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
+import { CompanyPolicyComponent } from './company-policy/company-policy.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
+>>>>>>> 0ea969778b18a9dbf1e0131969bfa862af6835c8
 
 const routes: Routes = [
   {
@@ -87,12 +95,28 @@ const routes: Routes = [
       {
         path:"timesheet",
         component:TimesheetComponent,
-      }
-      // {
-      //   path:'',
-      //   component:
-      // }
+      },
+      {
+        path:'Project-SignOff-Component',
+        component:ProjectSignOffComponent
+      },
       
+      {
+        path:'MyResourceListComponent',
+        component:MyResourceListComponent
+      },
+      {
+        path:'CompanyPolicyComponent',
+        component:CompanyPolicyComponent
+      },
+      {
+        path:'AttendanceComponent',
+        component:AttendanceComponent
+      },
+      {
+        path:'LeaveApplyComponent',
+        component:LeaveApplyComponent
+      },
       // {
       //   path:'',
       //   component:
