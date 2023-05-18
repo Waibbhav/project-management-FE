@@ -458,13 +458,15 @@
 
           ::ng-deep {
             p {
-              margin-bottom: 0px;
               font-size: 12px;
               line-height: 1.2;
-
               letter-spacing: 0.5px;
               color: #41475E;
-
+              margin: 0 0 5px 0;
+              span{
+                color: #979ba5;
+                margin: 0 7px 0 0;
+              }
               strong {
                 display: inline-block;
                 font-weight: 600;
