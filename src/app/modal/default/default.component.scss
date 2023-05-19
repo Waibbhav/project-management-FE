@@ -414,9 +414,10 @@
     width: 27px;
     height: 27px;
     color: #0D062D;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
 
     mat-icon {
       font-size: 17px;
@@ -494,6 +495,10 @@
       left: 0;
       z-index: 9;
       opacity: 0;
+      margin: 0;
+      width: 18px;
+      height: 18px;
+      top: 0;
     }
 
     input[type="radio"]:checked+label,
