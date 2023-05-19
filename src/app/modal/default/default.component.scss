@@ -658,6 +658,9 @@
         padding: 10px 20px;
         text-transform: capitalize;
         color: #092C38;
+        &:first-child {
+          border-left: 2px solid #f1f5ff;
+        }
 
         input {
           width: 20px;
