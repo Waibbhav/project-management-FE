@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup,FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { DefaultComponent } from '@project/modal';
 @Component({
@@ -8,9 +9,14 @@ import { DefaultComponent } from '@project/modal';
 })
 export class SprintComponent implements OnInit {
   panelOpenState = false;
+  removeX1:boolean=false
+  addForm!:FormGroup
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.addForm=new FormGroup({
+      search:new FormControl('') 
+     })
   }
 
   assignTask(){
@@ -36,6 +42,21 @@ export class SprintComponent implements OnInit {
     })
     .afterClosed()
     .subscribe((result) => {});
+  }
+  removeText(){
+    this.removeX1=false
+    this.addForm.reset()
+  
+  }
+  removeX(e:any){
+    
+    if(e.target.value!='')
+    {
+      this.removeX1=true
+    }
+    else{
+      this.removeX1=false
+    }
   }
  
 }

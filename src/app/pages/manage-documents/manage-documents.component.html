@@ -26,7 +26,12 @@
                 <button>
                   <mat-icon>search</mat-icon>
                 </button>
-                <input type="text" placeholder="Search" />
+                <form class="search-task" [formGroup]="addForm">
+                  <input type="text" placeholder="Search" (keyup)="removeX($event)" formControlName="search"/>
+                  <ng-container *ngIf="removeX1">
+                    <button class="close_icon" (click)="removeText()">X</button>
+                  </ng-container>
+                </form>
               </div>
               <div class="people_list">
                 <ul>
