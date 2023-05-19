@@ -308,10 +308,15 @@
     <div class="timesheet-btm">
       <div class="apprve-hdr">
         <h3>Approve Timesheet</h3>
-        <form>
+        <form [formGroup]="addForm">
           <div class="inputwrap">
-            <input type="text" placeholder="Search Emp." class="srch" />
-          </div>
+            <input type="text" placeholder="Search Emp." class="srch" (keyup)="removeX($event)" formControlName="search" />
+            <ng-container *ngIf="removeX1">
+              <button class="close_icon" (click)="removeText()">X</button>
+            </ng-container>
+        </div>
+        </form>
+        <form>
           <div class="inputwrap">
             <input type="date" placeholder="dd/mm/yyyy" class="date" />
           </div>
