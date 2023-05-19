@@ -164,7 +164,7 @@
       max-width: 105px;
       width: 100%;
       @media screen and (max-width: 767px) {
-        margin: 20px 0;
+        margin: 10px 5px;
       }
 
       ul {
@@ -191,8 +191,8 @@
 
     .select_bar {
       display: flex;
-      @media screen and (max-width: 991px) {
-        margin: 10px 0 0 0;
+      @media screen and (max-width: 767px) {
+        margin: 0;
       }
 
       select {
