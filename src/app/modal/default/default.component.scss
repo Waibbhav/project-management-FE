@@ -478,6 +478,8 @@
     input[type="radio"]:not(:checked) {
       position: absolute;
       left: 0;
+      z-index: 9;
+      opacity: 0;
     }
 
     input[type="radio"]:checked+label,
