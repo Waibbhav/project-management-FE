@@ -31,6 +31,9 @@
   border-radius: 10px;
   padding: 20px 23px;
   margin-bottom: 20px;
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
   h3 {
     font-weight: 600;
     font-size: 15px;
@@ -120,31 +123,37 @@
     align-items: center;
     input {
       background: #ffffff;
-      /* Gray/50 */
-
       border: 1px solid #ebeef2;
       box-shadow: 0px 1px 3px rgba(96, 108, 128, 0.05);
       border-radius: 5px;
       min-height: 28px;
       line-height: 1;
+      color: #98A2B2;
+      line-height: 40px;
+      font-size: 12px;
       &.srch {
         background-image: url(../../../assets/images/src.svg);
-        background-position: center left 6px;
+        background-position: center left 10px;
         background-repeat: no-repeat;
         background-size: 20px;
-        padding-left: 28px;
+        padding-left: 35px;
+        font-size: 12px!important;
       }
       &.date {
         background-image: url(../../../assets/images/cal2.svg);
-        background-position: center left 6px;
+        background-position: center left 10px;
         background-repeat: no-repeat;
-        background-size: 10px;
-        padding-left: 28px;
+        background-size: 15px;
+        padding-left: 35px;
+        font-size: 12px!important;
+      }
+      &::placeholder{
+        color: #98A2B2;
       }
     }
   }
   .inputwrap {
-    max-width: 170px;
+    max-width: 240px;
     margin-left: 5px;
   }
 }
@@ -397,6 +406,18 @@
     }
   }
 }
-
+.search-task {
+  position: relative;
+ 
+  .close_icon{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    background: transparent;
+    font-size: 10px;
+    color: #3cb4fc;
+    font-weight: 700;
+  }
+}
 
 

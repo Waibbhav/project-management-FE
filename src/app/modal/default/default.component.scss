@@ -107,7 +107,7 @@
       line-height: 1.2;
       text-transform: capitalize;
       color: #000;
-      margin-top: 2px;
+      margin-top: 0;
 
       @media screen and (max-width: 767px) {
         padding: 8px 15px;
@@ -399,7 +399,7 @@
     border-radius: 5px;
     width: 27px;
     height: 27px;
-    color: #666;
+    color: #0D062D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,6 +409,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: 600;
     }
   }
 }
@@ -657,6 +658,9 @@
         padding: 10px 20px;
         text-transform: capitalize;
         color: #092C38;
+        &:first-child {
+          border-left: 2px solid #f1f5ff;
+        }
 
         input {
           width: 20px;
