@@ -22,10 +22,12 @@ import { TimesheetComponent } from './timesheet/timesheet.component';
 import { MyResourceListComponent } from './my-resource-list/my-resource-list.component';
 import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TimelineSchedulerComponent } from './timeline-scheduler/timeline-scheduler.component';
+import { NgGanttEditorModule } from 'ng-gantt';
 
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, MyResourceListComponent,LeaveApplyComponent],
-  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule,ReactiveFormsModule],
+  declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, MyResourceListComponent,LeaveApplyComponent, TimelineSchedulerComponent],
+  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule,ReactiveFormsModule,NgGanttEditorModule],
 })
 export class PagesModule {}
