@@ -637,3 +637,17 @@
     }
   }
 }
+
+.search-task {
+  position: relative;
+ 
+  .close_icon{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    background: transparent;
+    font-size: 10px;
+    color: #3cb4fc;
+    font-weight: 700;
+  }
+}

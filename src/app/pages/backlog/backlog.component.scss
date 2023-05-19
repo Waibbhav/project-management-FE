@@ -127,8 +127,8 @@
 
       button {
         position: absolute;
-        left: 10px;
-        top: 6px;
+        // left: 10px;
+        // top: 6px;
         background: transparent;
         padding: 0;
 
@@ -150,6 +150,7 @@
         font-size: 12px;
         line-height: 20px;
         color: #98a2b3;
+        background: url(../../../assets/images/search.svg) 0 0 no-repeat;
 
         &::placeholder {
           color: #98a2b3;
@@ -623,3 +624,16 @@
   }
 }
 
+.search-task {
+  position: relative;
+ 
+  .close_icon{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    background: transparent;
+    font-size: 10px;
+    color: #3cb4fc;
+    font-weight: 700;
+  }
+}

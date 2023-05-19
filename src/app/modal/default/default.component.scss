@@ -31,7 +31,7 @@
   @media screen and (max-width: 991px) {
     // width: 100%;
     max-width: 100%;
-    padding: 15px 20px;
+    padding: 30px 20px;
   }
 
   h2 {
@@ -403,8 +403,11 @@
 
 .closebar {
   // display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  // align-items: center;
+  // justify-content: flex-end;
+  position: absolute;
+    right: 22px;
+    top: 10px;
 
   button {
     border-radius: 5px;
