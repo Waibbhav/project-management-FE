@@ -24,10 +24,11 @@ import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TimelineSchedulerComponent } from './timeline-scheduler/timeline-scheduler.component';
 import { NgGanttEditorModule } from 'ng-gantt';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
   declarations: [PagesComponent, HomeComponent, TaskBoardComponent, ResourcePullComponent, ResourcePullDetailsComponent, NewProjectAddedComponent, AddProjectDetailsComponent, ProjectDashboardComponent, RoadMapComponent, BacklogComponent, SprintComponent, ManageDocumentsComponent, TimesheetComponent, MyResourceListComponent,LeaveApplyComponent, TimelineSchedulerComponent],
-  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule,ReactiveFormsModule,NgGanttEditorModule],
+  imports: [CommonModule, PagesRoutingModule, SharedModule, MaterialModule, NgScrollbarModule, ModalModule,ReactiveFormsModule,NgGanttEditorModule,NgCircleProgressModule.forRoot({})],
 })
 export class PagesModule {}

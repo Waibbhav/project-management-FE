@@ -21,7 +21,27 @@
               <div class="time-data-inr">
                 <div class="progrss">
                   <figure>
-                    <img src="../../../assets/images/progress-bar.png" alt="" />
+                    <!-- <img src="../../../assets/images/progress-bar.png" alt="" /> -->
+                    <circle-progress
+                    [percent]="85"
+                    [radius]="32"
+                    [outerStrokeWidth]="7"
+                    [innerStrokeWidth]="0"
+                    [outerStrokeColor]="'#00B661'"
+                    [innerStrokeColor]="'#00B661'"
+                    [animation]="true"
+                    [animationDuration]="300"
+                    [titleColor]="'#00B661'"
+                    [subtitleColor]="'#00B661'"
+                    [innerStrokeColor]="'#E8E8E8'"
+                    subtitleFontSize='10'
+                    titleFontWeight='500'
+                    [showTitle] = 'true'
+                    [backgroundStrokeWidth]="0"
+                    unitsFontSize = 20
+                    unitsFontWeight="600"
+                    [unitsColor]="'#00B661'"
+                  ></circle-progress>
                   </figure>
                   <div class="pro-btm">
                     <p>Weekly Approve Hours</p>
