@@ -252,7 +252,7 @@
                         <option>name1</option>
                         <option>name2</option>
                       </select> -->
-                      <input type="text"  (click)="selectProjectCatagory()">
+                      <input type="text"  (click)="selectDrop=!selectDrop">
                       <div class="select_drop_down" *ngIf="selectDrop">
                         <ul>
                           <li>Select</li>
@@ -274,7 +274,7 @@
                         <option>name2</option>
                       </select> -->
                       <div class="select_box_sec">
-                        <input type="text" (click)="addName1()" placeholder="Add">
+                        <input type="text" (click)="addNameStatus=!addNameStatus" placeholder="Add">
                         <div class="select_drop_down" *ngIf="addNameStatus">
                           <ul>
                             <li>Add</li>
@@ -295,7 +295,7 @@
                     <div class="form-group">
                       <label>Task name2*</label>
                       <div class="select_box_sec">
-                        <input type="text" (click)="addName2()" placeholder="Add">
+                        <input type="text" (click)="addNameStatus2=!addNameStatus2" placeholder="Add">
                         <div class="select_drop_down" *ngIf="addNameStatus2">
                           <ul>
                             <li>Add</li>

@@ -51,15 +51,6 @@ export class TimesheetComponent implements OnInit {
       .subscribe((result) => {});
   }
 
-  selectProjectCatagory(){
-    this.selectDrop=!this.selectDrop
-  }
-  addName1(){
-    this.addNameStatus=!this.addNameStatus
-  }
-  addName2(){
-   this.addNameStatus2=!this.addNameStatus2 
-  }
   removeText(){
     this.removeX1=false
     this.addForm.patchValue({search:''})
