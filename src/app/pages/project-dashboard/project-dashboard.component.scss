@@ -197,21 +197,6 @@
       tr {
         position: relative;
 
-        &::after {
-          position: absolute;
-          z-index: 9;
-          background: #08A0F7;
-          border-radius: 10px;
-          width: 2px;
-          height: 0px;
-          content: "";
-          top: 50%;
-          left: 0;
-          transform: translate(0%, -50%);
-          transition: all ease-in 0.4s;
-          visibility: hidden;
-        }
-
         &:hover {
           &::after {
             height: 73px;
@@ -231,6 +216,22 @@
 
       td {
         padding: 18px 15px;
+        &:first-child{
+          &::after {
+            position: absolute;
+            z-index: 9;
+            background: #08A0F7;
+            border-radius: 10px;
+            width: 2px;
+            height: 0px;
+            content: "";
+            top: 50%;
+            left: 0;
+            transform: translate(0%, -50%);
+            transition: all ease-in 0.4s;
+            visibility: hidden;
+          }
+        }
 
         @media (max-width: 1199px) {
           // padding: 15px;
