@@ -36,7 +36,29 @@
                         </button>
                       </div>
                       <div class="progress-img-one">
-                        <img src="../../../assets/images/progress-img.png" />
+                        <!-- <img src="../../../assets/images/progress-img.png" /> -->
+                        <circle-progress
+                        [percent]="75"
+                        [radius]="87"
+                        [outerStrokeWidth]="9"
+                        [innerStrokeWidth]="0"
+                        [outerStrokeColor]="'#76CC8E'"
+                        [innerStrokeColor]="'#76CC8E'"
+                        [animation]="true"
+                        [animationDuration]="300"
+                        [titleColor]="'#2C81E7'"
+                        [subtitleColor]="'121212'"
+                        [innerStrokeColor]="'#E8E8E8'"
+                        subtitleFontSize='10'
+                        titleFontWeight='500'
+                        [showTitle] = 'true'
+                        [backgroundStrokeWidth]="0"
+                        unitsFontSize = 35
+                        unitsFontWeight="600"
+                        [unitsColor]="'#2C81E7'"
+                        [clockwise]= false
+                        titleFontSize="35"
+                      ></circle-progress>
                       </div>
                     </div>
                   </div>

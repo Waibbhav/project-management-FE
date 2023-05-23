@@ -21,7 +21,28 @@
               <div class="time-data-inr">
                 <div class="progrss">
                   <figure>
-                    <img src="../../../assets/images/progress-bar.png" alt="" />
+                    <!-- <img src="../../../assets/images/progress-bar.png" alt="" /> -->
+                    <circle-progress
+                    [percent]="85"
+                    [radius]="32"
+                    [outerStrokeWidth]="7"
+                    [innerStrokeWidth]="0"
+                    [outerStrokeColor]="'#00B661'"
+                    [innerStrokeColor]="'#00B661'"
+                    [animation]="true"
+                    [animationDuration]="300"
+                    [titleColor]="'#00B661'"
+                    [subtitleColor]="'#00B661'"
+                    [innerStrokeColor]="'#E8E8E8'"
+                    subtitleFontSize='10'
+                    titleFontWeight='500'
+                    [showTitle] = 'true'
+                    [backgroundStrokeWidth]="0"
+                    unitsFontSize = 20
+                    unitsFontWeight="600"
+                    [unitsColor]="'#00B661'"
+                    [clockwise]= false
+                  ></circle-progress>
                   </figure>
                   <div class="pro-btm">
                     <p>Weekly Approve Hours</p>
@@ -231,7 +252,7 @@
                         <option>name1</option>
                         <option>name2</option>
                       </select> -->
-                      <input type="text"  (click)="selectProjectCatagory()">
+                      <input type="text"  (click)="selectDrop=!selectDrop">
                       <div class="select_drop_down" *ngIf="selectDrop">
                         <ul>
                           <li>Select</li>
@@ -253,7 +274,7 @@
                         <option>name2</option>
                       </select> -->
                       <div class="select_box_sec">
-                        <input type="text" (click)="addName1()" placeholder="Add">
+                        <input type="text" (click)="addNameStatus=!addNameStatus" placeholder="Add">
                         <div class="select_drop_down" *ngIf="addNameStatus">
                           <ul>
                             <li>Add</li>
@@ -274,7 +295,7 @@
                     <div class="form-group">
                       <label>Task name2*</label>
                       <div class="select_box_sec">
-                        <input type="text" (click)="addName2()" placeholder="Add">
+                        <input type="text" (click)="addNameStatus2=!addNameStatus2" placeholder="Add">
                         <div class="select_drop_down" *ngIf="addNameStatus2">
                           <ul>
                             <li>Add</li>
@@ -316,7 +337,7 @@
             </ng-container>
           </div>
           <div class="inputwrap">
-            <input type="date" placeholder="dd/mm/yyyy" class="date" />
+            <input type="date" placeholder="dd/mm/yyyy" class="date" formControlName="date1"/>
           </div>
         </form>
       </div>

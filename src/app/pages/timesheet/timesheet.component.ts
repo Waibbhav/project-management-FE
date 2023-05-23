@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DefaultComponent } from '@project/modal';
-import { FormControl,FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl,FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-timesheet',
   templateUrl: './timesheet.component.html',
@@ -14,11 +14,13 @@ export class TimesheetComponent implements OnInit {
   addForm!:FormGroup
   removeX1:boolean=false
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog,
+    private fbuild:FormBuilder) { }
 
   ngOnInit(): void {
-    this.addForm=new FormGroup({
-      search:new FormControl('') 
+    this.addForm=this.fbuild.group({
+      search:[''],
+      date1:['']
      })
  
   }
@@ -49,18 +51,9 @@ export class TimesheetComponent implements OnInit {
       .subscribe((result) => {});
   }
 
-  selectProjectCatagory(){
-    this.selectDrop=!this.selectDrop
-  }
-  addName1(){
-    this.addNameStatus=!this.addNameStatus
-  }
-  addName2(){
-   this.addNameStatus2=!this.addNameStatus2 
-  }
   removeText(){
     this.removeX1=false
-    this.addForm.reset()
+    this.addForm.patchValue({search:''})
   
   }
   removeX(e:any){
