@@ -14,15 +14,13 @@ import { environment } from 'src/environments/environment';
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
-
   API_URL: string;
-  httpOptions: { headers: HttpHeaders; };
+  httpOptions: { headers: HttpHeaders };
   TOKEN: string;
   ROLE: string;
-
 
   constructor(
     private http: HttpClient,
@@ -30,7 +28,7 @@ export class ApiService {
     private event: EventService,
     private router: Router
   ) {
-    this.ROLE = ''
+    this.ROLE = '';
 
     this.API_URL = environment.BASE_API_ENDPOINT;
     this.TOKEN = this.storage.getDataField('token');
@@ -41,15 +39,15 @@ export class ApiService {
           headers: new HttpHeaders({
             'Content-Type': 'application/json',
             Accept: 'multipart/form-data',
-            'x-access-token': this.storage.getDataField('token')
-          })
+            'x-access-token': this.storage.getDataField('token'),
+          }),
         };
       } else {
         this.httpOptions = {
           headers: new HttpHeaders({
             'Content-Type': 'application/json',
             Accept: 'multipart/form-data',
-          })
+          }),
         };
       }
     });
@@ -58,61 +56,76 @@ export class ApiService {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',
           Accept: 'multipart/form-data',
-          'x-access-token': this.storage.getDataField('token')
-        })
+          'x-access-token': this.storage.getDataField('token'),
+        }),
       };
     } else {
       this.httpOptions = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',
           Accept: 'multipart/form-data',
-        })
+        }),
       };
     }
   }
-
-
 
   private formatErrors(error: any) {
     return throwError(error.error);
   }
 
-
-
-
   // GET METHOD HTTP REQUEST
   get(path: string, params: HttpParams = new HttpParams()) {
-    return this.http.get(`${this.API_URL}${path}`, { headers: this.httpOptions.headers, params })
+    return this.http
+      .get(`${this.API_URL}${path}`, {
+        headers: this.httpOptions.headers,
+        params,
+      })
       .pipe(catchError(this.formatErrors));
   }
 
   // POST METHOD HTTP REQUEST
   post(path: any, body: object = {}, reportProgress = false) {
-    return this.http.post(`${this.API_URL}${path}`, body, { headers: this.httpOptions.headers, reportProgress, })
+    return this.http
+      .post(`${this.API_URL}${path}`, body, {
+        headers: this.httpOptions.headers,
+        reportProgress,
+      })
       .pipe(catchError(this.formatErrors));
   }
 
-
-
   put(path: any, body: object = {}) {
-    return this.http.put(`${this.API_URL}${path}`, body, this.httpOptions).pipe(map((r: any) => {
-    })).pipe(catchError(this.formatErrors));
+    return this.http
+      .put(`${this.API_URL}${path}`, body, this.httpOptions)
+      .pipe(map((r: any) => {}))
+      .pipe(catchError(this.formatErrors));
   }
 
-
-  delete(path: string, alert: boolean = false, params: HttpParams = new HttpParams()) {
-    return this.http.delete(`${this.API_URL}${path}`, { headers: this.httpOptions.headers, params }).pipe(map((r: any) => {
-      if (alert) {
-        this.alert(r.message ? r.message : 'Success', 'success');
-      }
-    })).pipe(catchError(this.formatErrors));
+  delete(
+    path: string,
+    alert: boolean = false,
+    params: HttpParams = new HttpParams()
+  ) {
+    return this.http
+      .delete(`${this.API_URL}${path}`, {
+        headers: this.httpOptions.headers,
+        params,
+      })
+      .pipe(
+        map((r: any) => {
+          if (alert) {
+            this.alert(r.message ? r.message : 'Success', 'success');
+          }
+        })
+      )
+      .pipe(catchError(this.formatErrors));
   }
 
   upload(path: any, body: FormData) {
-    return this.http.put(`${this.API_URL}${path}`, body, this.httpOptions).pipe(map((r: any) => {
-    })).pipe(catchError(this.formatErrors));
+    return this.http
+      .put(`${this.API_URL}${path}`, body, this.httpOptions)
+      .pipe(map((r: any) => {}))
+      .pipe(catchError(this.formatErrors));
   }
-
 
   // SHOW ALERT AS A TOSATER WHEN REQUIRED
   alert(message: string, type: any, duraion?: number) {
@@ -128,30 +141,58 @@ export class ApiService {
   }
 
   // SHOW ALERT AS A POPUP WHEN REQUIRED
-  alertModal(message: string, type: any, CancelButton = false, isIcon?: boolean) {
+  alertModal(
+    message: string,
+    type: any,
+    CancelButton = false,
+    isIcon?: boolean
+  ) {
     return Swal.fire({
       text: message,
       icon: isIcon ? type : null,
       showConfirmButton: true,
       showCancelButton: CancelButton,
-      confirmButtonText: 'Ok'
+      confirmButtonText: 'Ok',
     });
   }
 
-
   // POST HTTP REQUEST WITH FILE UPLOAD
-  postMultiData(path: string, file: FormData, reportProgress = false): Observable<any> {
-    const httpOptionsimg = {
+  // postMultiData(
+  //   path: string,
+  //   file: FormData,
+  //   reportProgress = false
+  // ): Observable<any> {
+  //   const httpOptionsimg = {
+  //     headers: new HttpHeaders({
+  //       Accept: 'multipart/form-data',
+  //       'x-access-token': this.storage.getDataField('token'),
+  //     }),
+  //     reportProgress,
+  //   };
+  //   return this.http
+  //     .post(`${this.API_URL}${path}`, file, httpOptionsimg)
+  //     .pipe(catchError(this.formatErrors));
+  // }
+
+  postMultiData(
+    path: string,
+    file: FormData,
+    reportProgress = false
+  ): Observable<any> {
+    const httpOptions = {
       headers: new HttpHeaders({
         Accept: 'multipart/form-data',
-        'x-access-token': this.storage.getDataField('token')
+        // Remove x-access-token since it's not required for signup
+        // 'x-access-token': this.storage.getDataField('token'),
       }),
-      reportProgress
+      reportProgress,
     };
-    return this.http.post(`${this.API_URL}${path}`, file, httpOptionsimg)
-      .pipe(catchError(this.formatErrors));
+
+    return this.http.post(`${this.API_URL}${path}`, file, httpOptions).pipe(
+      catchError((error) => {
+        console.error('Error occurred during HTTP request:', error);
+        return throwError(error); // Re-throws the error to be handled later
+      })
+    );
   }
-
-
-
 }

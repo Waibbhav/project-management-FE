@@ -1,6 +1,4 @@
 <div class="login-wrapper">
-  <!-- <img src="./assets/images/pc1.svg" alt="" class="pc1">
-        <img src="./assets/images/pc2.svg" alt="" class="pc2"> -->
   <div class="login-sec">
     <img src="./assets/images/pc1.svg" alt="" class="pc1" />
     <img src="./assets/images/pc2.svg" alt="" class="pc2" />
@@ -14,21 +12,36 @@
                 <p>Log in to continue</p>
               </div>
               <div class="login-form">
-                <form class="form">
+                <!-- Form starts here -->
+                <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
                   <div class="form-group">
-                    <input type="email" placeholder="Enter your email" />
+                    <input
+                      type="email"
+                      name="email"
+                      [(ngModel)]="email"
+                      placeholder="Enter your email"
+                      required
+                      email
+                    />
                   </div>
 
                   <div class="form-group">
-                    <input type="password" placeholder="Password" />
+                    <input
+                      type="password"
+                      name="password"
+                      [(ngModel)]="password"
+                      placeholder="Password"
+                      required
+                    />
                   </div>
                   <div class="forgot_pass">
                     <a routerLink="/forgot_password">Forgot Password?</a>
                   </div>
                   <div class="submit-inn">
-                    <button type="submit" class="btn-big">Continue</button>
+                    <button type="submit" class="btn-big" [disabled]="loginForm.invalid">Continue</button>
                   </div>
                 </form>
+                <!-- Form ends here -->
                 <div class="dvider">
                   <span>OR</span>
                 </div>
@@ -37,7 +50,7 @@
                   <span>Continue with Outlook</span>
                 </a>
                 <div class="cant-log">
-                  <p>Can’t log in? • <a href="#">Create An Account</a></p>
+                  <p>Can’t log in? • <a routerLink="/register">Create An Account</a></p>
                 </div>
               </div>
               <div class="form-btm">
