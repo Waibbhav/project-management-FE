@@ -8,8 +8,8 @@ import { StorageService } from '@project/services/storage.service';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  email: string = '';
-  password: string = '';
+  email: string = ''
+  password: string = ''
 
   constructor(
     private apiService: ApiService,
@@ -36,9 +36,8 @@ export class LoginComponent {
         this.apiService.alert(response.message, 'success').then(() => {
           // Save the user data in cookies using StorageService
 
-          this.storageService.setUser(response.data.user).then(() => {
-            
-            this.router.navigateByUrl('/home');
+          this.storageService.setUser(response.data.user).then( () => {
+           this.router.navigate(["/home"])
           })
         });
       },
