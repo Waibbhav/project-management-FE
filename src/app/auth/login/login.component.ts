@@ -28,12 +28,22 @@ export class LoginComponent {
 
     this.apiService.post('user/signin', loginData).subscribe(
       async (response: any) => {
-        // Mark the function as async
         console.log('Login successful!', response);
-
+        await this.storageService.setUser(response.data); // Wait for user to be set
+        
         this.apiService.alert(response.message, 'success').then(async () => {
-          await this.storageService.setUser(response.data); // Wait for user to be set
-          this.router.navigate(['/home'], { replaceUrl: true }); // Navigate after setting user
+          // Ensure data is stored before redirecting
+          console.log('User data stored, redirecting now...');
+
+          setTimeout(() => {
+            this.router.navigate(['/home']).then((success) => {
+              if (success) {
+                console.log('Navigation to home successful!');
+              } else {
+                console.error('Navigation failed!');
+              }
+            });
+          }, 300); // Delay to ensure cookie is set
         });
       },
       (error) => {

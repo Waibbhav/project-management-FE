@@ -135,7 +135,7 @@ export class ApiService {
       toast: true,
       position: 'top-end',
       showConfirmButton: false,
-      timer: duraion ? duraion : 5000,
+      timer: duraion ? duraion : 1000,
       timerProgressBar: true,
     });
   }
