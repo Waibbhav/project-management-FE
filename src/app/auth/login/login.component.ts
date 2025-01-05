@@ -34,16 +34,21 @@ export class LoginComponent {
         this.apiService.alert(response.message, 'success').then(async () => {
           // Ensure data is stored before redirecting
           console.log('User data stored, redirecting now...');
-
-          setTimeout(() => {
-            this.router.navigate(['/home']).then((success) => {
-              if (success) {
-                console.log('Navigation to home successful!');
-              } else {
-                console.error('Navigation failed!');
-              }
-            });
-          }, 300); // Delay to ensure cookie is set
+setTimeout(() => {
+  console.log('Checking user data:', this.storageService.getUser());
+  this.router
+    .navigate(['/home'])
+    .then((success) => {
+      if (success) {
+        console.log('✅ Navigation to home successful!');
+      } else {
+        console.error('❌ Navigation failed!');
+      }
+    })
+    .catch((error) => {
+      console.error('🚨 Router navigation error:', error);
+    });
+}, 300); 
         });
       },
       (error) => {
