@@ -76,7 +76,8 @@
             <ul *ngIf="drop">
               <li><a href="#"><span>View Profile</span> <img src="./assets/images/my_profile_icon1.svg" alt="" /></a></li>
               <li><a href="#"><span>Edit Profile</span> <img src="./assets/images/my_profile_icon2.svg" alt="" /></a></li>
-              <li><a routerLink="/login"><span>logout</span> <img src="./assets/images/my_profile_icon3.svg" alt="" /></a></li>
+             <li  (click)="logout()" ><a><span>logout</span> <img src="./assets/images/my_profile_icon3.svg" alt="" /></a></li>
+                
             </ul>
           </div> 
         </div>
