@@ -9,8 +9,8 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  email: string = ''
-  password: string = ''
+  email: string = '';
+  password: string = '';
 
   constructor(
     private apiService: ApiService,
@@ -19,33 +19,25 @@ export class LoginComponent {
   ) {}
 
   onSubmit(): void {
-    // Check if form is valid
     if (!this.email || !this.password) {
       alert('Please fill in both email and password.');
       return;
     }
 
-    const loginData = {
-      email: this.email,
-      password: this.password,
-    };
+    const loginData = { email: this.email, password: this.password };
 
-    // Call the API to submit login data
     this.apiService.post('user/signin', loginData).subscribe(
-      (response: any) => {
+      async (response: any) => {
+        // Mark the function as async
         console.log('Login successful!', response);
-        this.apiService.alert(response.message, 'success').then(() => {
-          // Save the user data in cookies using StorageService
 
-          this.storageService.setUser(response.data).then( () => {
-           this.router.navigate(["/home"])
-          })
+        this.apiService.alert(response.message, 'success').then(async () => {
+          await this.storageService.setUser(response.data); // Wait for user to be set
+          this.router.navigate(['/home'], { replaceUrl: true }); // Navigate after setting user
         });
       },
       (error) => {
         console.error('Login error:', error);
-
-        // Show an error message
         alert('Invalid login credentials. Please try again.');
       }
     );

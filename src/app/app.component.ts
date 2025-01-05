@@ -8,15 +8,19 @@ import { StorageService } from './services/storage.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-
-  title="WTS"
+  title = 'WTS';
   constructor(private router: Router, private storageService: StorageService) {}
 
   ngOnInit() {
-    if (this.storageService.isAuthenticate()) {
-      this.router.navigate(['/home']);
-    } else {
-      this.router.navigate(['/login']);
-    }
+    setTimeout(() => {
+      // Add a delay to ensure cookies are loaded
+      if (this.storageService.isAuthenticate()) {
+        console.log('User is authenticated, navigating to home.');
+        this.router.navigate(['/home']);
+      } else {
+        console.log('User is not authenticated, navigating to login.');
+        this.router.navigate(['/login']);
+      }
+    }, 500); // Adjust delay if necessary
   }
 }
