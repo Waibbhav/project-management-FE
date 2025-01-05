@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       // Add a delay to ensure cookies are loaded
+      
       if (this.storageService.isAuthenticate()) {
         console.log('User is authenticated, navigating to home.');
         this.router.navigate(['/home']);
