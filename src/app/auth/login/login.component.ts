@@ -36,7 +36,7 @@ export class LoginComponent {
         this.apiService.alert(response.message, 'success').then(() => {
           // Save the user data in cookies using StorageService
 
-          this.storageService.setUser(response.data.user).then( () => {
+          this.storageService.setUser(response.data).then( () => {
            this.router.navigate(["/home"])
           })
         });
